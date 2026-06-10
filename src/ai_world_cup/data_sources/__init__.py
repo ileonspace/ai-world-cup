@@ -1,0 +1,1 @@
+"""Football data source adapters."""

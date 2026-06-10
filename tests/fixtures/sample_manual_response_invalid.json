@@ -1,0 +1,10 @@
+{
+  "home_team": "Mexico",
+  "away_team": "South Africa",
+  "predicted_home_goals": 2,
+  "predicted_away_goals": 1,
+  "predicted_outcome": "DRAW",
+  "predicted_winner": "DRAW",
+  "confidence": 0.64,
+  "reasoning_short": "Invalid because the outcome does not match the score."
+}

@@ -1,0 +1,23 @@
+{
+  "payload": {
+    "teams": [
+      { "id": 1, "name": "Mexico", "group": "A", "fifa_code": "MEX" },
+      { "id": 2, "name": "South Africa", "group": "A", "fifa_code": "RSA" }
+    ],
+    "stadiums": [
+      { "id": 10, "name": "Estadio Azteca", "city": "Mexico City", "country": "Mexico", "capacity": 87523 }
+    ],
+    "games": [
+      {
+        "id": 100,
+        "match_number": 1,
+        "group": "A",
+        "stage": "Group stage",
+        "home_team": "Mexico",
+        "away_team": "South Africa",
+        "kickoff": "2026-06-11T20:00:00Z",
+        "stadium": "Estadio Azteca"
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 8,
+    "model_display_name": "Claude Sonnet 4.6",
+    "provider": "Anthropic",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T15:51:49.922243",
+    "notes": null
+  },
+  {
+    "id": 9,
+    "model_display_name": "DeepSeek",
+    "provider": "DeepSeek",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T15:50:12.756122",
+    "notes": null
+  },
+  {
+    "id": 1,
+    "model_display_name": "Gemini",
+    "provider": "Google",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T16:06:06.015849",
+    "notes": null
+  },
+  {
+    "id": 10,
+    "model_display_name": "Copilot Chat",
+    "provider": "Microsoft",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T15:50:12.803289",
+    "notes": null
+  },
+  {
+    "id": 2,
+    "model_display_name": "Mistral Medium 3.5",
+    "provider": "Mistral",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T15:50:12.416507",
+    "notes": null
+  },
+  {
+    "id": 12,
+    "model_display_name": "Mistral Medium 3.5",
+    "provider": "Mistral AI",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T16:07:14.535401",
+    "notes": null
+  },
+  {
+    "id": 3,
+    "model_display_name": "GPT-5.5",
+    "provider": "OpenAI",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T16:08:05.491917",
+    "notes": null
+  },
+  {
+    "id": 5,
+    "model_display_name": "GPT-5.5 Thinking",
+    "provider": "OpenAI",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T16:09:10.649325",
+    "notes": null
+  },
+  {
+    "id": 7,
+    "model_display_name": "Perplexity",
+    "provider": "Perplexity",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T15:50:12.686271",
+    "notes": null
+  },
+  {
+    "id": 6,
+    "model_display_name": "Perplexity Pro",
+    "provider": "Perplexity",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T16:09:39.577320",
+    "notes": null
+  },
+  {
+    "id": 11,
+    "model_display_name": "Qwen 3 7",
+    "provider": "Qwen",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T15:50:12.823285",
+    "notes": null
+  },
+  {
+    "id": 4,
+    "model_display_name": "Grok",
+    "provider": "xAI",
+    "access_mode": "manual",
+    "web_search_enabled": null,
+    "submitted_at": "2026-06-10T16:08:36.854591",
+    "notes": null
+  }
+]

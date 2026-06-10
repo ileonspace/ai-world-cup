@@ -1,0 +1,10 @@
+{
+  "home_team": "Mexico",
+  "away_team": "South Africa",
+  "predicted_home_goals": 2,
+  "predicted_away_goals": 1,
+  "predicted_outcome": "HOME_WIN",
+  "predicted_winner": "Mexico",
+  "confidence": 0.64,
+  "reasoning_short": "Mexico have home advantage, but no current snapshot standings are available."
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "model": "Model A",
+    "home_goals_pred": 2,
+    "away_goals_pred": 1,
+    "outcome_pred": "HOME_WIN",
+    "winner_team_name_pred": "Mexico",
+    "confidence": 0.7
+  },
+  {
+    "model": "Model B",
+    "home_goals_pred": 1,
+    "away_goals_pred": 1,
+    "outcome_pred": "DRAW",
+    "winner_team_name_pred": "DRAW",
+    "confidence": 0.6
+  }
+]

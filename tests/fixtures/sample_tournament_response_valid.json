@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "project": "AI World Cup",
+    "prompt_version": "v1",
+    "data_snapshot_id": "1",
+    "model_name": "Model A",
+    "provider": "Provider",
+    "prediction_created_at": "2026-06-10"
+  },
+  "group_stage_predictions": [
+    {
+      "match_number": 1,
+      "stage": "Group Stage",
+      "group": "A",
+      "home_team": "Mexico",
+      "away_team": "South Africa",
+      "predicted_home_goals": 2,
+      "predicted_away_goals": 1,
+      "predicted_outcome": "HOME_WIN",
+      "predicted_winner": "Mexico",
+      "confidence": 0.7,
+      "reasoning_short": "Mexico have home advantage."
+    }
+  ],
+  "predicted_group_standings": [
+    {
+      "group": "A",
+      "rank": 1,
+      "team": "Mexico",
+      "points": 3,
+      "goals_for": 2,
+      "goals_against": 1,
+      "goal_difference": 1
+    },
+    {
+      "group": "A",
+      "rank": 2,
+      "team": "South Africa",
+      "points": 0,
+      "goals_for": 1,
+      "goals_against": 2,
+      "goal_difference": -1
+    }
+  ],
+  "knockout_predictions": [
+    {
+      "match_number": 104,
+      "stage": "Final",
+      "home_team": "Mexico",
+      "away_team": "France",
+      "predicted_home_goals": 2,
+      "predicted_away_goals": 1,
+      "predicted_outcome": "HOME_WIN",
+      "predicted_winner": "Mexico",
+      "confidence": 0.4,
+      "reasoning_short": "Projected final from the bracket."
+    },
+    {
+      "match_number": 103,
+      "stage": "Third-place match",
+      "home_team": "Brazil",
+      "away_team": "Argentina",
+      "predicted_home_goals": 1,
+      "predicted_away_goals": 2,
+      "predicted_outcome": "AWAY_WIN",
+      "predicted_winner": "Argentina",
+      "confidence": 0.5,
+      "reasoning_short": "Projected third-place match."
+    }
+  ],
+  "final_ranking": {
+    "champion": "Mexico",
+    "runner_up": "France",
+    "third_place": "Argentina",
+    "fourth_place": "Brazil"
+  },
+  "awards_predictions": {
+    "top_scorer": "Mexico Forward",
+    "best_player": "Mexico Midfielder",
+    "best_young_player": "France Youngster",
+    "best_goalkeeper": "Mexico Goalkeeper"
+  }
+}
