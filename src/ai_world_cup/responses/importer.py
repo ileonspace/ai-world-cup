@@ -9,6 +9,10 @@ from ai_world_cup.responses.parser import parse_response_json
 from ai_world_cup.responses.validator import validate_match_response, validation_errors_to_strings
 from ai_world_cup.schemas import GeneratedPrompt, LLMModel, ManualResponse, Match, Prediction
 
+PROVIDER_ALIASES = {
+    "Mistral": "Mistral AI",
+}
+
 
 def get_or_create_model(
     session: Session,
@@ -16,6 +20,7 @@ def get_or_create_model(
     provider: str,
     model_version: str | None = None,
 ) -> LLMModel:
+    provider = PROVIDER_ALIASES.get(provider, provider)
     model = session.exec(
         select(LLMModel).where(
             LLMModel.model_display_name == model_name,

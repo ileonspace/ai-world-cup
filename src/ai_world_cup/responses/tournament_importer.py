@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from sqlalchemy import delete
 from sqlmodel import Session, select
 
 from ai_world_cup.responses.importer import get_or_create_model
@@ -18,6 +19,46 @@ from ai_world_cup.schemas import (
 )
 
 
+def delete_existing_tournament_submission(
+    session: Session,
+    prompt_id: int,
+    model_id: int,
+) -> None:
+    existing_responses = list(
+        session.exec(
+            select(TournamentManualResponse).where(
+                TournamentManualResponse.tournament_prompt_run_id == prompt_id,
+                TournamentManualResponse.model_id == model_id,
+            )
+        )
+    )
+    for existing in existing_responses:
+        if existing.id is None:
+            continue
+        session.exec(
+            delete(TournamentPrediction).where(
+                TournamentPrediction.tournament_manual_response_id == existing.id
+            )
+        )
+        session.exec(
+            delete(PredictedGroupStanding).where(
+                PredictedGroupStanding.tournament_manual_response_id == existing.id
+            )
+        )
+        session.exec(
+            delete(PredictedFinalRanking).where(
+                PredictedFinalRanking.tournament_manual_response_id == existing.id
+            )
+        )
+        session.exec(
+            delete(PredictedAward).where(
+                PredictedAward.tournament_manual_response_id == existing.id
+            )
+        )
+        session.delete(existing)
+    session.commit()
+
+
 def import_tournament_response(
     session: Session,
     prompt_id: int,
@@ -31,6 +72,7 @@ def import_tournament_response(
         raise ValueError(f"No tournament prompt run found with id {prompt_id}")
     raw_text = response_file.read_text(encoding="utf-8")
     model = get_or_create_model(session, model_name, provider, model_version)
+    delete_existing_tournament_submission(session, prompt_id, model.id)
     parse_status = "VALID"
     messages: list[str] = []
     parsed = None

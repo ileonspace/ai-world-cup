@@ -5,7 +5,7 @@
     "provider": "Anthropic",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T15:51:49.922243",
+    "submitted_at": "2026-06-10T16:41:58.930319",
     "notes": null
   },
   {
@@ -14,7 +14,7 @@
     "provider": "DeepSeek",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T15:50:12.756122",
+    "submitted_at": "2026-06-10T16:41:59.008911",
     "notes": null
   },
   {
@@ -23,34 +23,16 @@
     "provider": "Google",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T16:06:06.015849",
-    "notes": null
-  },
-  {
-    "id": 10,
-    "model_display_name": "Copilot Chat",
-    "provider": "Microsoft",
-    "access_mode": "manual",
-    "web_search_enabled": null,
-    "submitted_at": "2026-06-10T15:50:12.803289",
+    "submitted_at": "2026-06-10T16:41:58.595988",
     "notes": null
   },
   {
     "id": 2,
     "model_display_name": "Mistral Medium 3.5",
-    "provider": "Mistral",
-    "access_mode": "manual",
-    "web_search_enabled": null,
-    "submitted_at": "2026-06-10T15:50:12.416507",
-    "notes": null
-  },
-  {
-    "id": 12,
-    "model_display_name": "Mistral Medium 3.5",
     "provider": "Mistral AI",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T16:07:14.535401",
+    "submitted_at": "2026-06-10T16:41:58.641823",
     "notes": null
   },
   {
@@ -59,7 +41,7 @@
     "provider": "OpenAI",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T16:08:05.491917",
+    "submitted_at": "2026-06-10T16:41:58.679888",
     "notes": null
   },
   {
@@ -68,7 +50,7 @@
     "provider": "OpenAI",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T16:09:10.649325",
+    "submitted_at": "2026-06-10T16:41:58.762969",
     "notes": null
   },
   {
@@ -77,7 +59,7 @@
     "provider": "Perplexity",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T15:50:12.686271",
+    "submitted_at": "2026-06-10T16:41:58.852208",
     "notes": null
   },
   {
@@ -86,16 +68,16 @@
     "provider": "Perplexity",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T16:09:39.577320",
+    "submitted_at": "2026-06-10T16:41:58.806289",
     "notes": null
   },
   {
-    "id": 11,
+    "id": 10,
     "model_display_name": "Qwen 3 7",
     "provider": "Qwen",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T15:50:12.823285",
+    "submitted_at": "2026-06-10T16:41:59.060560",
     "notes": null
   },
   {
@@ -104,7 +86,7 @@
     "provider": "xAI",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-10T16:08:36.854591",
+    "submitted_at": "2026-06-10T16:41:58.720090",
     "notes": null
   }
 ]
