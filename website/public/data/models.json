@@ -5,7 +5,7 @@
     "provider": "Anthropic",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.640450",
+    "submitted_at": "2026-06-10T16:41:58.930319",
     "notes": null
   },
   {
@@ -14,7 +14,7 @@
     "provider": "DeepSeek",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.724404",
+    "submitted_at": "2026-06-10T16:41:59.008911",
     "notes": null
   },
   {
@@ -23,7 +23,7 @@
     "provider": "Google",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.201828",
+    "submitted_at": "2026-06-10T16:41:58.595988",
     "notes": null
   },
   {
@@ -32,7 +32,7 @@
     "provider": "Mistral AI",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.250384",
+    "submitted_at": "2026-06-10T16:41:58.641823",
     "notes": null
   },
   {
@@ -41,7 +41,7 @@
     "provider": "OpenAI",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.319742",
+    "submitted_at": "2026-06-10T16:41:58.679888",
     "notes": null
   },
   {
@@ -50,7 +50,7 @@
     "provider": "OpenAI",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.428135",
+    "submitted_at": "2026-06-10T16:41:58.762969",
     "notes": null
   },
   {
@@ -59,7 +59,7 @@
     "provider": "Perplexity",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.552205",
+    "submitted_at": "2026-06-10T16:41:58.852208",
     "notes": null
   },
   {
@@ -68,7 +68,7 @@
     "provider": "Perplexity",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.488466",
+    "submitted_at": "2026-06-10T16:41:58.806289",
     "notes": null
   },
   {
@@ -77,7 +77,7 @@
     "provider": "Qwen",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.798336",
+    "submitted_at": "2026-06-10T16:41:59.060560",
     "notes": null
   },
   {
@@ -86,7 +86,7 @@
     "provider": "xAI",
     "access_mode": "manual",
     "web_search_enabled": null,
-    "submitted_at": "2026-06-11T10:51:13.374676",
+    "submitted_at": "2026-06-10T16:41:58.720090",
     "notes": null
   }
 ]
