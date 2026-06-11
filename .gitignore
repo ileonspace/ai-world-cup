@@ -22,9 +22,11 @@ data/exports/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/snapshots/.gitkeep
+!data/snapshots/*.json
 !data/prompts/match/.gitkeep
 !data/prompts/tournament/.gitkeep
 !data/prompts/tournament/*.md
 !data/prompts/tournament/*.json
 !data/responses/manual/.gitkeep
+!data/responses/manual/*.json
 !data/exports/.gitkeep
