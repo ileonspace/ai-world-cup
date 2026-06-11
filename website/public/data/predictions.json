@@ -12,7 +12,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.75,
     "reasoning_short": "Mexico wins opening match at Estadio Azteca powered by massive home advantage.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -27,7 +27,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.75,
     "reasoning_short": "Mexico's strong attack overpowers South Africa",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "GPT-5.5",
@@ -42,7 +42,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.72,
     "reasoning_short": "Mexico stronger and hosts.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Grok",
@@ -57,7 +57,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.75,
     "reasoning_short": "Mexico strong home advantage vs weaker South Africa.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -72,7 +72,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.72,
     "reasoning_short": "Mexico is favored by venue context and overall squad quality; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Perplexity Pro",
@@ -87,7 +87,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.72,
     "reasoning_short": "Mexico have the stronger baseline and home-like advantage in Mexico City, while South Africa are likely to struggle against higher-possession opponents.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Perplexity",
@@ -102,7 +102,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.62,
     "reasoning_short": "Mexico have home advantage and a stronger tournament profile than South Africa.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -117,7 +117,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.72,
     "reasoning_short": "Mexico strong at home in Azteca with hostile atmosphere. South Africa lack top-level tournament experience. Mexico's CONCACAF pedigree gives clear edge.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "DeepSeek",
@@ -132,7 +132,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.75,
     "reasoning_short": "Mexico's home advantage and superior attack likely too strong for South Africa.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Qwen 3 7",
@@ -147,7 +147,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.75,
     "reasoning_short": "Mexico has home advantage at Estadio Azteca and superior squad depth.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
