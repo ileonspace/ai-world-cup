@@ -584,7 +584,7 @@ AI World Cup is a research, benchmarking, and visualization project. It is not b
 
 ## Attribution
 
-Project created by **Jonaid Shianifar**.
+Project created by **Jonaid Shianifar** and **Iias Faiud**.
 
 The public website and project documentation were created and refined with support from **ChatGPT 5.5 Plus**.
 
