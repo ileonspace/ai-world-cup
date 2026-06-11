@@ -1,6 +1,7 @@
-import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import type { GroupsPayload } from '../lib/types';
 import { EmptyState } from '../components/EmptyState';
+import { colorForIndex } from '../lib/palette';
 
 export function GroupPredictionChart({ data }: { data: GroupsPayload }) {
   const winners = data.predicted_group_standings.filter((row) => row.rank === 1);
@@ -17,12 +18,14 @@ export function GroupPredictionChart({ data }: { data: GroupsPayload }) {
   return (
     <div className="h-72">
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={counts}>
+        <BarChart data={counts} margin={{ bottom: 48, left: 4, right: 8, top: 8 }}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="team" hide />
+          <XAxis dataKey="team" angle={-35} textAnchor="end" interval={0} height={70} tick={{ fontSize: 11 }} />
           <YAxis />
           <Tooltip />
-          <Bar dataKey="count" fill="#0f5132" name="Group winner picks" />
+          <Bar dataKey="count" name="Group winner picks">
+            {counts.map((row, index) => <Cell key={row.team} fill={colorForIndex(index)} />)}
+          </Bar>
         </BarChart>
       </ResponsiveContainer>
     </div>

@@ -8,7 +8,7 @@ const links = [
   ['/predictions', 'Predictions'],
   ['/groups', 'Groups'],
   ['/knockout', 'Knockout'],
-  ['/prompt-protocol', 'Protocol'],
+  ['/methodology', 'Methodology'],
   ['/data-snapshot', 'Data'],
   ['/about', 'About']
 ];

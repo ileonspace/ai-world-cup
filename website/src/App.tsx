@@ -8,9 +8,9 @@ import { Home } from './routes/Home';
 import { Knockout } from './routes/Knockout';
 import { Leaderboard } from './routes/Leaderboard';
 import { MatchDetails } from './routes/MatchDetails';
+import { Methodology } from './routes/Methodology';
 import { ModelComparison } from './routes/ModelComparison';
 import { Predictions } from './routes/Predictions';
-import { PromptProtocol } from './routes/PromptProtocol';
 
 export const App: RouteObject[] = [
   {
@@ -25,7 +25,8 @@ export const App: RouteObject[] = [
       { path: 'matches/:matchNumber', element: <MatchDetails /> },
       { path: 'groups', element: <Groups /> },
       { path: 'knockout', element: <Knockout /> },
-      { path: 'prompt-protocol', element: <PromptProtocol /> },
+      { path: 'methodology', element: <Methodology /> },
+      { path: 'prompt-protocol', element: <Methodology /> },
       { path: 'data-snapshot', element: <DataSnapshot /> },
       { path: 'about', element: <About /> }
     ]
