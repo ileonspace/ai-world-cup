@@ -24,5 +24,7 @@ data/exports/*
 !data/snapshots/.gitkeep
 !data/prompts/match/.gitkeep
 !data/prompts/tournament/.gitkeep
+!data/prompts/tournament/*.md
+!data/prompts/tournament/*.json
 !data/responses/manual/.gitkeep
 !data/exports/.gitkeep
