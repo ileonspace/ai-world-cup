@@ -231,19 +231,16 @@ To keep the benchmark fair, all model responses should follow the same protocol:
 
 The project is designed for free-access LLMs and assistants, such as:
 
-- ChatGPT Free
-- Gemini Free
-- Claude Free
-- DeepSeek Chat
-- Qwen Chat
-- Mistral Le Chat
-- Grok Free
-- Microsoft Copilot Free
-- Perplexity Free
-- Kimi
-- Meta AI
-- HuggingChat models
-
+- Claude Sonnet 4.6
+- DeepSeek
+- Gemini
+- Mistral Medium 3.5
+- GPT-5.5
+- GPT-5.5 Thinking
+- Perplexity
+- Perplexity Pro
+- Qwen 3.7
+- Grok
 Recommended separation:
 
 - **Main leaderboard:** models using only the provided prompt data.
