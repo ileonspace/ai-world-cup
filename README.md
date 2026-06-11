@@ -3,7 +3,7 @@
   <img src="AI_World_Cup_2026.png" alt="AI World Cup 2026" width="100%">
 </p>
 
-**A public, reproducible benchmark for comparing free LLMs on FIFA World Cup 2026 predictions.**
+**A public, reproducible benchmark for comparing LLMs on FIFA World Cup 2026 predictions.**
 
 [![Website](https://img.shields.io/badge/Live%20Website-AI%20World%20Cup-blue)](https://jonaidshianifar.github.io/ai-world-cup/)
 [![GitHub Pages](https://img.shields.io/badge/Deployed%20with-GitHub%20Pages-222)](https://pages.github.com/)
@@ -20,7 +20,7 @@
 
 AI World Cup is an independent open-source project for testing how well different Large Language Models can predict the FIFA World Cup 2026 tournament when they are given the same football data, the same prompt, and the same scoring rules.
 
-The project does **not** call paid LLM APIs. Instead, it uses a transparent manual workflow: generate one standardized tournament prompt, send it manually to different free LLMs, import their responses, validate their predictions, score them as real results become available, and publish the leaderboard on a public website.
+The project does **not** call LLM APIs. Instead, it uses a transparent manual workflow: generate one standardized tournament prompt, send it manually to different LLMs, import their responses, validate their predictions, score them as real results become available, and publish the leaderboard on a public website.
 
 The public website was created and refined with support from **ChatGPT 5.5 Plus**.
 
@@ -229,7 +229,7 @@ To keep the benchmark fair, all model responses should follow the same protocol:
 
 ## Models to Compare
 
-The project is designed for free-access LLMs and assistants, such as:
+The project is designed for manually tested LLMs and assistants, including free and pro models such as:
 
 - Claude Sonnet 4.6
 - DeepSeek
@@ -349,7 +349,7 @@ ai-world-cup/
   website/public/data/     # exported JSON used by the website
   docs/                    # methodology and protocol documentation
   tests/                   # pytest test suite
-  .github/workflows/       # daily sync and GitHub Pages deployment
+  .github/workflows/       # GitHub Pages deployment
 ```
 
 ### Python Pipeline
@@ -418,7 +418,7 @@ aiwc data status
 
 ```bash
 aiwc prompts generate-tournament --version v1
-aiwc prompts validate --prompt-file data/prompts/tournament/PROMPT_FILE.md
+aiwc prompts list
 ```
 
 ### Import a Model Response
