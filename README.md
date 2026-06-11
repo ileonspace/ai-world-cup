@@ -1,32 +1,80 @@
 # AI World Cup
 
-A reproducible benchmark for comparing LLM predictions on FIFA World Cup 2026.
+**A public, reproducible benchmark for comparing free LLMs on FIFA World Cup 2026 predictions.**
 
-AI World Cup does **not** call LLM APIs. It generates standardized prompts that you manually copy into models such as ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek, Mistral, or Qwen. You then save each raw model answer and import it back into this repository for validation, storage, scoring, and comparison.
+[![Website](https://img.shields.io/badge/Live%20Website-AI%20World%20Cup-blue)](https://jonaidshianifar.github.io/ai-world-cup/)
+[![GitHub Pages](https://img.shields.io/badge/Deployed%20with-GitHub%20Pages-222)](https://pages.github.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)
+[![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-646CFF)](website/)
+
+---
+
+## Live Project
+
+**Website:** https://jonaidshianifar.github.io/ai-world-cup/  
+**Repository:** https://github.com/jonaidshianifar/ai-world-cup
+
+AI World Cup is an independent open-source project for testing how well different Large Language Models can predict the FIFA World Cup 2026 tournament when they are given the same football data, the same prompt, and the same scoring rules.
+
+The project does **not** call paid LLM APIs. Instead, it uses a transparent manual workflow: generate one standardized tournament prompt, send it manually to different free LLMs, import their responses, validate their predictions, score them as real results become available, and publish the leaderboard on a public website.
+
+The public website was created and refined with support from **ChatGPT 5.5 Plus**.
+
+---
+
+## What Is AI World Cup?
+
+AI World Cup is a benchmark and public leaderboard for comparing LLM predictions on World Cup 2026.
+
+It asks questions such as:
+
+- Which free LLM predicts match outcomes most accurately?
+- Which model gives the best full-tournament forecast?
+- Are some models better at group-stage predictions than knockout predictions?
+- Do models become overconfident when predicting football results?
+- How different are the predictions from ChatGPT, Gemini, Claude, DeepSeek, Qwen, Mistral, Grok, Perplexity, and other assistants?
+
+The goal is not to create betting advice. The goal is to create a reproducible, transparent, and public experiment in LLM-based forecasting.
+
+---
+
+## Why This Project Exists
+
+Football prediction is difficult because it combines structured data, uncertainty, historical context, team strength, tournament dynamics, injuries, form, and randomness. LLMs are increasingly used for reasoning and forecasting, but their predictions are often difficult to compare fairly.
+
+AI World Cup solves this by fixing the benchmark conditions:
+
+1. Every model receives the same generated prompt.
+2. Every model receives the same tournament data snapshot.
+3. Every model must return the same JSON structure.
+4. Raw responses are saved exactly as returned.
+5. Predictions are validated before scoring.
+6. The leaderboard is updated using transparent scoring rules.
+7. The public website displays predictions, charts, tables, fixtures, and results.
+
+---
+
+## How It Works
 
 ```mermaid
 flowchart LR
-  A[Football data APIs] --> B[Snapshots]
-  B --> C[SQLite database]
-  C --> D[Standard prompt generator]
-  D --> E[Manual copy to LLMs]
-  E --> F[Raw response files]
-  F --> G[Parser and validator]
-  G --> H[Predictions]
-  H --> I[Evaluation]
-  I --> J[Leaderboard and dashboard]
+    A[Football Data Sources] --> B[Raw Data Snapshots]
+    B --> C[SQLite Database]
+    C --> D[Full-Tournament Prompt Generator]
+    D --> E[Manual Submission to LLMs]
+    E --> F[Raw Model Responses]
+    F --> G[JSON Parser and Validator]
+    G --> H[Structured Predictions]
+    H --> I[Scoring Engine]
+    I --> J[Leaderboard]
+    J --> K[Static Website Export]
+    K --> L[GitHub Pages Website]
 ```
 
-## Setup
+### Main Workflow
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -e ".[dev]"
-cp .env.example .env
-```
-
-## Recommended Workflow: One Full-Tournament Prompt
+AI World Cup uses one full-tournament prompt as the recommended benchmark workflow.
 
 ```bash
 aiwc data sync --sources openfootball,worldcup26
@@ -36,63 +84,173 @@ aiwc prompts generate-tournament --version v1
 aiwc prompts list
 ```
 
-Send the generated tournament prompt manually to each LLM. Save each raw response exactly as returned:
+The generated prompt is then manually sent to each LLM. Each model returns one JSON response containing:
 
-```text
-data/responses/manual/chatgpt_gpt5_tournament_v1.json
-data/responses/manual/claude_opus_tournament_v1.json
-data/responses/manual/gemini_25_pro_tournament_v1.json
-```
+- group-stage match predictions
+- predicted group standings
+- knockout-stage predictions
+- final ranking
+- award predictions
+- confidence values
+- short reasoning fields
 
-Import, evaluate, and compare:
+The response is saved and imported:
 
 ```bash
 aiwc responses import-tournament \
   --prompt-id PROMPT_ID \
-  --model-name "ChatGPT GPT-5" \
-  --provider "OpenAI" \
-  --response-file data/responses/manual/chatgpt_gpt5_tournament_v1.json
-
-aiwc evaluate tournament --completed-only
-aiwc leaderboard tournament
-aiwc dashboard
+  --model-name "Gemini Free" \
+  --provider "Google" \
+  --response-file data/responses/manual/gemini_tournament_v1.json
 ```
 
-The old match-by-match workflow is still available when you want more granular manual prompts:
+Then predictions are evaluated and exported to the website:
 
 ```bash
-aiwc prompts generate-upcoming --limit 10 --version v1
-aiwc responses import \
-  --prompt-id PROMPT_ID \
-  --model-name "ChatGPT GPT-5" \
-  --provider "OpenAI" \
-  --response-file data/responses/manual/chatgpt_gpt5_match_001.json
-aiwc evaluate matches --completed-only
-aiwc leaderboard matches
+aiwc evaluate tournament --completed-only
+aiwc leaderboard tournament
+aiwc site export
 ```
+
+---
+
+## What the Website Shows
+
+The website is a static React application deployed with GitHub Pages. It reads exported JSON files and does not require a backend server.
+
+The website includes:
+
+- project overview
+- model leaderboard
+- total points by model
+- outcome accuracy
+- exact score accuracy
+- average confidence
+- fixtures and results
+- all imported predictions
+- match-by-match model comparison
+- group predictions
+- knockout predictions
+- champion predictions
+- prompt protocol
+- data snapshot information
+- methodology and scoring explanation
+
+Website data is exported from the Python pipeline into:
+
+```text
+website/public/data/
+```
+
+---
+
+## Leaderboard
+
+The leaderboard ranks models using evaluated predictions. Scores are updated as official results become available.
+
+The main leaderboard includes:
+
+| Metric | Meaning |
+|---|---|
+| **Total points** | Sum of all scoring components |
+| **Group-stage points** | Points from official group-stage fixture predictions |
+| **Group-standing points** | Points from predicted group rankings and qualifiers |
+| **Knockout points** | Points from predicted tournament progression |
+| **Outcome accuracy** | Percentage of matches where the model predicted win/draw/loss correctly |
+| **Exact score accuracy** | Percentage of matches where the model predicted the exact score |
+| **Average confidence** | Mean confidence reported by the model |
+| **Champion prediction** | The model's predicted tournament winner |
+
+Search-enabled assistants can be tracked separately from non-search models to keep the benchmark fair.
+
+---
+
+## Scoring System
+
+AI World Cup uses a points-based scoring system. The system is designed to reward both match-level accuracy and tournament-level forecasting.
+
+### Match Prediction Scoring
+
+| Prediction type | Points |
+|---|---:|
+| Exact score | 5 |
+| Correct outcome | 3 |
+| Correct winner | 2 |
+| Correct goal difference | 1 |
+
+For draws, the correct winner bonus is not added separately because the draw is already captured by the outcome score.
+
+### Group Standing Scoring
+
+| Prediction type | Points |
+|---|---:|
+| Correct group winner | 5 |
+| Correct top two teams | 5 |
+| Correct qualified team from group | 3 per team |
+| Exact team rank | 2 per team |
+
+### Knockout and Tournament Scoring
+
+| Prediction type | Points |
+|---|---:|
+| Correct team reaches Round of 32 | 2 |
+| Correct team reaches Round of 16 | 4 |
+| Correct team reaches quarter-final | 6 |
+| Correct team reaches semi-final | 8 |
+| Correct finalist | 12 |
+| Correct champion | 20 |
+| Correct runner-up | 10 |
+| Correct third place | 8 |
+| Correct fourth place | 5 |
+
+Total tournament points are the sum of all applicable scoring components.
+
+---
 
 ## Manual LLM Submission Protocol
 
-1. Generate the prompt from the repo.
-2. Copy the full prompt.
-3. Send the exact same prompt to each LLM.
-4. Do not modify the prompt between models.
-5. Save the raw answer exactly as returned.
-6. Import the answer into the repo.
-7. Keep prompt version and data snapshot fixed for fair comparison.
+To keep the benchmark fair, all model responses should follow the same protocol:
 
-## Data Sources
+1. Generate the tournament prompt from this repository.
+2. Use the same prompt version for every model.
+3. Use the same data snapshot for every model.
+4. Copy the full prompt without editing it.
+5. Send the prompt manually to each LLM.
+6. Disable web search when possible for the main leaderboard.
+7. Save each model response exactly as returned.
+8. Import the raw response into the repository.
+9. Record the model name, provider, access mode, date, and notes.
+10. Evaluate only after official match results are available.
 
-- OpenFootball: no API key.
-- worldcup26.ir: no API key, with graceful fallback for unavailable endpoints.
-- football-data.org: optional `FOOTBALL_DATA_TOKEN`.
-- API-Football: optional `API_FOOTBALL_KEY`.
+---
 
-No LLM API keys are used or documented. The LLM comparison workflow is fully offline after you manually collect model responses.
+## Models to Compare
 
-## Required Tournament Response JSON
+The project is designed for free-access LLMs and assistants, such as:
 
-The recommended full-tournament prompt expects one response containing group-stage predictions, projected group standings, knockout predictions, final ranking, and optional awards:
+- ChatGPT Free
+- Gemini Free
+- Claude Free
+- DeepSeek Chat
+- Qwen Chat
+- Mistral Le Chat
+- Grok Free
+- Microsoft Copilot Free
+- Perplexity Free
+- Kimi
+- Meta AI
+- HuggingChat models
+
+Recommended separation:
+
+- **Main leaderboard:** models using only the provided prompt data.
+- **Search-augmented leaderboard:** tools that use live web search or external retrieval.
+
+---
+
+## Required Tournament Response Format
+
+The full-tournament prompt expects a JSON object with this structure:
 
 ```json
 {
@@ -104,9 +262,46 @@ The recommended full-tournament prompt expects one response containing group-sta
     "provider": "...",
     "prediction_created_at": "YYYY-MM-DD"
   },
-  "group_stage_predictions": [],
-  "predicted_group_standings": [],
-  "knockout_predictions": [],
+  "group_stage_predictions": [
+    {
+      "match_number": 1,
+      "stage": "Group Stage",
+      "group": "A",
+      "home_team": "...",
+      "away_team": "...",
+      "predicted_home_goals": 0,
+      "predicted_away_goals": 0,
+      "predicted_outcome": "HOME_WIN|DRAW|AWAY_WIN",
+      "predicted_winner": "team name or DRAW",
+      "confidence": 0.0,
+      "reasoning_short": "maximum 40 words"
+    }
+  ],
+  "predicted_group_standings": [
+    {
+      "group": "A",
+      "rank": 1,
+      "team": "...",
+      "points": 0,
+      "goals_for": 0,
+      "goals_against": 0,
+      "goal_difference": 0
+    }
+  ],
+  "knockout_predictions": [
+    {
+      "match_number": 73,
+      "stage": "Round of 32",
+      "home_team": "...",
+      "away_team": "...",
+      "predicted_home_goals": 0,
+      "predicted_away_goals": 0,
+      "predicted_outcome": "HOME_WIN|AWAY_WIN",
+      "predicted_winner": "...",
+      "confidence": 0.0,
+      "reasoning_short": "maximum 40 words"
+    }
+  ],
   "final_ranking": {
     "champion": "...",
     "runner_up": "...",
@@ -122,60 +317,136 @@ The recommended full-tournament prompt expects one response containing group-sta
 }
 ```
 
-## Optional Match Response JSON
+---
 
-```json
-{
-  "home_team": "string",
-  "away_team": "string",
-  "predicted_home_goals": 0,
-  "predicted_away_goals": 0,
-  "predicted_outcome": "HOME_WIN|DRAW|AWAY_WIN",
-  "predicted_winner": "team name or DRAW",
-  "confidence": 0.0,
-  "reasoning_short": "maximum 80 words"
-}
+## Data Sources
+
+AI World Cup can use multiple football data sources.
+
+| Source | API key | Purpose |
+|---|---|---|
+| OpenFootball | No | Fixtures and historical World Cup data |
+| worldcup26.ir | No | World Cup 2026 teams, groups, games, stadiums |
+| football-data.org | Optional | Additional match and standing data |
+| API-Football | Optional | Additional fixtures, teams, rounds, standings |
+
+No LLM API keys are required. The LLM comparison workflow remains offline after model responses are manually collected.
+
+---
+
+## Technical Architecture
+
+The project contains two main systems:
+
+1. **Python benchmark pipeline**
+2. **Static public website**
+
+```text
+ai-world-cup/
+  src/ai_world_cup/        # Python package and CLI
+  data/                    # raw data, snapshots, prompts, responses, exports
+  website/                 # React/Vite static website
+  website/public/data/     # exported JSON used by the website
+  docs/                    # methodology and protocol documentation
+  tests/                   # pytest test suite
+  .github/workflows/       # daily sync and GitHub Pages deployment
 ```
 
-## Scoring
+### Python Pipeline
 
-Group-stage match scoring:
+The Python pipeline handles:
 
-- Exact score: 5 points.
-- Correct outcome: 3 points.
-- Correct winner: 2 points, except draws where this is already included in outcome.
-- Correct goal difference: 1 point.
+- data synchronization
+- raw snapshots
+- SQLite storage
+- prompt generation
+- response importing
+- JSON parsing
+- validation
+- scoring
+- leaderboard generation
+- website data export
 
-Tournament scoring also includes group standings, knockout progression, and final ranking:
+### Website
 
-- Correct group winner: 5 points.
-- Correct top two teams: 5 points.
-- Correct qualified teams from group: 3 points per team.
-- Exact rank: 2 points per team.
-- Correct team reaches Round of 32, Round of 16, quarter-final, semi-final, final, or wins champion according to the tournament scoring rules.
+The website uses:
 
-Total points are the sum of all applicable scoring components.
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- Recharts
+- TanStack Table
+- GitHub Pages
 
-## Development
+The site is static and reads JSON files from:
+
+```text
+website/public/data/
+```
+
+---
+
+## Installation
 
 ```bash
-ruff format .
-ruff check .
-pytest
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+cp .env.example .env
 ```
 
-## Website and GitHub Pages
+Optional API keys can be added to `.env`:
 
-The repository includes a static React website in `website/`. It works on GitHub Pages and does not require a Python backend or a database connection. The site reads JSON files from `website/public/data`.
+```env
+FOOTBALL_DATA_TOKEN=
+API_FOOTBALL_KEY=
+```
 
-Export current benchmark data for the website:
+---
+
+## Common Commands
+
+### Sync Data
+
+```bash
+aiwc data sync --sources openfootball,worldcup26
+aiwc data status
+```
+
+### Generate Full-Tournament Prompt
+
+```bash
+aiwc prompts generate-tournament --version v1
+aiwc prompts validate --prompt-file data/prompts/tournament/PROMPT_FILE.md
+```
+
+### Import a Model Response
+
+```bash
+aiwc responses import-tournament \
+  --prompt-id PROMPT_ID \
+  --model-name "ChatGPT Free" \
+  --provider "OpenAI" \
+  --response-file data/responses/manual/chatgpt_tournament_v1.json
+```
+
+### Evaluate and Show Leaderboard
 
 ```bash
 aiwc evaluate tournament --completed-only
+aiwc leaderboard tournament
+```
+
+### Export Website Data
+
+```bash
 aiwc site export
 ```
 
-Run the website locally:
+---
+
+## Running the Website Locally
 
 ```bash
 cd website
@@ -183,22 +454,33 @@ npm install
 npm run dev
 ```
 
-Build the static site:
+Build the static website:
 
 ```bash
-cd website
 npm run build
 ```
 
-Deploy with GitHub Pages:
+---
 
-1. Push the repo to GitHub.
-2. Go to Settings > Pages.
-3. Set source to GitHub Actions.
-4. Push to `main`.
-5. Open the GitHub Pages URL.
+## GitHub Pages Deployment
 
-To update website results:
+The website is deployed using GitHub Pages and GitHub Actions.
+
+To deploy:
+
+1. Push the repository to GitHub.
+2. Open repository settings.
+3. Go to **Pages**.
+4. Set source to **GitHub Actions**.
+5. Push to `main`.
+
+The site will be published at:
+
+```text
+https://jonaidshianifar.github.io/ai-world-cup/
+```
+
+To update website data:
 
 ```bash
 aiwc evaluate tournament --completed-only
@@ -208,4 +490,110 @@ git commit -m "Update AI World Cup website data"
 git push
 ```
 
-The website presents project details, prompt protocol, fixtures, model predictions, data snapshots, charts, and leaderboards from exported static JSON.
+---
+
+## Daily Automation
+
+The repository can be configured to run a daily GitHub Actions workflow.
+
+The daily workflow can:
+
+1. sync the latest football data,
+2. update snapshots,
+3. evaluate predictions against completed matches,
+4. export website JSON,
+5. commit updated data,
+6. redeploy the GitHub Pages website.
+
+This keeps the public leaderboard and charts up to date during the tournament.
+
+---
+
+## Development
+
+```bash
+ruff format .
+ruff check .
+pytest
+```
+
+Frontend build:
+
+```bash
+cd website
+npm install
+npm run build
+```
+
+---
+
+## Methodology
+
+AI World Cup follows these methodological principles:
+
+### 1. Same Prompt
+
+Every model receives the same full-tournament prompt.
+
+### 2. Same Data Snapshot
+
+Every prediction is linked to a specific data snapshot. This prevents unfair comparisons caused by changing fixture data or updated football information.
+
+### 3. Manual Submission
+
+The repository does not call LLM APIs. Manual submission makes the benchmark accessible to free models and avoids dependency on paid inference services.
+
+### 4. Raw Response Preservation
+
+Each model response is stored exactly as returned before parsing or validation.
+
+### 5. Structured Validation
+
+Responses must follow the expected JSON schema. Invalid or inconsistent predictions are flagged before scoring.
+
+### 6. Gradual Evaluation
+
+Predictions can be evaluated gradually as World Cup matches are completed.
+
+### 7. Transparent Leaderboard
+
+Scoring rules are visible, deterministic, and applied equally to all models.
+
+### 8. Search Separation
+
+Search-enabled assistants should be evaluated separately unless all models are allowed to use web search.
+
+---
+
+## Limitations
+
+- Football outcomes are highly uncertain.
+- LLMs may hallucinate unavailable statistics.
+- Free model versions can change over time.
+- Some assistants may silently use web search or hidden tools.
+- Long full-tournament prompts may be handled differently by different models.
+- The benchmark depends on the quality and availability of football data sources.
+
+---
+
+## Not Betting Advice
+
+AI World Cup is a research, benchmarking, and visualization project. It is not betting advice, financial advice, or a guarantee of any real-world match outcome.
+
+---
+
+## Attribution
+
+Project created by **Jonaid Shianifar**.
+
+The public website and project documentation were created and refined with support from **ChatGPT 5.5 Plus**.
+
+---
+
+## License
+
+This project's source code is licensed under the [MIT License](LICENSE).
+
+Data, fixtures, team names, logos, competition information, and other football-related content may come from third-party sources and may be subject to their own licenses, terms of use, or attribution requirements.
+
+AI World Cup is an independent project and is not affiliated with FIFA.
