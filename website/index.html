@@ -14,6 +14,15 @@
 
       gtag('config', 'G-1N80W1B7XZ');
     </script>
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
     <title>AI World Cup</title>
   </head>
   <body>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI World Cup</title>
+    <script>
+      (function () {
+        var pathSegmentsToKeep = 1;
+        var locationPath = window.location.pathname
+          .split('/')
+          .slice(0, 1 + pathSegmentsToKeep)
+          .join('/');
+        sessionStorage.redirect = window.location.href;
+        window.location.replace(
+          window.location.protocol +
+            '//' +
+            window.location.hostname +
+            (window.location.port ? ':' + window.location.port : '') +
+            locationPath +
+            '/'
+        );
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
