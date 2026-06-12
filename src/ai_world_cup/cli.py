@@ -24,6 +24,7 @@ from ai_world_cup.prompts.prompt_exporter import (
     create_tournament_prompt,
     export_prompts,
 )
+from ai_world_cup.readme_export import update_readme_leaderboard
 from ai_world_cup.responses.importer import import_manual_response
 from ai_world_cup.responses.tournament_importer import (
     import_tournament_response,
@@ -51,12 +52,14 @@ responses_app = typer.Typer(help="Import manual LLM responses.")
 evaluate_app = typer.Typer(help="Evaluate predictions.")
 leaderboard_app = typer.Typer(help="Show leaderboards.")
 site_app = typer.Typer(help="Export static website data.")
+readme_app = typer.Typer(help="Update README generated sections.")
 app.add_typer(data_app, name="data")
 app.add_typer(prompts_app, name="prompts")
 app.add_typer(responses_app, name="responses")
 app.add_typer(evaluate_app, name="evaluate")
 app.add_typer(leaderboard_app, name="leaderboard")
 app.add_typer(site_app, name="site")
+app.add_typer(readme_app, name="readme")
 console = Console()
 
 
@@ -386,6 +389,30 @@ def site_export(
         written = export_site_data(session, output_dir)
         for path in written:
             console.print(f"Wrote {path}")
+
+
+@readme_app.command("leaderboard")
+def readme_leaderboard(
+    readme_path: Annotated[
+        Path,
+        typer.Option(help="README path to update."),
+    ] = Path("README.md"),
+    limit: Annotated[int, typer.Option(help="Maximum models to show.")] = 10,
+    completed_only: Annotated[
+        bool,
+        typer.Option(help="Only evaluate predictions for matches with actual scores."),
+    ] = True,
+) -> None:
+    """Update the generated tournament leaderboard table in README.md."""
+    init_db()
+    with get_session() as session:
+        path = update_readme_leaderboard(
+            session,
+            readme_path=readme_path,
+            limit=limit,
+            completed_only=completed_only,
+        )
+        console.print(f"Updated README leaderboard: {path}")
 
 
 @app.command("dashboard")
