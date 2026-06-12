@@ -312,7 +312,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.65,
     "reasoning_short": "Canada utilizes home conditions and dynamic attack to secure opening victory.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -327,7 +327,7 @@
     "predicted_winner": "Bosnia and Herzegovina",
     "confidence": 0.65,
     "reasoning_short": "Bosnia's defense holds firm",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -342,7 +342,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.58,
     "reasoning_short": "Home advantage.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -357,7 +357,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Both teams competitive, expect cautious draw.",
-    "points": null
+    "points": 9
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -372,7 +372,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Snapshot lacks player-form data; the matchup appears balanced, so a low-scoring draw is projected.",
-    "points": null
+    "points": 9
   },
   {
     "model_name": "Perplexity Pro",
@@ -387,7 +387,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.58,
     "reasoning_short": "Canada get a narrow edge from attacking speed and venue familiarity, but Bosnia and Herzegovina should still create enough chances to score.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -402,7 +402,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.58,
     "reasoning_short": "Canada get the edge through stronger depth and home-region familiarity.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -417,7 +417,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.55,
     "reasoning_short": "Canada at home in Toronto, motivated host nation. Bosnia technically capable but Canada's athleticism and home crowd advantage tips the balance.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -432,7 +432,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.7,
     "reasoning_short": "Canada's home crowd and pace edge out Bosnia's aging core.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -447,7 +447,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.65,
     "reasoning_short": "Canada leverages home crowd support in Toronto to edge a tight contest.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",

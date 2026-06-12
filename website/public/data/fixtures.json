@@ -33,9 +33,9 @@
     "away_team": "Bosnia and Herzegovina",
     "kickoff_time": null,
     "venue": "BMO Field",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 1,
     "winner": null
   },
   {
