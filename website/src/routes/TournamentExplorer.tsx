@@ -3,6 +3,7 @@ import { EmptyState } from '../components/EmptyState';
 import { api } from '../lib/api';
 import type {
   TournamentBracketRound,
+  TournamentGroupRow,
   TournamentGroupTable,
   TournamentSource,
   TournamentView,
@@ -216,6 +217,52 @@ function MatchBox({ match }: { match: TournamentBracketRound['matches'][number] 
   );
 }
 
+function seedTeam(seed: string, view: TournamentView): string | null {
+  const compact = seed.trim().toUpperCase().replace(/\s/g, '');
+  const groups = new Map(view.group_tables.map((table) => [table.group.toUpperCase(), table.rows]));
+  const direct = compact.match(/^([12])([A-L])$/);
+  if (direct) {
+    const rank = Number(direct[1]);
+    return groups.get(direct[2])?.[rank - 1]?.team ?? null;
+  }
+  const thirdPlace = compact.match(/^3([A-L](?:\/[A-L])*)$/);
+  if (!thirdPlace) return null;
+  const candidates: TournamentGroupRow[] = thirdPlace[1]
+    .split('/')
+    .map((group: string) => groups.get(group)?.[2])
+    .filter((row: TournamentGroupRow | undefined): row is TournamentGroupRow => Boolean(row))
+    .sort((left: TournamentGroupRow, right: TournamentGroupRow) =>
+      right.points - left.points ||
+      right.goal_difference - left.goal_difference ||
+      right.goals_for - left.goals_for ||
+      left.team.localeCompare(right.team)
+    );
+  return candidates[0]?.team ?? null;
+}
+
+function resolveSeedReference(name: string, view: TournamentView): string {
+  if (view.source.kind !== 'model') return name;
+  return seedTeam(name, view) ?? name;
+}
+
+function resolvedMatch(
+  match: TournamentBracketRound['matches'][number],
+  view: TournamentView
+): TournamentBracketRound['matches'][number] {
+  const homeTeam = resolveSeedReference(match.home_team, view);
+  const awayTeam = resolveSeedReference(match.away_team, view);
+  let winner = match.winner ? resolveSeedReference(match.winner, view) : match.winner;
+  if (winner !== homeTeam && winner !== awayTeam && match.home_score !== null && match.away_score !== null) {
+    winner = match.home_score > match.away_score ? homeTeam : awayTeam;
+  }
+  return {
+    ...match,
+    home_team: homeTeam,
+    away_team: awayTeam,
+    winner
+  };
+}
+
 function Bracket({ view }: { view: TournamentView }) {
   if (!view.knockout_rounds.length) {
     return <EmptyState title="No knockout bracket exported" />;
@@ -230,7 +277,10 @@ function Bracket({ view }: { view: TournamentView }) {
             </h3>
             <div className="space-y-3">
               {round.matches.map((match, index) => (
-                <MatchBox key={`${match.stage}-${match.match_number ?? index}`} match={match} />
+                <MatchBox
+                  key={`${match.stage}-${match.match_number ?? index}`}
+                  match={resolvedMatch(match, view)}
+                />
               ))}
             </div>
           </section>

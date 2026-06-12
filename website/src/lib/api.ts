@@ -12,7 +12,9 @@ import type {
 
 async function loadJson<T>(name: string, fallback: T): Promise<T> {
   try {
-    const response = await fetch(`${import.meta.env.BASE_URL}data/${name}`);
+    const response = await fetch(`${import.meta.env.BASE_URL}data/${name}`, {
+      cache: 'no-cache'
+    });
     if (!response.ok) return fallback;
     return (await response.json()) as T;
   } catch {
