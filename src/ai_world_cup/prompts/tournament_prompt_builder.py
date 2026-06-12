@@ -10,6 +10,32 @@ from ai_world_cup.schemas import DataSnapshot, Match, Stadium, Team
 
 TEMPLATE_PATH = Path(__file__).with_name("tournament_prediction_v1.md")
 
+TEAM_ALIASES = {
+    "Bosnia & Herzegovina": "Bosnia and Herzegovina",
+    "USA": "United States",
+    "U.S.A.": "United States",
+    "United States of America": "United States",
+    "DR Congo": "Democratic Republic of the Congo",
+    "Congo DR": "Democratic Republic of the Congo",
+    "Côte d'Ivoire": "Ivory Coast",
+    "Cote d'Ivoire": "Ivory Coast",
+    "Türkiye": "Turkey",
+    "Curacao": "Curaçao",
+}
+
+
+def _canonical_team_name(name: str | None) -> str:
+    if not name:
+        return ""
+    normalized = " ".join(name.strip().split())
+    return TEAM_ALIASES.get(normalized, normalized)
+
+
+def _canonical_group_name(group_name: str | None) -> str | None:
+    if not group_name:
+        return None
+    return group_name.replace("Group ", "")
+
 
 def _render_template(template: str, values: dict[str, str]) -> str:
     rendered = template
@@ -30,22 +56,28 @@ def tournament_context(session: Session) -> dict[str, Any]:
     )
     stadiums = list(session.exec(select(Stadium).order_by(Stadium.name)))
     groups: dict[str, list[str]] = {}
+    teams_by_name: dict[str, dict[str, Any]] = {}
     for team in teams:
-        if team.group_name:
-            groups.setdefault(team.group_name, []).append(team.name)
+        group = _canonical_group_name(team.group_name)
+        if not group:
+            continue
+        name = _canonical_team_name(team.name)
+        if name not in groups.setdefault(group, []):
+            groups[group].append(name)
+        existing = teams_by_name.get(name, {})
+        teams_by_name[name] = {
+            "name": name,
+            "fifa_code": existing.get("fifa_code") or team.fifa_code,
+            "group": existing.get("group") or group,
+            "country": _canonical_team_name(existing.get("country") or team.country or name),
+            "confederation": existing.get("confederation") or team.confederation,
+        }
     return {
         "data_snapshot_id": latest_snapshot_id(session),
-        "teams": [
-            {
-                "name": team.name,
-                "fifa_code": team.fifa_code,
-                "group": team.group_name,
-                "country": team.country,
-                "confederation": team.confederation,
-            }
-            for team in teams
+        "teams": sorted(teams_by_name.values(), key=lambda item: (item["group"], item["name"])),
+        "groups": [
+            {"group": name, "teams": sorted(names)} for name, names in sorted(groups.items())
         ],
-        "groups": [{"group": name, "teams": names} for name, names in sorted(groups.items())],
         "venues": [
             {
                 "name": stadium.name,
@@ -59,9 +91,9 @@ def tournament_context(session: Session) -> dict[str, Any]:
             {
                 "match_number": match.match_number,
                 "stage": match.stage,
-                "group": match.group_name,
-                "home_team": match.home_team_name,
-                "away_team": match.away_team_name,
+                "group": _canonical_group_name(match.group_name),
+                "home_team": _canonical_team_name(match.home_team_name),
+                "away_team": _canonical_team_name(match.away_team_name),
                 "kickoff_utc": match.kickoff_utc.isoformat() if match.kickoff_utc else None,
                 "venue": match.venue_name,
             }

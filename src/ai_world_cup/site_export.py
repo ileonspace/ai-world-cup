@@ -48,6 +48,12 @@ def _canonical_team_name(name: str | None) -> str:
     return TEAM_ALIASES.get(normalized, normalized)
 
 
+def _canonical_group_name(group_name: str | None) -> str | None:
+    if not group_name:
+        return None
+    return group_name.replace("Group ", "")
+
+
 def _dump(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, default=str), encoding="utf-8")
@@ -150,9 +156,9 @@ def _fixtures_payload(session: Session) -> list[dict[str, Any]]:
         {
             "match_number": match.match_number,
             "stage": match.stage,
-            "group": match.group_name,
-            "home_team": match.home_team_name,
-            "away_team": match.away_team_name,
+            "group": _canonical_group_name(match.group_name),
+            "home_team": _canonical_team_name(match.home_team_name),
+            "away_team": _canonical_team_name(match.away_team_name),
             "kickoff_time": match.kickoff_utc.isoformat() if match.kickoff_utc else None,
             "venue": match.venue_name,
             "status": match.status,
@@ -201,12 +207,12 @@ def _predictions_payload(session: Session) -> list[dict[str, Any]]:
                 "provider": model.provider if model else "",
                 "match_number": prediction.match_number,
                 "stage": prediction.stage,
-                "home_team": prediction.home_team,
-                "away_team": prediction.away_team,
+                "home_team": _canonical_team_name(prediction.home_team),
+                "away_team": _canonical_team_name(prediction.away_team),
                 "predicted_home_goals": prediction.predicted_home_goals,
                 "predicted_away_goals": prediction.predicted_away_goals,
                 "predicted_outcome": prediction.predicted_outcome,
-                "predicted_winner": prediction.predicted_winner,
+                "predicted_winner": _canonical_team_name(prediction.predicted_winner),
                 "confidence": prediction.confidence,
                 "reasoning_short": prediction.reasoning_short,
                 "points": _prediction_points(prediction, match),
@@ -220,7 +226,9 @@ def _groups_payload(session: Session) -> dict[str, Any]:
     official: dict[str, list[str]] = defaultdict(list)
     for team in teams_by_id.values():
         if team.group_name:
-            group = team.group_name.replace("Group ", "")
+            group = _canonical_group_name(team.group_name)
+            if group is None:
+                continue
             team_name = _canonical_team_name(team.name)
             if team_name not in official[group]:
                 official[group].append(team_name)
@@ -333,12 +341,14 @@ def _team_index(session: Session) -> dict[str, dict[str, Any]]:
     teams = {}
     for team in session.exec(select(Team)):
         canonical_name = _canonical_team_name(team.name)
-        group = team.group_name.replace("Group ", "") if team.group_name else None
+        group = _canonical_group_name(team.group_name)
         existing = teams.get(canonical_name, {})
         teams[canonical_name] = {
             "name": canonical_name,
             "fifa_code": existing.get("fifa_code") or team.fifa_code,
-            "country": existing.get("country") or team.country or canonical_name,
+            "country": _canonical_team_name(
+                existing.get("country") or team.country or canonical_name
+            ),
             "group": existing.get("group") or group,
         }
     return teams
@@ -444,7 +454,7 @@ def _actual_tournament_view(
     groups = _initial_group_rows(team_meta)
     knockout_matches = []
     for match in session.exec(select(Match).order_by(Match.match_number, Match.id)):
-        group = match.group_name.replace("Group ", "") if match.group_name else None
+        group = _canonical_group_name(match.group_name)
         if group and match.home_score is not None and match.away_score is not None:
             groups.setdefault(group, {})
             _apply_group_result(
@@ -577,7 +587,7 @@ def _model_tournament_view(
     groups = _initial_group_rows(team_meta)
     knockout_matches = []
     for prediction in predictions:
-        group = prediction.group_name.replace("Group ", "") if prediction.group_name else None
+        group = _canonical_group_name(prediction.group_name)
         if prediction.is_official_fixture and group:
             groups.setdefault(group, {})
             _apply_group_result(
