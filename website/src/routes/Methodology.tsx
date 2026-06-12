@@ -63,6 +63,23 @@ export function Methodology() {
           use live web search or external retrieval.
         </p>
       </section>
+
+      <section className="rounded-lg border border-emerald-200 bg-emerald-50 p-5 dark:border-emerald-900 dark:bg-emerald-950">
+        <h2 className="font-semibold">Repository and reproducibility</h2>
+        <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
+          The benchmark is designed to be auditable: prompts, response files, validation logic,
+          scoring rules, exported website JSON, and deployment configuration are all kept in the
+          repository.
+        </p>
+        <a
+          className="mt-4 inline-flex rounded-md bg-pitch px-4 py-2 text-sm font-semibold text-white dark:bg-emerald-500 dark:text-slate-950"
+          href="https://github.com/jonaidshianifar/ai-world-cup/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          View GitHub repository
+        </a>
+      </section>
     </div>
   );
 }

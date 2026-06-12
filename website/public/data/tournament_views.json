@@ -141,8 +141,8 @@
           "group": "B",
           "rows": [
             {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
+              "team": "Bosnia and Herzegovina",
+              "fifa_code": "BIH",
               "country": "Bosnia & Herzegovina",
               "matches_played": 0,
               "wins": 0,
@@ -153,20 +153,6 @@
               "goal_difference": 0,
               "points": 0,
               "rank": 1
-            },
-            {
-              "team": "Bosnia and Herzegovina",
-              "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 2
             },
             {
               "team": "Canada",
@@ -180,7 +166,7 @@
               "goals_against": 0,
               "goal_difference": 0,
               "points": 0,
-              "rank": 3
+              "rank": 2
             },
             {
               "team": "Qatar",
@@ -194,7 +180,7 @@
               "goals_against": 0,
               "goal_difference": 0,
               "points": 0,
-              "rank": 4
+              "rank": 3
             },
             {
               "team": "Switzerland",
@@ -208,7 +194,7 @@
               "goals_against": 0,
               "goal_difference": 0,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -319,8 +305,8 @@
               "rank": 3
             },
             {
-              "team": "USA",
-              "fifa_code": null,
+              "team": "United States",
+              "fifa_code": "USA",
               "country": "USA",
               "matches_played": 0,
               "wins": 0,
@@ -331,20 +317,6 @@
               "goal_difference": 0,
               "points": 0,
               "rank": 4
-            },
-            {
-              "team": "United States",
-              "fifa_code": "USA",
-              "country": "United States",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -732,8 +704,8 @@
               "rank": 1
             },
             {
-              "team": "DR Congo",
-              "fifa_code": null,
+              "team": "Democratic Republic of the Congo",
+              "fifa_code": "COD",
               "country": "DR Congo",
               "matches_played": 0,
               "wins": 0,
@@ -744,20 +716,6 @@
               "goal_difference": 0,
               "points": 0,
               "rank": 2
-            },
-            {
-              "team": "Democratic Republic of the Congo",
-              "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 3
             },
             {
               "team": "Portugal",
@@ -771,7 +729,7 @@
               "goals_against": 0,
               "goal_difference": 0,
               "points": 0,
-              "rank": 4
+              "rank": 3
             },
             {
               "team": "Uzbekistan",
@@ -785,7 +743,7 @@
               "goals_against": 0,
               "goal_difference": 0,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -1146,7 +1104,8 @@
           ]
         }
       ],
-      "final_ranking": null
+      "final_ranking": null,
+      "awards": null
     },
     {
       "source": {
@@ -1251,7 +1210,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -1261,20 +1220,6 @@
               "goal_difference": -1,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Qatar",
@@ -1288,7 +1233,7 @@
               "goals_against": 7,
               "goal_difference": -7,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -1359,7 +1304,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 3,
               "draws": 0,
@@ -1411,20 +1356,6 @@
               "goal_difference": -3,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -1828,7 +1759,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -1838,20 +1769,6 @@
               "goal_difference": -4,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Uzbekistan",
@@ -1865,7 +1782,7 @@
               "goals_against": 6,
               "goal_difference": -6,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -1938,17 +1855,17 @@
             {
               "match_number": 73,
               "stage": "Round of 32",
-              "home_team": "2A",
-              "away_team": "2B",
+              "home_team": "South Korea",
+              "away_team": "Switzerland",
               "home_score": 1,
               "away_score": 2,
-              "winner": "Canada"
+              "winner": "Switzerland"
             },
             {
               "match_number": 74,
               "stage": "Round of 32",
-              "home_team": "1E",
-              "away_team": "3A/B/C/D/F",
+              "home_team": "Germany",
+              "away_team": "Czech Republic",
               "home_score": 2,
               "away_score": 0,
               "winner": "Germany"
@@ -1956,8 +1873,8 @@
             {
               "match_number": 75,
               "stage": "Round of 32",
-              "home_team": "1F",
-              "away_team": "2C",
+              "home_team": "Netherlands",
+              "away_team": "Morocco",
               "home_score": 2,
               "away_score": 1,
               "winner": "Netherlands"
@@ -1965,8 +1882,8 @@
             {
               "match_number": 76,
               "stage": "Round of 32",
-              "home_team": "1C",
-              "away_team": "2F",
+              "home_team": "Brazil",
+              "away_team": "Japan",
               "home_score": 2,
               "away_score": 0,
               "winner": "Brazil"
@@ -1974,8 +1891,8 @@
             {
               "match_number": 77,
               "stage": "Round of 32",
-              "home_team": "1I",
-              "away_team": "3C/D/F/G/H",
+              "home_team": "France",
+              "away_team": "Scotland",
               "home_score": 2,
               "away_score": 0,
               "winner": "France"
@@ -1983,8 +1900,8 @@
             {
               "match_number": 78,
               "stage": "Round of 32",
-              "home_team": "2E",
-              "away_team": "2I",
+              "home_team": "Ecuador",
+              "away_team": "Norway",
               "home_score": 1,
               "away_score": 2,
               "winner": "Norway"
@@ -1992,8 +1909,8 @@
             {
               "match_number": 79,
               "stage": "Round of 32",
-              "home_team": "1A",
-              "away_team": "3C/E/F/H/I",
+              "home_team": "Mexico",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
               "winner": "Mexico"
@@ -2001,8 +1918,8 @@
             {
               "match_number": 80,
               "stage": "Round of 32",
-              "home_team": "1L",
-              "away_team": "3E/H/I/J/K",
+              "home_team": "England",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
               "winner": "England"
@@ -2010,8 +1927,8 @@
             {
               "match_number": 81,
               "stage": "Round of 32",
-              "home_team": "1D",
-              "away_team": "3B/E/F/I/J",
+              "home_team": "United States",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 1,
               "winner": "United States"
@@ -2019,8 +1936,8 @@
             {
               "match_number": 82,
               "stage": "Round of 32",
-              "home_team": "1G",
-              "away_team": "3A/E/H/I/J",
+              "home_team": "Belgium",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
               "winner": "Belgium"
@@ -2028,8 +1945,8 @@
             {
               "match_number": 83,
               "stage": "Round of 32",
-              "home_team": "2K",
-              "away_team": "2L",
+              "home_team": "Colombia",
+              "away_team": "Croatia",
               "home_score": 1,
               "away_score": 2,
               "winner": "Croatia"
@@ -2037,8 +1954,8 @@
             {
               "match_number": 84,
               "stage": "Round of 32",
-              "home_team": "1H",
-              "away_team": "2J",
+              "home_team": "Spain",
+              "away_team": "Austria",
               "home_score": 2,
               "away_score": 0,
               "winner": "Spain"
@@ -2046,17 +1963,17 @@
             {
               "match_number": 85,
               "stage": "Round of 32",
-              "home_team": "1B",
-              "away_team": "3E/F/G/I/J",
+              "home_team": "Canada",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
-              "winner": "Switzerland"
+              "winner": "Canada"
             },
             {
               "match_number": 86,
               "stage": "Round of 32",
-              "home_team": "1J",
-              "away_team": "2H",
+              "home_team": "Argentina",
+              "away_team": "Uruguay",
               "home_score": 3,
               "away_score": 0,
               "winner": "Argentina"
@@ -2064,8 +1981,8 @@
             {
               "match_number": 87,
               "stage": "Round of 32",
-              "home_team": "1K",
-              "away_team": "3D/E/I/J/L",
+              "home_team": "Portugal",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
               "winner": "Portugal"
@@ -2073,8 +1990,8 @@
             {
               "match_number": 88,
               "stage": "Round of 32",
-              "home_team": "2D",
-              "away_team": "2G",
+              "home_team": "Turkey",
+              "away_team": "Iran",
               "home_score": 1,
               "away_score": 2,
               "winner": "Iran"
@@ -2091,7 +2008,7 @@
               "away_team": "W77",
               "home_score": 2,
               "away_score": 1,
-              "winner": "Germany"
+              "winner": "W74"
             },
             {
               "match_number": 90,
@@ -2100,7 +2017,7 @@
               "away_team": "W75",
               "home_score": 2,
               "away_score": 1,
-              "winner": "Canada"
+              "winner": "W73"
             },
             {
               "match_number": 91,
@@ -2109,7 +2026,7 @@
               "away_team": "W78",
               "home_score": 2,
               "away_score": 0,
-              "winner": "Brazil"
+              "winner": "W76"
             },
             {
               "match_number": 92,
@@ -2118,7 +2035,7 @@
               "away_team": "W80",
               "home_score": 1,
               "away_score": 2,
-              "winner": "England"
+              "winner": "W80"
             },
             {
               "match_number": 93,
@@ -2127,7 +2044,7 @@
               "away_team": "W84",
               "home_score": 1,
               "away_score": 2,
-              "winner": "Spain"
+              "winner": "W84"
             },
             {
               "match_number": 94,
@@ -2136,7 +2053,7 @@
               "away_team": "W82",
               "home_score": 2,
               "away_score": 1,
-              "winner": "United States"
+              "winner": "W81"
             },
             {
               "match_number": 95,
@@ -2145,7 +2062,7 @@
               "away_team": "W88",
               "home_score": 2,
               "away_score": 1,
-              "winner": "Argentina"
+              "winner": "W86"
             },
             {
               "match_number": 96,
@@ -2154,7 +2071,7 @@
               "away_team": "W87",
               "home_score": 2,
               "away_score": 0,
-              "winner": "Portugal"
+              "winner": "W85"
             }
           ]
         },
@@ -2168,7 +2085,7 @@
               "away_team": "W90",
               "home_score": 2,
               "away_score": 1,
-              "winner": "Germany"
+              "winner": "W89"
             },
             {
               "match_number": 98,
@@ -2177,7 +2094,7 @@
               "away_team": "W94",
               "home_score": 2,
               "away_score": 1,
-              "winner": "Spain"
+              "winner": "W93"
             },
             {
               "match_number": 99,
@@ -2186,7 +2103,7 @@
               "away_team": "W92",
               "home_score": 1,
               "away_score": 2,
-              "winner": "England"
+              "winner": "W92"
             },
             {
               "match_number": 100,
@@ -2195,7 +2112,7 @@
               "away_team": "W96",
               "home_score": 2,
               "away_score": 1,
-              "winner": "Argentina"
+              "winner": "W95"
             }
           ]
         },
@@ -2209,7 +2126,7 @@
               "away_team": "W98",
               "home_score": 1,
               "away_score": 2,
-              "winner": "Spain"
+              "winner": "W98"
             },
             {
               "match_number": 102,
@@ -2218,7 +2135,7 @@
               "away_team": "W100",
               "home_score": 1,
               "away_score": 2,
-              "winner": "Argentina"
+              "winner": "W100"
             }
           ]
         },
@@ -2232,7 +2149,7 @@
               "away_team": "W102",
               "home_score": 1,
               "away_score": 2,
-              "winner": "Argentina"
+              "winner": "W102"
             }
           ]
         },
@@ -2246,7 +2163,7 @@
               "away_team": "L102",
               "home_score": 2,
               "away_score": 1,
-              "winner": "Germany"
+              "winner": "L101"
             }
           ]
         }
@@ -2256,6 +2173,12 @@
         "runner_up": "Spain",
         "third_place": "Germany",
         "fourth_place": "England"
+      },
+      "awards": {
+        "top_scorer": "Erling Haaland (Norway)",
+        "best_player": "Lionel Messi (Argentina)",
+        "best_young_player": "Lamine Yamal (Spain)",
+        "best_goalkeeper": "Emiliano Martinez (Argentina)"
       }
     },
     {
@@ -2361,7 +2284,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 0,
               "draws": 1,
@@ -2385,20 +2308,6 @@
               "goal_difference": -3,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -2469,7 +2378,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 3,
               "draws": 0,
@@ -2521,20 +2430,6 @@
               "goal_difference": -3,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -2938,7 +2833,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 0,
               "draws": 1,
@@ -2962,20 +2857,6 @@
               "goal_difference": -5,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -3366,6 +3247,12 @@
         "runner_up": "Argentina",
         "third_place": "France",
         "fourth_place": "Spain"
+      },
+      "awards": {
+        "top_scorer": "Vinicius Jr.",
+        "best_player": "Lionel Messi",
+        "best_young_player": "Jude Bellingham",
+        "best_goalkeeper": "Alisson Becker"
       }
     },
     {
@@ -3471,7 +3358,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -3481,20 +3368,6 @@
               "goal_difference": -1,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Qatar",
@@ -3508,7 +3381,7 @@
               "goals_against": 5,
               "goal_difference": -5,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -3579,7 +3452,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 2,
               "draws": 1,
@@ -3631,20 +3504,6 @@
               "goal_difference": -1,
               "points": 2,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -4048,7 +3907,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 0,
               "draws": 1,
@@ -4072,20 +3931,6 @@
               "goal_difference": -5,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -4476,6 +4321,12 @@
         "runner_up": "Argentina",
         "third_place": "France",
         "fourth_place": "Spain"
+      },
+      "awards": {
+        "top_scorer": "Brazil player unavailable",
+        "best_player": "Brazil player unavailable",
+        "best_young_player": "Information unavailable",
+        "best_goalkeeper": "Brazil goalkeeper unavailable"
       }
     },
     {
@@ -4581,7 +4432,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 1,
               "draws": 1,
@@ -4591,20 +4442,6 @@
               "goal_difference": 0,
               "points": 4,
               "rank": 3
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Qatar",
@@ -4618,7 +4455,7 @@
               "goals_against": 6,
               "goal_difference": -5,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -4689,7 +4526,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 3,
               "draws": 0,
@@ -4741,20 +4578,6 @@
               "goal_difference": -3,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -5158,7 +4981,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 0,
               "draws": 1,
@@ -5182,20 +5005,6 @@
               "goal_difference": -4,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -5586,6 +5395,12 @@
         "runner_up": "Argentina",
         "third_place": "France",
         "fourth_place": "Brazil"
+      },
+      "awards": {
+        "top_scorer": "Kylian Mbapp\u00e9",
+        "best_player": "Pedri",
+        "best_young_player": "Lamine Yamal",
+        "best_goalkeeper": "Unai Sim\u00f3n"
       }
     },
     {
@@ -5691,7 +5506,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -5701,20 +5516,6 @@
               "goal_difference": 0,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Qatar",
@@ -5728,7 +5529,7 @@
               "goals_against": 7,
               "goal_difference": -7,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -5799,7 +5600,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 3,
               "draws": 0,
@@ -5851,20 +5652,6 @@
               "goal_difference": -3,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -6268,7 +6055,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -6278,20 +6065,6 @@
               "goal_difference": -2,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Uzbekistan",
@@ -6305,7 +6078,7 @@
               "goals_against": 6,
               "goal_difference": -6,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -6696,6 +6469,12 @@
         "runner_up": "Argentina",
         "third_place": "Brazil",
         "fourth_place": "Spain"
+      },
+      "awards": {
+        "top_scorer": "Kylian Mbapp\u00e9",
+        "best_player": "Kylian Mbapp\u00e9",
+        "best_young_player": "Lamine Yamal",
+        "best_goalkeeper": "Mike Maignan"
       }
     },
     {
@@ -6801,7 +6580,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 0,
               "draws": 2,
@@ -6825,20 +6604,6 @@
               "goal_difference": -2,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -6909,7 +6674,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 3,
               "draws": 0,
@@ -6961,20 +6726,6 @@
               "goal_difference": -2,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -7378,7 +7129,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 0,
               "draws": 1,
@@ -7402,20 +7153,6 @@
               "goal_difference": -5,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -7488,146 +7225,146 @@
             {
               "match_number": 73,
               "stage": "Round of 32",
-              "home_team": "2A",
-              "away_team": "2B",
+              "home_team": "Czech Republic",
+              "away_team": "Canada",
               "home_score": 1,
               "away_score": 2,
-              "winner": "2B"
+              "winner": "Canada"
             },
             {
               "match_number": 74,
               "stage": "Round of 32",
-              "home_team": "1E",
-              "away_team": "3A/B/C/D/F",
+              "home_team": "Germany",
+              "away_team": "Scotland",
               "home_score": 2,
               "away_score": 0,
-              "winner": "1E"
+              "winner": "Germany"
             },
             {
               "match_number": 75,
               "stage": "Round of 32",
-              "home_team": "1F",
-              "away_team": "2C",
+              "home_team": "Netherlands",
+              "away_team": "Morocco",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1F"
+              "winner": "Netherlands"
             },
             {
               "match_number": 76,
               "stage": "Round of 32",
-              "home_team": "1C",
-              "away_team": "2F",
+              "home_team": "Brazil",
+              "away_team": "Sweden",
               "home_score": 3,
               "away_score": 1,
-              "winner": "1C"
+              "winner": "Brazil"
             },
             {
               "match_number": 77,
               "stage": "Round of 32",
-              "home_team": "1I",
-              "away_team": "3C/D/F/G/H",
+              "home_team": "France",
+              "away_team": "Scotland",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1I"
+              "winner": "France"
             },
             {
               "match_number": 78,
               "stage": "Round of 32",
-              "home_team": "2E",
-              "away_team": "2I",
+              "home_team": "Ivory Coast",
+              "away_team": "Senegal",
               "home_score": 1,
               "away_score": 1,
-              "winner": "2E"
+              "winner": "Ivory Coast"
             },
             {
               "match_number": 79,
               "stage": "Round of 32",
-              "home_team": "1A",
-              "away_team": "3C/E/F/H/I",
+              "home_team": "Mexico",
+              "away_team": "Norway",
               "home_score": 1,
               "away_score": 0,
-              "winner": "1A"
+              "winner": "Mexico"
             },
             {
               "match_number": 80,
               "stage": "Round of 32",
-              "home_team": "1L",
-              "away_team": "3E/H/I/J/K",
+              "home_team": "England",
+              "away_team": "Norway",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1L"
+              "winner": "England"
             },
             {
               "match_number": 81,
               "stage": "Round of 32",
-              "home_team": "1D",
-              "away_team": "3B/E/F/I/J",
+              "home_team": "United States",
+              "away_team": "Norway",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1D"
+              "winner": "United States"
             },
             {
               "match_number": 82,
               "stage": "Round of 32",
-              "home_team": "1G",
-              "away_team": "3A/E/H/I/J",
+              "home_team": "Belgium",
+              "away_team": "Norway",
               "home_score": 2,
               "away_score": 0,
-              "winner": "1G"
+              "winner": "Belgium"
             },
             {
               "match_number": 83,
               "stage": "Round of 32",
-              "home_team": "2K",
-              "away_team": "2L",
+              "home_team": "Colombia",
+              "away_team": "Croatia",
               "home_score": 1,
               "away_score": 2,
-              "winner": "2L"
+              "winner": "Croatia"
             },
             {
               "match_number": 84,
               "stage": "Round of 32",
-              "home_team": "1H",
-              "away_team": "2J",
+              "home_team": "Spain",
+              "away_team": "Austria",
               "home_score": 1,
               "away_score": 1,
-              "winner": "1H"
+              "winner": "Spain"
             },
             {
               "match_number": 85,
               "stage": "Round of 32",
-              "home_team": "1B",
-              "away_team": "3E/F/G/I/J",
+              "home_team": "Switzerland",
+              "away_team": "Norway",
               "home_score": 1,
               "away_score": 0,
-              "winner": "1B"
+              "winner": "Switzerland"
             },
             {
               "match_number": 86,
               "stage": "Round of 32",
-              "home_team": "1J",
-              "away_team": "2H",
+              "home_team": "Argentina",
+              "away_team": "Uruguay",
               "home_score": 1,
               "away_score": 2,
-              "winner": "2H"
+              "winner": "Uruguay"
             },
             {
               "match_number": 87,
               "stage": "Round of 32",
-              "home_team": "1K",
-              "away_team": "3D/E/I/J/L",
+              "home_team": "Portugal",
+              "away_team": "Norway",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1K"
+              "winner": "Portugal"
             },
             {
               "match_number": 88,
               "stage": "Round of 32",
-              "home_team": "2D",
-              "away_team": "2G",
+              "home_team": "Turkey",
+              "away_team": "Egypt",
               "home_score": 1,
               "away_score": 2,
-              "winner": "2G"
+              "winner": "Egypt"
             }
           ]
         },
@@ -7806,6 +7543,12 @@
         "runner_up": "Argentina",
         "third_place": "Brazil",
         "fourth_place": "England"
+      },
+      "awards": {
+        "top_scorer": "Kylian Mbapp\u00e9",
+        "best_player": "Kylian Mbapp\u00e9",
+        "best_young_player": "Jude Bellingham",
+        "best_goalkeeper": "Alisson"
       }
     },
     {
@@ -7897,7 +7640,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 2,
               "draws": 0,
@@ -7923,20 +7666,6 @@
               "rank": 3
             },
             {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
-            },
-            {
               "team": "Qatar",
               "fifa_code": "QAT",
               "country": "Qatar",
@@ -7948,7 +7677,7 @@
               "goals_against": 6,
               "goal_difference": -6,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -8019,7 +7748,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 3,
               "draws": 0,
@@ -8071,20 +7800,6 @@
               "goal_difference": -3,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -8488,7 +8203,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -8498,20 +8213,6 @@
               "goal_difference": -4,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Uzbekistan",
@@ -8525,7 +8226,7 @@
               "goals_against": 7,
               "goal_difference": -6,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -8916,6 +8617,12 @@
         "runner_up": "Argentina",
         "third_place": "Brazil",
         "fourth_place": "Uruguay"
+      },
+      "awards": {
+        "top_scorer": "Kylian Mbapp\u00e9",
+        "best_player": "Lionel Messi",
+        "best_young_player": "Jude Bellingham",
+        "best_goalkeeper": "Thibaut Courtois"
       }
     },
     {
@@ -9021,7 +8728,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -9031,20 +8738,6 @@
               "goal_difference": -3,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Qatar",
@@ -9058,7 +8751,7 @@
               "goals_against": 5,
               "goal_difference": -5,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -9129,7 +8822,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 3,
               "draws": 0,
@@ -9181,20 +8874,6 @@
               "goal_difference": -2,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -9598,7 +9277,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 0,
               "draws": 1,
@@ -9622,20 +9301,6 @@
               "goal_difference": -5,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -10001,6 +9666,12 @@
         "runner_up": "Argentina",
         "third_place": "France",
         "fourth_place": "Spain"
+      },
+      "awards": {
+        "top_scorer": "Kylian Mbapp\u00e9",
+        "best_player": "Lionel Messi",
+        "best_young_player": "Jude Bellingham",
+        "best_goalkeeper": "Alisson Becker"
       }
     },
     {
@@ -10106,7 +9777,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -10116,20 +9787,6 @@
               "goal_difference": -2,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Qatar",
@@ -10143,7 +9800,7 @@
               "goals_against": 5,
               "goal_difference": -5,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -10214,7 +9871,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 3,
               "draws": 0,
@@ -10266,20 +9923,6 @@
               "goal_difference": -1,
               "points": 2,
               "rank": 4
-            },
-            {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -10683,7 +10326,7 @@
             {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 0,
               "draws": 1,
@@ -10707,20 +10350,6 @@
               "goal_difference": -5,
               "points": 1,
               "rank": 4
-            },
-            {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 5
             }
           ]
         },
@@ -10793,146 +10422,146 @@
             {
               "match_number": 73,
               "stage": "Round of 32",
-              "home_team": "2A",
-              "away_team": "2B",
+              "home_team": "Mexico",
+              "away_team": "Canada",
               "home_score": 1,
               "away_score": 2,
-              "winner": "2B"
+              "winner": "Canada"
             },
             {
               "match_number": 74,
               "stage": "Round of 32",
-              "home_team": "1E",
-              "away_team": "3A/B/C/D/F",
+              "home_team": "Germany",
+              "away_team": "South Korea",
               "home_score": 2,
               "away_score": 0,
-              "winner": "1E"
+              "winner": "Germany"
             },
             {
               "match_number": 75,
               "stage": "Round of 32",
-              "home_team": "1F",
-              "away_team": "2C",
+              "home_team": "Netherlands",
+              "away_team": "Morocco",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1F"
+              "winner": "Netherlands"
             },
             {
               "match_number": 76,
               "stage": "Round of 32",
-              "home_team": "1C",
-              "away_team": "2F",
+              "home_team": "Brazil",
+              "away_team": "Japan",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1C"
+              "winner": "Brazil"
             },
             {
               "match_number": 77,
               "stage": "Round of 32",
-              "home_team": "1I",
-              "away_team": "3C/D/F/G/H",
+              "home_team": "France",
+              "away_team": "Sweden",
               "home_score": 2,
               "away_score": 0,
-              "winner": "1I"
+              "winner": "France"
             },
             {
               "match_number": 78,
               "stage": "Round of 32",
-              "home_team": "2E",
-              "away_team": "2I",
+              "home_team": "Ecuador",
+              "away_team": "Senegal",
               "home_score": 1,
               "away_score": 2,
-              "winner": "2I"
+              "winner": "Senegal"
             },
             {
               "match_number": 79,
               "stage": "Round of 32",
-              "home_team": "1A",
-              "away_team": "3C/E/F/H/I",
+              "home_team": "Czech Republic",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
-              "winner": "1A"
+              "winner": "Czech Republic"
             },
             {
               "match_number": 80,
               "stage": "Round of 32",
-              "home_team": "1L",
-              "away_team": "3E/H/I/J/K",
+              "home_team": "England",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1L"
+              "winner": "England"
             },
             {
               "match_number": 81,
               "stage": "Round of 32",
-              "home_team": "1D",
-              "away_team": "3B/E/F/I/J",
+              "home_team": "United States",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
-              "winner": "1D"
+              "winner": "United States"
             },
             {
               "match_number": 82,
               "stage": "Round of 32",
-              "home_team": "1G",
-              "away_team": "3A/E/H/I/J",
+              "home_team": "Belgium",
+              "away_team": "South Korea",
               "home_score": 1,
               "away_score": 2,
-              "winner": "3A/E/H/I/J"
+              "winner": "South Korea"
             },
             {
               "match_number": 83,
               "stage": "Round of 32",
-              "home_team": "2K",
-              "away_team": "2L",
+              "home_team": "Colombia",
+              "away_team": "Croatia",
               "home_score": 1,
               "away_score": 2,
-              "winner": "2L"
+              "winner": "Croatia"
             },
             {
               "match_number": 84,
               "stage": "Round of 32",
-              "home_team": "1H",
-              "away_team": "2J",
+              "home_team": "Spain",
+              "away_team": "Austria",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1H"
+              "winner": "Spain"
             },
             {
               "match_number": 85,
               "stage": "Round of 32",
-              "home_team": "1B",
-              "away_team": "3E/F/G/I/J",
+              "home_team": "Switzerland",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
-              "winner": "1B"
+              "winner": "Switzerland"
             },
             {
               "match_number": 86,
               "stage": "Round of 32",
-              "home_team": "1J",
-              "away_team": "2H",
+              "home_team": "Argentina",
+              "away_team": "Uruguay",
               "home_score": 2,
               "away_score": 1,
-              "winner": "1J"
+              "winner": "Argentina"
             },
             {
               "match_number": 87,
               "stage": "Round of 32",
-              "home_team": "1K",
-              "away_team": "3D/E/I/J/L",
+              "home_team": "Portugal",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
-              "winner": "1K"
+              "winner": "Portugal"
             },
             {
               "match_number": 88,
               "stage": "Round of 32",
-              "home_team": "2D",
-              "away_team": "2G",
+              "home_team": "Australia",
+              "away_team": "Egypt",
               "home_score": 1,
               "away_score": 2,
-              "winner": "2G"
+              "winner": "Egypt"
             },
             {
               "match_number": 89,
@@ -11086,6 +10715,12 @@
         "runner_up": "France",
         "third_place": "Argentina",
         "fourth_place": "Spain"
+      },
+      "awards": {
+        "top_scorer": "Brazil",
+        "best_player": "France",
+        "best_young_player": "Spain",
+        "best_goalkeeper": "Argentina"
       }
     },
     {
@@ -11191,7 +10826,7 @@
             {
               "team": "Bosnia and Herzegovina",
               "fifa_code": "BIH",
-              "country": "Bosnia and Herzegovina",
+              "country": "Bosnia & Herzegovina",
               "matches_played": 3,
               "wins": 1,
               "draws": 0,
@@ -11201,20 +10836,6 @@
               "goal_difference": -2,
               "points": 3,
               "rank": 3
-            },
-            {
-              "team": "Bosnia & Herzegovina",
-              "fifa_code": null,
-              "country": "Bosnia & Herzegovina",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
             },
             {
               "team": "Qatar",
@@ -11228,7 +10849,7 @@
               "goals_against": 5,
               "goal_difference": -4,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -11299,7 +10920,7 @@
             {
               "team": "United States",
               "fifa_code": "USA",
-              "country": "United States",
+              "country": "USA",
               "matches_played": 3,
               "wins": 2,
               "draws": 1,
@@ -11339,20 +10960,6 @@
               "rank": 3
             },
             {
-              "team": "USA",
-              "fifa_code": null,
-              "country": "USA",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
-            },
-            {
               "team": "Paraguay",
               "fifa_code": "PAR",
               "country": "Paraguay",
@@ -11364,7 +10971,7 @@
               "goals_against": 4,
               "goal_difference": -4,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -11780,23 +11387,9 @@
               "rank": 3
             },
             {
-              "team": "DR Congo",
-              "fifa_code": null,
-              "country": "DR Congo",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 4
-            },
-            {
               "team": "Democratic Republic of the Congo",
               "fifa_code": "COD",
-              "country": "Democratic Republic of the Congo",
+              "country": "DR Congo",
               "matches_played": 3,
               "wins": 0,
               "draws": 0,
@@ -11805,7 +11398,7 @@
               "goals_against": 5,
               "goal_difference": -5,
               "points": 0,
-              "rank": 5
+              "rank": 4
             }
           ]
         },
@@ -12196,6 +11789,12 @@
         "runner_up": "France",
         "third_place": "Brazil",
         "fourth_place": "Spain"
+      },
+      "awards": {
+        "top_scorer": "Kylian Mbapp\u00e9",
+        "best_player": "Lionel Messi",
+        "best_young_player": "Jude Bellingham",
+        "best_goalkeeper": "Emiliano Mart\u00ednez"
       }
     }
   ]

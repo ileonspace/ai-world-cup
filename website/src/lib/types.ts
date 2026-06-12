@@ -162,6 +162,12 @@ export type TournamentView = {
     third_place: string;
     fourth_place: string;
   } | null;
+  awards: {
+    top_scorer: string | null;
+    best_player: string | null;
+    best_young_player: string | null;
+    best_goalkeeper: string | null;
+  } | null;
 };
 
 export type TournamentViewsPayload = {

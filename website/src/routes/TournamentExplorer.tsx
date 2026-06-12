@@ -11,46 +11,74 @@ import type {
 
 const teamFlags: Record<string, string> = {
   Argentina: '🇦🇷',
+  Algeria: '🇩🇿',
   Australia: '🇦🇺',
+  Austria: '🇦🇹',
   Belgium: '🇧🇪',
+  'Bosnia and Herzegovina': '🇧🇦',
+  'Bosnia & Herzegovina': '🇧🇦',
   Brazil: '🇧🇷',
   Canada: '🇨🇦',
+  'Cape Verde': '🇨🇻',
   Chile: '🇨🇱',
   Colombia: '🇨🇴',
   Croatia: '🇭🇷',
+  Curaçao: '🇨🇼',
+  Curacao: '🇨🇼',
   Denmark: '🇩🇰',
+  'Democratic Republic of the Congo': '🇨🇩',
+  'DR Congo': '🇨🇩',
   Ecuador: '🇪🇨',
+  Egypt: '🇪🇬',
   England: '🏴',
   France: '🇫🇷',
   Germany: '🇩🇪',
   Ghana: '🇬🇭',
   Haiti: '🇭🇹',
+  Iran: '🇮🇷',
+  Iraq: '🇮🇶',
   Italy: '🇮🇹',
+  'Ivory Coast': '🇨🇮',
   Japan: '🇯🇵',
+  Jordan: '🇯🇴',
   Mexico: '🇲🇽',
   Morocco: '🇲🇦',
   Netherlands: '🇳🇱',
+  'New Zealand': '🇳🇿',
   Norway: '🇳🇴',
+  Panama: '🇵🇦',
   Paraguay: '🇵🇾',
   Portugal: '🇵🇹',
   Qatar: '🇶🇦',
+  'Saudi Arabia': '🇸🇦',
   Scotland: '🏴',
   Senegal: '🇸🇳',
+  'South Africa': '🇿🇦',
+  'South Korea': '🇰🇷',
   Spain: '🇪🇸',
+  Sweden: '🇸🇪',
   Switzerland: '🇨🇭',
+  Tunisia: '🇹🇳',
+  Turkey: '🇹🇷',
+  'Czech Republic': '🇨🇿',
+  Uzbekistan: '🇺🇿',
   Uruguay: '🇺🇾',
   USA: '🇺🇸',
+  'United States': '🇺🇸',
   Wales: '🏴'
 };
 
 function flagFor(team: string): string {
-  return teamFlags[team] ?? '◼';
+  return teamFlags[team] ?? '';
 }
 
 function TeamName({ name }: { name: string }) {
+  const flag = flagFor(name);
   return (
     <span className="inline-flex items-center gap-2">
-      <span aria-hidden="true" className="w-5 text-center">{flagFor(name)}</span>
+      <span aria-hidden="true" className="w-5 text-center">
+        {flag || name.slice(0, 1).toUpperCase()}
+      </span>
       <span>{name}</span>
     </span>
   );
@@ -233,23 +261,45 @@ function BracketSection({ primary, secondary }: { primary: TournamentView; secon
 }
 
 function FinalRanking({ view }: { view: TournamentView }) {
-  if (!view.final_ranking) return null;
+  if (!view.final_ranking && !view.awards) return null;
   return (
-    <div className="rounded-lg border bg-white p-4 dark:border-slate-800 dark:bg-slate-950">
-      <h3 className="text-lg font-semibold">{view.source.label} final four</h3>
-      <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-4">
-        {[
-          ['Champion', view.final_ranking.champion],
-          ['Runner-up', view.final_ranking.runner_up],
-          ['Third', view.final_ranking.third_place],
-          ['Fourth', view.final_ranking.fourth_place]
-        ].map(([label, team]) => (
-          <div key={label} className="rounded-md bg-slate-50 p-3 dark:bg-slate-900">
-            <dt className="text-slate-500 dark:text-slate-400">{label}</dt>
-            <dd className="mt-1 font-semibold"><TeamName name={team} /></dd>
-          </div>
-        ))}
-      </dl>
+    <div className="space-y-4 rounded-lg border bg-white p-4 dark:border-slate-800 dark:bg-slate-950">
+      {view.final_ranking ? (
+        <div>
+          <h3 className="text-lg font-semibold">{view.source.label} final four</h3>
+          <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-4">
+            {[
+              ['Champion', view.final_ranking.champion],
+              ['Runner-up', view.final_ranking.runner_up],
+              ['Third', view.final_ranking.third_place],
+              ['Fourth', view.final_ranking.fourth_place]
+            ].map(([label, team]) => (
+              <div key={label} className="rounded-md bg-slate-50 p-3 dark:bg-slate-900">
+                <dt className="text-slate-500 dark:text-slate-400">{label}</dt>
+                <dd className="mt-1 font-semibold"><TeamName name={team} /></dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      ) : null}
+      {view.awards ? (
+        <div>
+          <h3 className="text-lg font-semibold">{view.source.label} awards</h3>
+          <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-4">
+            {[
+              ['Top scorer', view.awards.top_scorer],
+              ['Best player', view.awards.best_player],
+              ['Best young player', view.awards.best_young_player],
+              ['Best goalkeeper', view.awards.best_goalkeeper]
+            ].map(([label, person]) => (
+              <div key={label} className="rounded-md bg-slate-50 p-3 dark:bg-slate-900">
+                <dt className="text-slate-500 dark:text-slate-400">{label}</dt>
+                <dd className="mt-1 font-semibold">{person || 'Not provided'}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      ) : null}
     </div>
   );
 }

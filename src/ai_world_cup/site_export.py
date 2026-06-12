@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
@@ -24,6 +25,27 @@ from ai_world_cup.schemas import (
     TournamentPrediction,
     TournamentPromptRun,
 )
+
+TEAM_ALIASES = {
+    "Bosnia & Herzegovina": "Bosnia and Herzegovina",
+    "USA": "United States",
+    "U.S.A.": "United States",
+    "United States of America": "United States",
+    "DR Congo": "Democratic Republic of the Congo",
+    "Congo DR": "Democratic Republic of the Congo",
+    "Ivory Coast": "Ivory Coast",
+    "Côte d'Ivoire": "Ivory Coast",
+    "Cote d'Ivoire": "Ivory Coast",
+    "Türkiye": "Turkey",
+    "Curacao": "Curaçao",
+}
+
+
+def _canonical_team_name(name: str | None) -> str:
+    if not name:
+        return ""
+    normalized = " ".join(name.strip().split())
+    return TEAM_ALIASES.get(normalized, normalized)
 
 
 def _dump(path: Path, payload: Any) -> None:
@@ -199,8 +221,9 @@ def _groups_payload(session: Session) -> dict[str, Any]:
     for team in teams_by_id.values():
         if team.group_name:
             group = team.group_name.replace("Group ", "")
-            if team.name not in official[group]:
-                official[group].append(team.name)
+            team_name = _canonical_team_name(team.name)
+            if team_name not in official[group]:
+                official[group].append(team_name)
     predicted = []
     models = _model_by_id(session)
     for standing in session.exec(
@@ -215,7 +238,7 @@ def _groups_payload(session: Session) -> dict[str, Any]:
                 "provider": model.provider if model else "",
                 "group": standing.group_name,
                 "rank": standing.rank,
-                "team": standing.team,
+                "team": _canonical_team_name(standing.team),
                 "points": standing.points,
                 "goals_for": standing.goals_for,
                 "goals_against": standing.goals_against,
@@ -229,7 +252,7 @@ def _groups_payload(session: Session) -> dict[str, Any]:
             {
                 "group": standing.group_name,
                 "rank": standing.rank,
-                "team": team.name if team else None,
+                "team": _canonical_team_name(team.name) if team else None,
                 "points": standing.points,
                 "goals_for": standing.goals_for,
                 "goals_against": standing.goals_against,
@@ -261,9 +284,9 @@ def _knockout_payload(session: Session) -> dict[str, Any]:
                 "provider": model.provider if model else "",
                 "match_number": prediction.match_number,
                 "stage": prediction.stage,
-                "home_team": prediction.home_team,
-                "away_team": prediction.away_team,
-                "predicted_winner": prediction.predicted_winner,
+                "home_team": _canonical_team_name(prediction.home_team),
+                "away_team": _canonical_team_name(prediction.away_team),
+                "predicted_winner": _canonical_team_name(prediction.predicted_winner),
                 "confidence": prediction.confidence,
             }
         )
@@ -277,10 +300,10 @@ def _knockout_payload(session: Session) -> dict[str, Any]:
             {
                 "model_name": model.model_display_name if model else str(ranking.model_id),
                 "provider": model.provider if model else "",
-                "champion": ranking.champion,
-                "runner_up": ranking.runner_up,
-                "third_place": ranking.third_place,
-                "fourth_place": ranking.fourth_place,
+                "champion": _canonical_team_name(ranking.champion),
+                "runner_up": _canonical_team_name(ranking.runner_up),
+                "third_place": _canonical_team_name(ranking.third_place),
+                "fourth_place": _canonical_team_name(ranking.fourth_place),
             }
         )
     awards = []
@@ -309,12 +332,14 @@ def _knockout_payload(session: Session) -> dict[str, Any]:
 def _team_index(session: Session) -> dict[str, dict[str, Any]]:
     teams = {}
     for team in session.exec(select(Team)):
+        canonical_name = _canonical_team_name(team.name)
         group = team.group_name.replace("Group ", "") if team.group_name else None
-        teams[team.name] = {
-            "name": team.name,
-            "fifa_code": team.fifa_code,
-            "country": team.country,
-            "group": group,
+        existing = teams.get(canonical_name, {})
+        teams[canonical_name] = {
+            "name": canonical_name,
+            "fifa_code": existing.get("fifa_code") or team.fifa_code,
+            "country": existing.get("country") or team.country or canonical_name,
+            "group": existing.get("group") or group,
         }
     return teams
 
@@ -339,14 +364,17 @@ def _empty_group_row(team_name: str, team_meta: dict[str, dict[str, Any]]) -> di
 
 def _apply_group_result(
     rows: dict[str, dict[str, Any]],
+    team_meta: dict[str, dict[str, Any]],
     home_team: str,
     away_team: str,
     home_goals: int,
     away_goals: int,
 ) -> None:
+    home_team = _canonical_team_name(home_team)
+    away_team = _canonical_team_name(away_team)
     for team_name in (home_team, away_team):
         if team_name not in rows:
-            rows[team_name] = _empty_group_row(team_name, {})
+            rows[team_name] = _empty_group_row(team_name, team_meta)
 
     home = rows[home_team]
     away = rows[away_team]
@@ -421,6 +449,7 @@ def _actual_tournament_view(
             groups.setdefault(group, {})
             _apply_group_result(
                 groups[group],
+                team_meta,
                 match.home_team_name,
                 match.away_team_name,
                 match.home_score,
@@ -431,8 +460,8 @@ def _actual_tournament_view(
                 {
                     "match_number": match.match_number,
                     "stage": match.stage or "Knockout",
-                    "home_team": match.home_team_name,
-                    "away_team": match.away_team_name,
+                    "home_team": _canonical_team_name(match.home_team_name),
+                    "away_team": _canonical_team_name(match.away_team_name),
                     "home_score": match.home_score,
                     "away_score": match.away_score,
                     "winner": None,
@@ -448,6 +477,60 @@ def _actual_tournament_view(
         "group_tables": _group_tables_from_matches(groups),
         "knockout_rounds": _rounds_from_matches(knockout_matches),
         "final_ranking": None,
+        "awards": None,
+    }
+
+
+def _seed_team(seed: str, group_tables: list[dict[str, Any]]) -> str | None:
+    compact = seed.strip().upper().replace(" ", "")
+    group_by_name = {table["group"].upper(): table["rows"] for table in group_tables}
+    direct = re.fullmatch(r"([12])([A-L])", compact)
+    if direct:
+        rank = int(direct.group(1))
+        rows = group_by_name.get(direct.group(2), [])
+        if len(rows) >= rank:
+            return rows[rank - 1]["team"]
+
+    third_place = re.fullmatch(r"3([A-L](?:/[A-L])*)", compact)
+    if third_place:
+        candidates = []
+        for group in third_place.group(1).split("/"):
+            rows = group_by_name.get(group, [])
+            if len(rows) >= 3:
+                row = rows[2]
+                candidates.append(
+                    (
+                        row["points"],
+                        row["goal_difference"],
+                        row["goals_for"],
+                        row["team"],
+                    )
+                )
+        if candidates:
+            return sorted(candidates, reverse=True)[0][3]
+    return None
+
+
+def _resolve_team_reference(name: str, group_tables: list[dict[str, Any]]) -> str:
+    canonical = _canonical_team_name(name)
+    return _seed_team(canonical, group_tables) or canonical
+
+
+def _resolve_knockout_match(
+    match: dict[str, Any],
+    group_tables: list[dict[str, Any]],
+) -> dict[str, Any]:
+    home_team = _resolve_team_reference(match["home_team"], group_tables)
+    away_team = _resolve_team_reference(match["away_team"], group_tables)
+    winner = _resolve_team_reference(match["winner"], group_tables) if match.get("winner") else None
+    if winner not in {home_team, away_team}:
+        if match.get("home_score") is not None and match.get("away_score") is not None:
+            winner = home_team if match["home_score"] > match["away_score"] else away_team
+    return {
+        **match,
+        "home_team": home_team,
+        "away_team": away_team,
+        "winner": winner,
     }
 
 
@@ -489,6 +572,7 @@ def _model_tournament_view(
     predictions: list[TournamentPrediction],
     final_ranking: PredictedFinalRanking | None,
     team_meta: dict[str, dict[str, Any]],
+    awards: PredictedAward | None,
 ) -> dict[str, Any]:
     groups = _initial_group_rows(team_meta)
     knockout_matches = []
@@ -498,6 +582,7 @@ def _model_tournament_view(
             groups.setdefault(group, {})
             _apply_group_result(
                 groups[group],
+                team_meta,
                 prediction.home_team,
                 prediction.away_team,
                 prediction.predicted_home_goals,
@@ -508,13 +593,15 @@ def _model_tournament_view(
                 {
                     "match_number": prediction.match_number,
                     "stage": prediction.stage,
-                    "home_team": prediction.home_team,
-                    "away_team": prediction.away_team,
+                    "home_team": _canonical_team_name(prediction.home_team),
+                    "away_team": _canonical_team_name(prediction.away_team),
                     "home_score": prediction.predicted_home_goals,
                     "away_score": prediction.predicted_away_goals,
-                    "winner": prediction.predicted_winner,
+                    "winner": _canonical_team_name(prediction.predicted_winner),
                 }
             )
+    group_tables = _group_tables_from_matches(groups)
+    knockout_matches = [_resolve_knockout_match(match, group_tables) for match in knockout_matches]
     return {
         "source": {
             "id": f"model-{response.model_id}",
@@ -522,15 +609,23 @@ def _model_tournament_view(
             "provider": model.provider if model else "",
             "kind": "model",
         },
-        "group_tables": _group_tables_from_matches(groups),
+        "group_tables": group_tables,
         "knockout_rounds": _rounds_from_matches(knockout_matches),
         "final_ranking": {
-            "champion": final_ranking.champion,
-            "runner_up": final_ranking.runner_up,
-            "third_place": final_ranking.third_place,
-            "fourth_place": final_ranking.fourth_place,
+            "champion": _canonical_team_name(final_ranking.champion),
+            "runner_up": _canonical_team_name(final_ranking.runner_up),
+            "third_place": _canonical_team_name(final_ranking.third_place),
+            "fourth_place": _canonical_team_name(final_ranking.fourth_place),
         }
         if final_ranking
+        else None,
+        "awards": {
+            "top_scorer": awards.top_scorer,
+            "best_player": awards.best_player,
+            "best_young_player": awards.best_young_player,
+            "best_goalkeeper": awards.best_goalkeeper,
+        }
+        if awards
         else None,
     }
 
@@ -555,6 +650,11 @@ def _tournament_views_payload(session: Session) -> dict[str, Any]:
         for ranking in session.exec(select(PredictedFinalRanking))
         if ranking.tournament_manual_response_id in response_ids
     }
+    awards_by_response = {
+        award.tournament_manual_response_id: award
+        for award in session.exec(select(PredictedAward))
+        if award.tournament_manual_response_id in response_ids
+    }
     views = [_actual_tournament_view(session, team_meta)]
     for response in sorted(
         latest_responses.values(),
@@ -573,6 +673,7 @@ def _tournament_views_payload(session: Session) -> dict[str, Any]:
                 predictions_by_response.get(response.id, []),
                 rankings_by_response.get(response.id),
                 team_meta,
+                awards_by_response.get(response.id),
             )
         )
     return {

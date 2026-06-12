@@ -57,6 +57,23 @@ export function Home() {
           ))}
         </div>
       </section>
+
+      <section className="rounded-lg border border-emerald-200 bg-emerald-50 p-5 dark:border-emerald-900 dark:bg-emerald-950">
+        <h2 className="text-2xl font-semibold">Open benchmark repository</h2>
+        <p className="mt-2 max-w-3xl text-sm text-slate-700 dark:text-slate-200">
+          AI World Cup is published as an open GitHub repository. The prompts, imported model
+          responses, scoring code, static website export, and GitHub Pages deployment workflow are
+          available for review.
+        </p>
+        <a
+          className="mt-4 inline-flex rounded-md bg-pitch px-4 py-2 text-sm font-semibold text-white dark:bg-emerald-500 dark:text-slate-950"
+          href="https://github.com/jonaidshianifar/ai-world-cup/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          View GitHub repository
+        </a>
+      </section>
     </div>
   );
 }
