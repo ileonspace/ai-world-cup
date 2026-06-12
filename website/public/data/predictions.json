@@ -162,7 +162,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Two evenly matched teams neutralize each other tactically, splitting the points.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -177,7 +177,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.7,
     "reasoning_short": "Evenly matched teams share points",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -192,7 +192,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.51,
     "reasoning_short": "Even matchup.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -207,7 +207,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.55,
     "reasoning_short": "Evenly matched mid-tier teams likely to share points.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -222,7 +222,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Snapshot lacks player-form data; the matchup appears balanced, so a low-scoring draw is projected.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -237,7 +237,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.41,
     "reasoning_short": "Both teams are well-organized and reasonably balanced, making a low-scoring draw the most likely opening result.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -252,7 +252,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.34,
     "reasoning_short": "Both are competitive sides, and an opening match at a neutral venue looks balanced.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -267,7 +267,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.42,
     "reasoning_short": "Evenly matched sides. Czech Republic solid in European competition; South Korea technically skilled with Son-era quality. Tight opener expected.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -282,7 +282,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.65,
     "reasoning_short": "Evenly matched; both have organized defenses and limited firepower.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -297,7 +297,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Evenly matched teams; South Korea's pace cancels out Czech Republic's tactical discipline.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
