@@ -447,6 +447,24 @@ def _group_tables_from_matches(
     ]
 
 
+def _knockout_stage_for_match_number(match_number: int | None, fallback: str | None) -> str:
+    if match_number is None:
+        return fallback or "Knockout"
+    if 73 <= match_number <= 88:
+        return "Round of 32"
+    if 89 <= match_number <= 96:
+        return "Round of 16"
+    if 97 <= match_number <= 100:
+        return "Quarter-final"
+    if 101 <= match_number <= 102:
+        return "Semi-final"
+    if match_number == 103:
+        return "Third-place match"
+    if match_number == 104:
+        return "Final"
+    return fallback or "Knockout"
+
+
 def _actual_tournament_view(
     session: Session,
     team_meta: dict[str, dict[str, Any]],
@@ -469,7 +487,7 @@ def _actual_tournament_view(
             knockout_matches.append(
                 {
                     "match_number": match.match_number,
-                    "stage": match.stage or "Knockout",
+                    "stage": _knockout_stage_for_match_number(match.match_number, match.stage),
                     "home_team": _canonical_team_name(match.home_team_name),
                     "away_team": _canonical_team_name(match.away_team_name),
                     "home_score": match.home_score,
@@ -526,13 +544,34 @@ def _resolve_team_reference(name: str, group_tables: list[dict[str, Any]]) -> st
     return _seed_team(canonical, group_tables) or canonical
 
 
+def _match_side_reference(name: str, resolved_by_number: dict[int, dict[str, str]]) -> str | None:
+    match = re.fullmatch(r"([WL])(\d+)", name.strip().upper())
+    if not match:
+        return None
+    resolved = resolved_by_number.get(int(match.group(2)))
+    if not resolved:
+        return None
+    return resolved["winner"] if match.group(1) == "W" else resolved["loser"]
+
+
 def _resolve_knockout_match(
     match: dict[str, Any],
     group_tables: list[dict[str, Any]],
+    resolved_by_number: dict[int, dict[str, str]] | None = None,
 ) -> dict[str, Any]:
-    home_team = _resolve_team_reference(match["home_team"], group_tables)
-    away_team = _resolve_team_reference(match["away_team"], group_tables)
-    winner = _resolve_team_reference(match["winner"], group_tables) if match.get("winner") else None
+    resolved_by_number = resolved_by_number or {}
+    home_team = _match_side_reference(
+        match["home_team"], resolved_by_number
+    ) or _resolve_team_reference(match["home_team"], group_tables)
+    away_team = _match_side_reference(
+        match["away_team"], resolved_by_number
+    ) or _resolve_team_reference(match["away_team"], group_tables)
+    winner = (
+        _match_side_reference(match["winner"], resolved_by_number)
+        or _resolve_team_reference(match["winner"], group_tables)
+        if match.get("winner")
+        else None
+    )
     if winner not in {home_team, away_team}:
         if match.get("home_score") is not None and match.get("away_score") is not None:
             winner = home_team if match["home_score"] > match["away_score"] else away_team
@@ -542,6 +581,33 @@ def _resolve_knockout_match(
         "away_team": away_team,
         "winner": winner,
     }
+
+
+def _resolve_knockout_matches(
+    matches: list[dict[str, Any]],
+    group_tables: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    resolved_matches = []
+    resolved_by_number: dict[int, dict[str, str]] = {}
+    for match in sorted(matches, key=lambda item: item.get("match_number") or 999):
+        resolved = _resolve_knockout_match(match, group_tables, resolved_by_number)
+        match_number = resolved.get("match_number")
+        if (
+            isinstance(match_number, int)
+            and resolved.get("winner")
+            and resolved["winner"] in {resolved["home_team"], resolved["away_team"]}
+        ):
+            loser = (
+                resolved["away_team"]
+                if resolved["winner"] == resolved["home_team"]
+                else resolved["home_team"]
+            )
+            resolved_by_number[match_number] = {
+                "winner": resolved["winner"],
+                "loser": loser,
+            }
+        resolved_matches.append(resolved)
+    return resolved_matches
 
 
 def _rounds_from_matches(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -555,6 +621,7 @@ def _rounds_from_matches(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
         "Semifinals": 4,
         "Semi-final": 4,
         "Third-place play-off": 5,
+        "Third-place match": 5,
         "Third Place": 5,
         "Final": 6,
     }
@@ -602,7 +669,9 @@ def _model_tournament_view(
             knockout_matches.append(
                 {
                     "match_number": prediction.match_number,
-                    "stage": prediction.stage,
+                    "stage": _knockout_stage_for_match_number(
+                        prediction.match_number, prediction.stage
+                    ),
                     "home_team": _canonical_team_name(prediction.home_team),
                     "away_team": _canonical_team_name(prediction.away_team),
                     "home_score": prediction.predicted_home_goals,
@@ -611,7 +680,7 @@ def _model_tournament_view(
                 }
             )
     group_tables = _group_tables_from_matches(groups)
-    knockout_matches = [_resolve_knockout_match(match, group_tables) for match in knockout_matches]
+    knockout_matches = _resolve_knockout_matches(knockout_matches, group_tables)
     return {
         "source": {
             "id": f"model-{response.model_id}",

@@ -811,11 +811,11 @@
       ],
       "knockout_rounds": [
         {
-          "stage": "Group Stage",
+          "stage": "Round of 32",
           "matches": [
             {
               "match_number": 73,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "2A",
               "away_team": "2B",
               "home_score": null,
@@ -824,7 +824,7 @@
             },
             {
               "match_number": 74,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1E",
               "away_team": "3A/B/C/D/F",
               "home_score": null,
@@ -833,7 +833,7 @@
             },
             {
               "match_number": 75,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1F",
               "away_team": "2C",
               "home_score": null,
@@ -842,7 +842,7 @@
             },
             {
               "match_number": 76,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1C",
               "away_team": "2F",
               "home_score": null,
@@ -851,7 +851,7 @@
             },
             {
               "match_number": 77,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1I",
               "away_team": "3C/D/F/G/H",
               "home_score": null,
@@ -860,7 +860,7 @@
             },
             {
               "match_number": 78,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "2E",
               "away_team": "2I",
               "home_score": null,
@@ -869,7 +869,7 @@
             },
             {
               "match_number": 79,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1A",
               "away_team": "3C/E/F/H/I",
               "home_score": null,
@@ -878,7 +878,7 @@
             },
             {
               "match_number": 80,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1L",
               "away_team": "3E/H/I/J/K",
               "home_score": null,
@@ -887,7 +887,7 @@
             },
             {
               "match_number": 81,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1D",
               "away_team": "3B/E/F/I/J",
               "home_score": null,
@@ -896,7 +896,7 @@
             },
             {
               "match_number": 82,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1G",
               "away_team": "3A/E/H/I/J",
               "home_score": null,
@@ -905,7 +905,7 @@
             },
             {
               "match_number": 83,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "2K",
               "away_team": "2L",
               "home_score": null,
@@ -914,7 +914,7 @@
             },
             {
               "match_number": 84,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1H",
               "away_team": "2J",
               "home_score": null,
@@ -923,7 +923,7 @@
             },
             {
               "match_number": 85,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1B",
               "away_team": "3E/F/G/I/J",
               "home_score": null,
@@ -932,7 +932,7 @@
             },
             {
               "match_number": 86,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1J",
               "away_team": "2H",
               "home_score": null,
@@ -941,7 +941,7 @@
             },
             {
               "match_number": 87,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "1K",
               "away_team": "3D/E/I/J/L",
               "home_score": null,
@@ -950,16 +950,21 @@
             },
             {
               "match_number": 88,
-              "stage": "Group Stage",
+              "stage": "Round of 32",
               "home_team": "2D",
               "away_team": "2G",
               "home_score": null,
               "away_score": null,
               "winner": null
-            },
+            }
+          ]
+        },
+        {
+          "stage": "Round of 16",
+          "matches": [
             {
               "match_number": 89,
-              "stage": "Group Stage",
+              "stage": "Round of 16",
               "home_team": "W74",
               "away_team": "W77",
               "home_score": null,
@@ -968,7 +973,7 @@
             },
             {
               "match_number": 90,
-              "stage": "Group Stage",
+              "stage": "Round of 16",
               "home_team": "W73",
               "away_team": "W75",
               "home_score": null,
@@ -977,7 +982,7 @@
             },
             {
               "match_number": 91,
-              "stage": "Group Stage",
+              "stage": "Round of 16",
               "home_team": "W76",
               "away_team": "W78",
               "home_score": null,
@@ -986,7 +991,7 @@
             },
             {
               "match_number": 92,
-              "stage": "Group Stage",
+              "stage": "Round of 16",
               "home_team": "W79",
               "away_team": "W80",
               "home_score": null,
@@ -995,7 +1000,7 @@
             },
             {
               "match_number": 93,
-              "stage": "Group Stage",
+              "stage": "Round of 16",
               "home_team": "W83",
               "away_team": "W84",
               "home_score": null,
@@ -1004,7 +1009,7 @@
             },
             {
               "match_number": 94,
-              "stage": "Group Stage",
+              "stage": "Round of 16",
               "home_team": "W81",
               "away_team": "W82",
               "home_score": null,
@@ -1013,7 +1018,7 @@
             },
             {
               "match_number": 95,
-              "stage": "Group Stage",
+              "stage": "Round of 16",
               "home_team": "W86",
               "away_team": "W88",
               "home_score": null,
@@ -1022,16 +1027,21 @@
             },
             {
               "match_number": 96,
-              "stage": "Group Stage",
+              "stage": "Round of 16",
               "home_team": "W85",
               "away_team": "W87",
               "home_score": null,
               "away_score": null,
               "winner": null
-            },
+            }
+          ]
+        },
+        {
+          "stage": "Quarter-final",
+          "matches": [
             {
               "match_number": 97,
-              "stage": "Group Stage",
+              "stage": "Quarter-final",
               "home_team": "W89",
               "away_team": "W90",
               "home_score": null,
@@ -1040,7 +1050,7 @@
             },
             {
               "match_number": 98,
-              "stage": "Group Stage",
+              "stage": "Quarter-final",
               "home_team": "W93",
               "away_team": "W94",
               "home_score": null,
@@ -1049,7 +1059,7 @@
             },
             {
               "match_number": 99,
-              "stage": "Group Stage",
+              "stage": "Quarter-final",
               "home_team": "W91",
               "away_team": "W92",
               "home_score": null,
@@ -1058,16 +1068,21 @@
             },
             {
               "match_number": 100,
-              "stage": "Group Stage",
+              "stage": "Quarter-final",
               "home_team": "W95",
               "away_team": "W96",
               "home_score": null,
               "away_score": null,
               "winner": null
-            },
+            }
+          ]
+        },
+        {
+          "stage": "Semi-final",
+          "matches": [
             {
               "match_number": 101,
-              "stage": "Group Stage",
+              "stage": "Semi-final",
               "home_team": "W97",
               "away_team": "W98",
               "home_score": null,
@@ -1076,25 +1091,35 @@
             },
             {
               "match_number": 102,
-              "stage": "Group Stage",
+              "stage": "Semi-final",
               "home_team": "W99",
               "away_team": "W100",
               "home_score": null,
               "away_score": null,
               "winner": null
-            },
+            }
+          ]
+        },
+        {
+          "stage": "Third-place match",
+          "matches": [
             {
               "match_number": 103,
-              "stage": "Group Stage",
+              "stage": "Third-place match",
               "home_team": "L101",
               "away_team": "L102",
               "home_score": null,
               "away_score": null,
               "winner": null
-            },
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
             {
               "match_number": 104,
-              "stage": "Group Stage",
+              "stage": "Final",
               "home_team": "W101",
               "away_team": "W102",
               "home_score": null,
@@ -2004,74 +2029,74 @@
             {
               "match_number": 89,
               "stage": "Round of 16",
-              "home_team": "W74",
-              "away_team": "W77",
+              "home_team": "Germany",
+              "away_team": "France",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W74"
+              "winner": "Germany"
             },
             {
               "match_number": 90,
               "stage": "Round of 16",
-              "home_team": "W73",
-              "away_team": "W75",
+              "home_team": "Switzerland",
+              "away_team": "Netherlands",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W73"
+              "winner": "Switzerland"
             },
             {
               "match_number": 91,
               "stage": "Round of 16",
-              "home_team": "W76",
-              "away_team": "W78",
+              "home_team": "Brazil",
+              "away_team": "Norway",
               "home_score": 2,
               "away_score": 0,
-              "winner": "W76"
+              "winner": "Brazil"
             },
             {
               "match_number": 92,
               "stage": "Round of 16",
-              "home_team": "W79",
-              "away_team": "W80",
+              "home_team": "Mexico",
+              "away_team": "England",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W80"
+              "winner": "England"
             },
             {
               "match_number": 93,
               "stage": "Round of 16",
-              "home_team": "W83",
-              "away_team": "W84",
+              "home_team": "Croatia",
+              "away_team": "Spain",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W84"
+              "winner": "Spain"
             },
             {
               "match_number": 94,
               "stage": "Round of 16",
-              "home_team": "W81",
-              "away_team": "W82",
+              "home_team": "United States",
+              "away_team": "Belgium",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W81"
+              "winner": "United States"
             },
             {
               "match_number": 95,
               "stage": "Round of 16",
-              "home_team": "W86",
-              "away_team": "W88",
+              "home_team": "Argentina",
+              "away_team": "Iran",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W86"
+              "winner": "Argentina"
             },
             {
               "match_number": 96,
               "stage": "Round of 16",
-              "home_team": "W85",
-              "away_team": "W87",
+              "home_team": "Canada",
+              "away_team": "Portugal",
               "home_score": 2,
               "away_score": 0,
-              "winner": "W85"
+              "winner": "Portugal"
             }
           ]
         },
@@ -2081,38 +2106,38 @@
             {
               "match_number": 97,
               "stage": "Quarter-final",
-              "home_team": "W89",
-              "away_team": "W90",
+              "home_team": "Germany",
+              "away_team": "Switzerland",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W89"
+              "winner": "Germany"
             },
             {
               "match_number": 98,
               "stage": "Quarter-final",
-              "home_team": "W93",
-              "away_team": "W94",
+              "home_team": "Spain",
+              "away_team": "United States",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W93"
+              "winner": "Spain"
             },
             {
               "match_number": 99,
               "stage": "Quarter-final",
-              "home_team": "W91",
-              "away_team": "W92",
+              "home_team": "Brazil",
+              "away_team": "England",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W92"
+              "winner": "England"
             },
             {
               "match_number": 100,
               "stage": "Quarter-final",
-              "home_team": "W95",
-              "away_team": "W96",
+              "home_team": "Argentina",
+              "away_team": "Portugal",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W95"
+              "winner": "Argentina"
             }
           ]
         },
@@ -2122,34 +2147,20 @@
             {
               "match_number": 101,
               "stage": "Semi-final",
-              "home_team": "W97",
-              "away_team": "W98",
+              "home_team": "Germany",
+              "away_team": "Spain",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W98"
+              "winner": "Spain"
             },
             {
               "match_number": 102,
               "stage": "Semi-final",
-              "home_team": "W99",
-              "away_team": "W100",
+              "home_team": "England",
+              "away_team": "Argentina",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W100"
-            }
-          ]
-        },
-        {
-          "stage": "Final",
-          "matches": [
-            {
-              "match_number": 104,
-              "stage": "Final",
-              "home_team": "W101",
-              "away_team": "W102",
-              "home_score": 1,
-              "away_score": 2,
-              "winner": "W102"
+              "winner": "Argentina"
             }
           ]
         },
@@ -2159,11 +2170,25 @@
             {
               "match_number": 103,
               "stage": "Third-place match",
-              "home_team": "L101",
-              "away_team": "L102",
+              "home_team": "Germany",
+              "away_team": "England",
               "home_score": 2,
               "away_score": 1,
-              "winner": "L101"
+              "winner": "Germany"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
+            {
+              "match_number": 104,
+              "stage": "Final",
+              "home_team": "Spain",
+              "away_team": "Argentina",
+              "home_score": 1,
+              "away_score": 2,
+              "winner": "Argentina"
             }
           ]
         }
@@ -3214,20 +3239,6 @@
           ]
         },
         {
-          "stage": "Final",
-          "matches": [
-            {
-              "match_number": 104,
-              "stage": "Final",
-              "home_team": "Brazil",
-              "away_team": "Argentina",
-              "home_score": 2,
-              "away_score": 2,
-              "winner": "Brazil"
-            }
-          ]
-        },
-        {
           "stage": "Third-place match",
           "matches": [
             {
@@ -3238,6 +3249,20 @@
               "home_score": 2,
               "away_score": 1,
               "winner": "France"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
+            {
+              "match_number": 104,
+              "stage": "Final",
+              "home_team": "Brazil",
+              "away_team": "Argentina",
+              "home_score": 2,
+              "away_score": 2,
+              "winner": "Brazil"
             }
           ]
         }
@@ -4288,11 +4313,11 @@
           ]
         },
         {
-          "stage": "Third Place",
+          "stage": "Third-place match",
           "matches": [
             {
               "match_number": 103,
-              "stage": "Third Place",
+              "stage": "Third-place match",
               "home_team": "France",
               "away_team": "Spain",
               "home_score": 2,
@@ -5362,20 +5387,6 @@
           ]
         },
         {
-          "stage": "Final",
-          "matches": [
-            {
-              "match_number": 104,
-              "stage": "Final",
-              "home_team": "Spain",
-              "away_team": "Argentina",
-              "home_score": 2,
-              "away_score": 1,
-              "winner": "Spain"
-            }
-          ]
-        },
-        {
           "stage": "Third-place match",
           "matches": [
             {
@@ -5386,6 +5397,20 @@
               "home_score": 2,
               "away_score": 1,
               "winner": "France"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
+            {
+              "match_number": 104,
+              "stage": "Final",
+              "home_team": "Spain",
+              "away_team": "Argentina",
+              "home_score": 2,
+              "away_score": 1,
+              "winner": "Spain"
             }
           ]
         }
@@ -6436,20 +6461,6 @@
           ]
         },
         {
-          "stage": "Final",
-          "matches": [
-            {
-              "match_number": 104,
-              "stage": "Final",
-              "home_team": "France",
-              "away_team": "Argentina",
-              "home_score": 2,
-              "away_score": 1,
-              "winner": "France"
-            }
-          ]
-        },
-        {
           "stage": "Third-place match",
           "matches": [
             {
@@ -6460,6 +6471,20 @@
               "home_score": 1,
               "away_score": 2,
               "winner": "Brazil"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
+            {
+              "match_number": 104,
+              "stage": "Final",
+              "home_team": "France",
+              "away_team": "Argentina",
+              "home_score": 2,
+              "away_score": 1,
+              "winner": "France"
             }
           ]
         }
@@ -7374,74 +7399,74 @@
             {
               "match_number": 89,
               "stage": "Round of 16",
-              "home_team": "W74",
-              "away_team": "W77",
+              "home_team": "Germany",
+              "away_team": "France",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W77"
+              "winner": "France"
             },
             {
               "match_number": 90,
               "stage": "Round of 16",
-              "home_team": "W73",
-              "away_team": "W75",
+              "home_team": "Canada",
+              "away_team": "Netherlands",
               "home_score": 1,
               "away_score": 1,
-              "winner": "W73"
+              "winner": "Canada"
             },
             {
               "match_number": 91,
               "stage": "Round of 16",
-              "home_team": "W76",
-              "away_team": "W78",
+              "home_team": "Brazil",
+              "away_team": "Ivory Coast",
               "home_score": 2,
               "away_score": 0,
-              "winner": "W76"
+              "winner": "Brazil"
             },
             {
               "match_number": 92,
               "stage": "Round of 16",
-              "home_team": "W79",
-              "away_team": "W80",
+              "home_team": "Mexico",
+              "away_team": "England",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W79"
+              "winner": "Mexico"
             },
             {
               "match_number": 93,
               "stage": "Round of 16",
-              "home_team": "W83",
-              "away_team": "W84",
+              "home_team": "Croatia",
+              "away_team": "Spain",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W84"
+              "winner": "Spain"
             },
             {
               "match_number": 94,
               "stage": "Round of 16",
-              "home_team": "W81",
-              "away_team": "W82",
+              "home_team": "United States",
+              "away_team": "Belgium",
               "home_score": 0,
               "away_score": 1,
-              "winner": "W82"
+              "winner": "Belgium"
             },
             {
               "match_number": 95,
               "stage": "Round of 16",
-              "home_team": "W86",
-              "away_team": "W88",
+              "home_team": "Uruguay",
+              "away_team": "Egypt",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W86"
+              "winner": "Uruguay"
             },
             {
               "match_number": 96,
               "stage": "Round of 16",
-              "home_team": "W85",
-              "away_team": "W87",
+              "home_team": "Switzerland",
+              "away_team": "Portugal",
               "home_score": 1,
               "away_score": 1,
-              "winner": "W85"
+              "winner": "Switzerland"
             }
           ]
         },
@@ -7451,38 +7476,38 @@
             {
               "match_number": 97,
               "stage": "Quarter-final",
-              "home_team": "W89",
-              "away_team": "W90",
+              "home_team": "France",
+              "away_team": "Canada",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W90"
+              "winner": "Canada"
             },
             {
               "match_number": 98,
               "stage": "Quarter-final",
-              "home_team": "W93",
-              "away_team": "W94",
+              "home_team": "Spain",
+              "away_team": "Belgium",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W93"
+              "winner": "Spain"
             },
             {
               "match_number": 99,
               "stage": "Quarter-final",
-              "home_team": "W91",
-              "away_team": "W92",
+              "home_team": "Brazil",
+              "away_team": "Mexico",
               "home_score": 1,
               "away_score": 0,
-              "winner": "W91"
+              "winner": "Brazil"
             },
             {
               "match_number": 100,
               "stage": "Quarter-final",
-              "home_team": "W95",
-              "away_team": "W96",
+              "home_team": "Uruguay",
+              "away_team": "Switzerland",
               "home_score": 2,
               "away_score": 2,
-              "winner": "W95"
+              "winner": "Uruguay"
             }
           ]
         },
@@ -7492,34 +7517,20 @@
             {
               "match_number": 101,
               "stage": "Semi-final",
-              "home_team": "W97",
-              "away_team": "W98",
+              "home_team": "Canada",
+              "away_team": "Spain",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W98"
+              "winner": "Spain"
             },
             {
               "match_number": 102,
               "stage": "Semi-final",
-              "home_team": "W99",
-              "away_team": "W100",
+              "home_team": "Brazil",
+              "away_team": "Uruguay",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W99"
-            }
-          ]
-        },
-        {
-          "stage": "Final",
-          "matches": [
-            {
-              "match_number": 104,
-              "stage": "Final",
-              "home_team": "W101",
-              "away_team": "W102",
-              "home_score": 1,
-              "away_score": 2,
-              "winner": "W102"
+              "winner": "Brazil"
             }
           ]
         },
@@ -7529,11 +7540,25 @@
             {
               "match_number": 103,
               "stage": "Third-place match",
-              "home_team": "L101",
-              "away_team": "L102",
+              "home_team": "Canada",
+              "away_team": "Uruguay",
               "home_score": 2,
               "away_score": 1,
-              "winner": "L101"
+              "winner": "Canada"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
+            {
+              "match_number": 104,
+              "stage": "Final",
+              "home_team": "Spain",
+              "away_team": "Brazil",
+              "home_score": 1,
+              "away_score": 2,
+              "winner": "Brazil"
             }
           ]
         }
@@ -8584,20 +8609,6 @@
           ]
         },
         {
-          "stage": "Final",
-          "matches": [
-            {
-              "match_number": 104,
-              "stage": "Final",
-              "home_team": "France",
-              "away_team": "Argentina",
-              "home_score": 2,
-              "away_score": 1,
-              "winner": "France"
-            }
-          ]
-        },
-        {
           "stage": "Third-place match",
           "matches": [
             {
@@ -8608,6 +8619,20 @@
               "home_score": 3,
               "away_score": 1,
               "winner": "Brazil"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
+            {
+              "match_number": 104,
+              "stage": "Final",
+              "home_team": "France",
+              "away_team": "Argentina",
+              "home_score": 2,
+              "away_score": 1,
+              "winner": "France"
             }
           ]
         }
@@ -9513,150 +9538,175 @@
               "home_score": 2,
               "away_score": 0,
               "winner": "Argentina"
-            },
+            }
+          ]
+        },
+        {
+          "stage": "Round of 16",
+          "matches": [
             {
               "match_number": 89,
-              "stage": "Round of 32",
-              "home_team": "W74",
-              "away_team": "W77",
+              "stage": "Round of 16",
+              "home_team": "Germany",
+              "away_team": "Spain",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W74"
+              "winner": "Germany"
             },
             {
               "match_number": 90,
-              "stage": "Round of 32",
-              "home_team": "W73",
-              "away_team": "W75",
+              "stage": "Round of 16",
+              "home_team": "Mexico",
+              "away_team": "Netherlands",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W73"
+              "winner": "Mexico"
             },
             {
               "match_number": 91,
-              "stage": "Round of 32",
-              "home_team": "W76",
-              "away_team": "W78",
+              "stage": "Round of 16",
+              "home_team": "Brazil",
+              "away_team": "Ecuador",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W76"
+              "winner": "Brazil"
             },
             {
               "match_number": 92,
-              "stage": "Round of 32",
-              "home_team": "W79",
-              "away_team": "W80",
+              "stage": "Round of 16",
+              "home_team": "Mexico",
+              "away_team": "Argentina",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W79"
+              "winner": "Mexico"
             },
             {
               "match_number": 93,
-              "stage": "Round of 32",
-              "home_team": "W83",
-              "away_team": "W84",
+              "stage": "Round of 16",
+              "home_team": "Portugal",
+              "away_team": "Spain",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W83"
+              "winner": "Portugal"
             },
             {
               "match_number": 94,
-              "stage": "Round of 32",
-              "home_team": "W81",
-              "away_team": "W82",
+              "stage": "Round of 16",
+              "home_team": "Switzerland",
+              "away_team": "Belgium",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W81"
+              "winner": "Switzerland"
             },
             {
               "match_number": 95,
-              "stage": "Round of 32",
-              "home_team": "W86",
-              "away_team": "W88",
+              "stage": "Round of 16",
+              "home_team": "Germany",
+              "away_team": "Argentina",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W86"
+              "winner": "Germany"
             },
             {
               "match_number": 96,
-              "stage": "Round of 32",
-              "home_team": "W85",
-              "away_team": "W87",
+              "stage": "Round of 16",
+              "home_team": "Brazil",
+              "away_team": "Portugal",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W85"
-            },
+              "winner": "Brazil"
+            }
+          ]
+        },
+        {
+          "stage": "Quarter-final",
+          "matches": [
             {
               "match_number": 97,
-              "stage": "Round of 32",
-              "home_team": "W89",
-              "away_team": "W90",
+              "stage": "Quarter-final",
+              "home_team": "Germany",
+              "away_team": "Mexico",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W89"
+              "winner": "Germany"
             },
             {
               "match_number": 98,
-              "stage": "Round of 32",
-              "home_team": "W93",
-              "away_team": "W94",
+              "stage": "Quarter-final",
+              "home_team": "Portugal",
+              "away_team": "Switzerland",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W93"
+              "winner": "Portugal"
             },
             {
               "match_number": 99,
-              "stage": "Round of 32",
-              "home_team": "W91",
-              "away_team": "W92",
+              "stage": "Quarter-final",
+              "home_team": "Brazil",
+              "away_team": "Mexico",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W91"
+              "winner": "Brazil"
             },
             {
               "match_number": 100,
-              "stage": "Round of 32",
-              "home_team": "W95",
-              "away_team": "W96",
+              "stage": "Quarter-final",
+              "home_team": "Germany",
+              "away_team": "Brazil",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W95"
-            },
+              "winner": "Germany"
+            }
+          ]
+        },
+        {
+          "stage": "Semi-final",
+          "matches": [
             {
               "match_number": 101,
-              "stage": "Round of 32",
-              "home_team": "W97",
-              "away_team": "W98",
+              "stage": "Semi-final",
+              "home_team": "Germany",
+              "away_team": "Portugal",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W97"
+              "winner": "Germany"
             },
             {
               "match_number": 102,
-              "stage": "Round of 32",
-              "home_team": "W99",
-              "away_team": "W100",
+              "stage": "Semi-final",
+              "home_team": "Brazil",
+              "away_team": "Germany",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W99"
-            },
+              "winner": "Brazil"
+            }
+          ]
+        },
+        {
+          "stage": "Third-place match",
+          "matches": [
             {
               "match_number": 103,
-              "stage": "Round of 32",
-              "home_team": "L101",
-              "away_team": "L102",
+              "stage": "Third-place match",
+              "home_team": "Portugal",
+              "away_team": "Germany",
               "home_score": 0,
               "away_score": 0,
-              "winner": "L101"
-            },
+              "winner": "Portugal"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
             {
               "match_number": 104,
-              "stage": "Round of 32",
-              "home_team": "W101",
-              "away_team": "W102",
+              "stage": "Final",
+              "home_team": "Germany",
+              "away_team": "Brazil",
               "home_score": 0,
               "away_score": 0,
-              "winner": "W101"
+              "winner": "Germany"
             }
           ]
         }
@@ -10562,150 +10612,175 @@
               "home_score": 1,
               "away_score": 2,
               "winner": "Egypt"
-            },
+            }
+          ]
+        },
+        {
+          "stage": "Round of 16",
+          "matches": [
             {
               "match_number": 89,
-              "stage": "Round of 32",
-              "home_team": "W74",
-              "away_team": "W77",
+              "stage": "Round of 16",
+              "home_team": "Germany",
+              "away_team": "France",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W74"
+              "winner": "Germany"
             },
             {
               "match_number": 90,
-              "stage": "Round of 32",
-              "home_team": "W73",
-              "away_team": "W75",
+              "stage": "Round of 16",
+              "home_team": "Canada",
+              "away_team": "Netherlands",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W75"
+              "winner": "Netherlands"
             },
             {
               "match_number": 91,
-              "stage": "Round of 32",
-              "home_team": "W76",
-              "away_team": "W78",
+              "stage": "Round of 16",
+              "home_team": "Brazil",
+              "away_team": "Senegal",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W76"
+              "winner": "Brazil"
             },
             {
               "match_number": 92,
-              "stage": "Round of 32",
-              "home_team": "W79",
-              "away_team": "W80",
+              "stage": "Round of 16",
+              "home_team": "Czech Republic",
+              "away_team": "England",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W80"
+              "winner": "England"
             },
             {
               "match_number": 93,
-              "stage": "Round of 32",
-              "home_team": "W83",
-              "away_team": "W84",
+              "stage": "Round of 16",
+              "home_team": "Croatia",
+              "away_team": "Spain",
               "home_score": 2,
               "away_score": 0,
-              "winner": "W83"
+              "winner": "Croatia"
             },
             {
               "match_number": 94,
-              "stage": "Round of 32",
-              "home_team": "W81",
-              "away_team": "W82",
+              "stage": "Round of 16",
+              "home_team": "United States",
+              "away_team": "South Korea",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W82"
+              "winner": "South Korea"
             },
             {
               "match_number": 95,
-              "stage": "Round of 32",
-              "home_team": "W86",
-              "away_team": "W88",
+              "stage": "Round of 16",
+              "home_team": "Argentina",
+              "away_team": "Egypt",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W86"
+              "winner": "Argentina"
             },
             {
               "match_number": 96,
-              "stage": "Round of 32",
-              "home_team": "W85",
-              "away_team": "W87",
+              "stage": "Round of 16",
+              "home_team": "Switzerland",
+              "away_team": "Portugal",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W87"
-            },
+              "winner": "Portugal"
+            }
+          ]
+        },
+        {
+          "stage": "Quarter-final",
+          "matches": [
             {
               "match_number": 97,
-              "stage": "Round of 32",
-              "home_team": "W89",
-              "away_team": "W90",
+              "stage": "Quarter-final",
+              "home_team": "Germany",
+              "away_team": "Netherlands",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W89"
+              "winner": "Germany"
             },
             {
               "match_number": 98,
-              "stage": "Round of 32",
-              "home_team": "W93",
-              "away_team": "W94",
+              "stage": "Quarter-final",
+              "home_team": "Croatia",
+              "away_team": "South Korea",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W94"
+              "winner": "South Korea"
             },
             {
               "match_number": 99,
-              "stage": "Round of 32",
-              "home_team": "W91",
-              "away_team": "W92",
+              "stage": "Quarter-final",
+              "home_team": "Brazil",
+              "away_team": "England",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W91"
+              "winner": "Brazil"
             },
             {
               "match_number": 100,
-              "stage": "Round of 32",
-              "home_team": "W95",
-              "away_team": "W96",
+              "stage": "Quarter-final",
+              "home_team": "Argentina",
+              "away_team": "Portugal",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W96"
-            },
+              "winner": "Portugal"
+            }
+          ]
+        },
+        {
+          "stage": "Semi-final",
+          "matches": [
             {
               "match_number": 101,
-              "stage": "Round of 32",
-              "home_team": "W97",
-              "away_team": "W98",
+              "stage": "Semi-final",
+              "home_team": "Germany",
+              "away_team": "South Korea",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W97"
+              "winner": "Germany"
             },
             {
               "match_number": 102,
-              "stage": "Round of 32",
-              "home_team": "W99",
-              "away_team": "W100",
+              "stage": "Semi-final",
+              "home_team": "Brazil",
+              "away_team": "Portugal",
               "home_score": 1,
               "away_score": 2,
-              "winner": "W100"
-            },
+              "winner": "Portugal"
+            }
+          ]
+        },
+        {
+          "stage": "Third-place match",
+          "matches": [
             {
               "match_number": 103,
-              "stage": "Round of 32",
-              "home_team": "L101",
-              "away_team": "L102",
+              "stage": "Third-place match",
+              "home_team": "South Korea",
+              "away_team": "Brazil",
               "home_score": 1,
               "away_score": 2,
-              "winner": "L102"
-            },
+              "winner": "Brazil"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
             {
               "match_number": 104,
-              "stage": "Round of 32",
-              "home_team": "W101",
-              "away_team": "W102",
+              "stage": "Final",
+              "home_team": "Germany",
+              "away_team": "Portugal",
               "home_score": 2,
               "away_score": 1,
-              "winner": "W101"
+              "winner": "Germany"
             }
           ]
         }
@@ -11756,20 +11831,6 @@
           ]
         },
         {
-          "stage": "Final",
-          "matches": [
-            {
-              "match_number": 104,
-              "stage": "Final",
-              "home_team": "France",
-              "away_team": "Argentina",
-              "home_score": 1,
-              "away_score": 2,
-              "winner": "Argentina"
-            }
-          ]
-        },
-        {
           "stage": "Third-place match",
           "matches": [
             {
@@ -11780,6 +11841,20 @@
               "home_score": 1,
               "away_score": 2,
               "winner": "Brazil"
+            }
+          ]
+        },
+        {
+          "stage": "Final",
+          "matches": [
+            {
+              "match_number": 104,
+              "stage": "Final",
+              "home_team": "France",
+              "away_team": "Argentina",
+              "home_score": 1,
+              "away_score": 2,
+              "winner": "Argentina"
             }
           ]
         }
