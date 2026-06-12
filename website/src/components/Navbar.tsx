@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 const links = [
   ['/', 'Home'],
   ['/leaderboard', 'Leaderboard'],
+  ['/tournament', 'Tournament'],
   ['/models', 'Models'],
   ['/fixtures', 'Fixtures'],
   ['/predictions', 'Predictions'],

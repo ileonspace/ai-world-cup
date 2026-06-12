@@ -51,6 +51,24 @@ def _actual_match_by_number(session: Session) -> dict[int, Match]:
     }
 
 
+def _latest_valid_tournament_responses(
+    session: Session,
+) -> dict[int, TournamentManualResponse]:
+    responses = list(
+        session.exec(
+            select(TournamentManualResponse).where(
+                TournamentManualResponse.parse_status != "INVALID"
+            )
+        )
+    )
+    latest_by_model: dict[int, TournamentManualResponse] = {}
+    for response in responses:
+        current = latest_by_model.get(response.model_id)
+        if current is None or response.imported_at > current.imported_at:
+            latest_by_model[response.model_id] = response
+    return latest_by_model
+
+
 def _prediction_points(prediction: TournamentPrediction, match: Match | None) -> int | None:
     if not match or match.home_score is None or match.away_score is None:
         return None
@@ -288,6 +306,281 @@ def _knockout_payload(session: Session) -> dict[str, Any]:
     }
 
 
+def _team_index(session: Session) -> dict[str, dict[str, Any]]:
+    teams = {}
+    for team in session.exec(select(Team)):
+        group = team.group_name.replace("Group ", "") if team.group_name else None
+        teams[team.name] = {
+            "name": team.name,
+            "fifa_code": team.fifa_code,
+            "country": team.country,
+            "group": group,
+        }
+    return teams
+
+
+def _empty_group_row(team_name: str, team_meta: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    meta = team_meta.get(team_name, {})
+    return {
+        "team": team_name,
+        "fifa_code": meta.get("fifa_code"),
+        "country": meta.get("country"),
+        "matches_played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goals_for": 0,
+        "goals_against": 0,
+        "goal_difference": 0,
+        "points": 0,
+        "rank": 0,
+    }
+
+
+def _apply_group_result(
+    rows: dict[str, dict[str, Any]],
+    home_team: str,
+    away_team: str,
+    home_goals: int,
+    away_goals: int,
+) -> None:
+    for team_name in (home_team, away_team):
+        if team_name not in rows:
+            rows[team_name] = _empty_group_row(team_name, {})
+
+    home = rows[home_team]
+    away = rows[away_team]
+    home["matches_played"] += 1
+    away["matches_played"] += 1
+    home["goals_for"] += home_goals
+    home["goals_against"] += away_goals
+    away["goals_for"] += away_goals
+    away["goals_against"] += home_goals
+    if home_goals > away_goals:
+        home["wins"] += 1
+        home["points"] += 3
+        away["losses"] += 1
+    elif home_goals < away_goals:
+        away["wins"] += 1
+        away["points"] += 3
+        home["losses"] += 1
+    else:
+        home["draws"] += 1
+        away["draws"] += 1
+        home["points"] += 1
+        away["points"] += 1
+
+
+def _rank_group_rows(rows: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    ranked = []
+    for row in rows.values():
+        row["goal_difference"] = row["goals_for"] - row["goals_against"]
+        ranked.append(row)
+    ranked.sort(
+        key=lambda row: (
+            -row["points"],
+            -row["goal_difference"],
+            -row["goals_for"],
+            row["team"],
+        )
+    )
+    for index, row in enumerate(ranked, start=1):
+        row["rank"] = index
+    return ranked
+
+
+def _initial_group_rows(
+    team_meta: dict[str, dict[str, Any]],
+) -> dict[str, dict[str, dict[str, Any]]]:
+    groups: dict[str, dict[str, dict[str, Any]]] = defaultdict(dict)
+    for team_name, meta in team_meta.items():
+        group = meta.get("group")
+        if group:
+            groups[group][team_name] = _empty_group_row(team_name, team_meta)
+    return groups
+
+
+def _group_tables_from_matches(
+    grouped_rows: dict[str, dict[str, dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    return [
+        {"group": group, "rows": _rank_group_rows(rows)}
+        for group, rows in sorted(grouped_rows.items())
+    ]
+
+
+def _actual_tournament_view(
+    session: Session,
+    team_meta: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    groups = _initial_group_rows(team_meta)
+    knockout_matches = []
+    for match in session.exec(select(Match).order_by(Match.match_number, Match.id)):
+        group = match.group_name.replace("Group ", "") if match.group_name else None
+        if group and match.home_score is not None and match.away_score is not None:
+            groups.setdefault(group, {})
+            _apply_group_result(
+                groups[group],
+                match.home_team_name,
+                match.away_team_name,
+                match.home_score,
+                match.away_score,
+            )
+        elif not group:
+            knockout_matches.append(
+                {
+                    "match_number": match.match_number,
+                    "stage": match.stage or "Knockout",
+                    "home_team": match.home_team_name,
+                    "away_team": match.away_team_name,
+                    "home_score": match.home_score,
+                    "away_score": match.away_score,
+                    "winner": None,
+                }
+            )
+    return {
+        "source": {
+            "id": "actual",
+            "label": "Real Results",
+            "provider": "Official",
+            "kind": "actual",
+        },
+        "group_tables": _group_tables_from_matches(groups),
+        "knockout_rounds": _rounds_from_matches(knockout_matches),
+        "final_ranking": None,
+    }
+
+
+def _rounds_from_matches(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    round_order = {
+        "Round of 32": 1,
+        "Round of 16": 2,
+        "Quarter-finals": 3,
+        "Quarterfinals": 3,
+        "Quarter-final": 3,
+        "Semi-finals": 4,
+        "Semifinals": 4,
+        "Semi-final": 4,
+        "Third-place play-off": 5,
+        "Third Place": 5,
+        "Final": 6,
+    }
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for match in matches:
+        grouped[match["stage"] or "Knockout"].append(match)
+    return [
+        {
+            "stage": stage,
+            "matches": sorted(
+                stage_matches,
+                key=lambda match: match.get("match_number") or 999,
+            ),
+        }
+        for stage, stage_matches in sorted(
+            grouped.items(),
+            key=lambda item: (round_order.get(item[0], 99), item[0]),
+        )
+    ]
+
+
+def _model_tournament_view(
+    response: TournamentManualResponse,
+    model: LLMModel | None,
+    predictions: list[TournamentPrediction],
+    final_ranking: PredictedFinalRanking | None,
+    team_meta: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    groups = _initial_group_rows(team_meta)
+    knockout_matches = []
+    for prediction in predictions:
+        group = prediction.group_name.replace("Group ", "") if prediction.group_name else None
+        if prediction.is_official_fixture and group:
+            groups.setdefault(group, {})
+            _apply_group_result(
+                groups[group],
+                prediction.home_team,
+                prediction.away_team,
+                prediction.predicted_home_goals,
+                prediction.predicted_away_goals,
+            )
+        elif not prediction.is_official_fixture:
+            knockout_matches.append(
+                {
+                    "match_number": prediction.match_number,
+                    "stage": prediction.stage,
+                    "home_team": prediction.home_team,
+                    "away_team": prediction.away_team,
+                    "home_score": prediction.predicted_home_goals,
+                    "away_score": prediction.predicted_away_goals,
+                    "winner": prediction.predicted_winner,
+                }
+            )
+    return {
+        "source": {
+            "id": f"model-{response.model_id}",
+            "label": model.model_display_name if model else str(response.model_id),
+            "provider": model.provider if model else "",
+            "kind": "model",
+        },
+        "group_tables": _group_tables_from_matches(groups),
+        "knockout_rounds": _rounds_from_matches(knockout_matches),
+        "final_ranking": {
+            "champion": final_ranking.champion,
+            "runner_up": final_ranking.runner_up,
+            "third_place": final_ranking.third_place,
+            "fourth_place": final_ranking.fourth_place,
+        }
+        if final_ranking
+        else None,
+    }
+
+
+def _tournament_views_payload(session: Session) -> dict[str, Any]:
+    team_meta = _team_index(session)
+    models = _model_by_id(session)
+    latest_responses = _latest_valid_tournament_responses(session)
+    response_ids = {response.id for response in latest_responses.values() if response.id}
+    predictions_by_response: dict[int, list[TournamentPrediction]] = defaultdict(list)
+    for prediction in session.exec(
+        select(TournamentPrediction).order_by(
+            TournamentPrediction.tournament_manual_response_id,
+            TournamentPrediction.match_number,
+        )
+    ):
+        if prediction.tournament_manual_response_id in response_ids:
+            predictions_by_response[prediction.tournament_manual_response_id].append(prediction)
+
+    rankings_by_response = {
+        ranking.tournament_manual_response_id: ranking
+        for ranking in session.exec(select(PredictedFinalRanking))
+        if ranking.tournament_manual_response_id in response_ids
+    }
+    views = [_actual_tournament_view(session, team_meta)]
+    for response in sorted(
+        latest_responses.values(),
+        key=lambda item: (
+            models.get(item.model_id).model_display_name
+            if models.get(item.model_id)
+            else str(item.model_id)
+        ),
+    ):
+        if response.id is None:
+            continue
+        views.append(
+            _model_tournament_view(
+                response,
+                models.get(response.model_id),
+                predictions_by_response.get(response.id, []),
+                rankings_by_response.get(response.id),
+                team_meta,
+            )
+        )
+    return {
+        "sources": [view["source"] for view in views],
+        "views": views,
+    }
+
+
 def _snapshots_payload(
     session: Session, prompt: TournamentPromptRun | None
 ) -> list[dict[str, Any]]:
@@ -313,6 +606,7 @@ def export_site_data(session: Session, output_dir: Path | None = None) -> list[P
     predictions = _predictions_payload(session)
     groups = _groups_payload(session)
     knockout = _knockout_payload(session)
+    tournament_views = _tournament_views_payload(session)
     snapshots = _snapshots_payload(session, prompt)
     project_summary = {
         "project_name": "AI World Cup",
@@ -334,6 +628,7 @@ def export_site_data(session: Session, output_dir: Path | None = None) -> list[P
         "predictions.json": predictions,
         "groups.json": groups,
         "knockout.json": knockout,
+        "tournament_views.json": tournament_views,
         "snapshots.json": snapshots,
     }
     written = []

@@ -109,3 +109,62 @@ export type SnapshotInfo = {
   raw_file_path: string;
   prompt_version: string | null;
 };
+
+export type TournamentSource = {
+  id: string;
+  label: string;
+  provider: string;
+  kind: 'actual' | 'model';
+};
+
+export type TournamentGroupRow = {
+  rank: number;
+  team: string;
+  fifa_code: string | null;
+  country: string | null;
+  matches_played: number;
+  wins: number;
+  draws: number;
+  losses: number;
+  goals_for: number;
+  goals_against: number;
+  goal_difference: number;
+  points: number;
+};
+
+export type TournamentGroupTable = {
+  group: string;
+  rows: TournamentGroupRow[];
+};
+
+export type TournamentBracketMatch = {
+  match_number: number | null;
+  stage: string;
+  home_team: string;
+  away_team: string;
+  home_score: number | null;
+  away_score: number | null;
+  winner: string | null;
+};
+
+export type TournamentBracketRound = {
+  stage: string;
+  matches: TournamentBracketMatch[];
+};
+
+export type TournamentView = {
+  source: TournamentSource;
+  group_tables: TournamentGroupTable[];
+  knockout_rounds: TournamentBracketRound[];
+  final_ranking: {
+    champion: string;
+    runner_up: string;
+    third_place: string;
+    fourth_place: string;
+  } | null;
+};
+
+export type TournamentViewsPayload = {
+  sources: TournamentSource[];
+  views: TournamentView[];
+};

@@ -126,6 +126,7 @@ The website includes:
 
 - project overview
 - model leaderboard
+- tournament explorer for comparing real results and model brackets
 - total points by model
 - outcome accuracy
 - exact score accuracy

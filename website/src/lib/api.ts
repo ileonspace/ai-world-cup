@@ -6,7 +6,8 @@ import type {
   ModelInfo,
   Prediction,
   ProjectSummary,
-  SnapshotInfo
+  SnapshotInfo,
+  TournamentViewsPayload
 } from './types';
 
 async function loadJson<T>(name: string, fallback: T): Promise<T> {
@@ -48,5 +49,10 @@ export const api = {
       champion_predictions: [],
       awards_predictions: []
     }),
-  snapshots: () => loadJson<SnapshotInfo[]>('snapshots.json', [])
+  snapshots: () => loadJson<SnapshotInfo[]>('snapshots.json', []),
+  tournamentViews: () =>
+    loadJson<TournamentViewsPayload>('tournament_views.json', {
+      sources: [],
+      views: []
+    })
 };

@@ -11,6 +11,7 @@ import { MatchDetails } from './routes/MatchDetails';
 import { Methodology } from './routes/Methodology';
 import { ModelComparison } from './routes/ModelComparison';
 import { Predictions } from './routes/Predictions';
+import { TournamentExplorer } from './routes/TournamentExplorer';
 
 export const App: RouteObject[] = [
   {
@@ -19,6 +20,7 @@ export const App: RouteObject[] = [
     children: [
       { index: true, element: <Home /> },
       { path: 'leaderboard', element: <Leaderboard /> },
+      { path: 'tournament', element: <TournamentExplorer /> },
       { path: 'models', element: <ModelComparison /> },
       { path: 'fixtures', element: <Fixtures /> },
       { path: 'predictions', element: <Predictions /> },
