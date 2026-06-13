@@ -1062,7 +1062,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.8,
     "reasoning_short": "Switzerland dominates possession and comfortably overrides Qatar defensive strategy.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -1077,7 +1077,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.75,
     "reasoning_short": "Swiss precision secures win",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -1092,7 +1092,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.7,
     "reasoning_short": "Switzerland stronger.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -1107,7 +1107,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.7,
     "reasoning_short": "Switzerland better ranked side.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -1122,7 +1122,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.68,
     "reasoning_short": "Switzerland is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -1137,7 +1137,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.76,
     "reasoning_short": "Switzerland are the stronger and more complete team, with superior control in midfield and fewer defensive weaknesses.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -1152,7 +1152,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.73,
     "reasoning_short": "Switzerland have superior tournament quality and are favored to win comfortably.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -1167,7 +1167,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.75,
     "reasoning_short": "Switzerland consistently strong in knockout stages. Qatar struggled badly at 2022 home World Cup. Switzerland's European pedigree too much here.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -1182,7 +1182,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.7,
     "reasoning_short": "Switzerland's tournament experience and organization too much for Qatar.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -1197,7 +1197,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.85,
     "reasoning_short": "Switzerland's tactical discipline and clinical finishing prove too much for Qatar.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
