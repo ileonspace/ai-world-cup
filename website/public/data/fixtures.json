@@ -46,9 +46,9 @@
     "away_team": "Paraguay",
     "kickoff_time": null,
     "venue": "SoFi Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 4,
+    "away_score": 1,
     "winner": null
   },
   {

@@ -462,7 +462,7 @@
     "predicted_winner": "United States",
     "confidence": 0.75,
     "reasoning_short": "USA delivers strong performance on home turf against defensively resilient Paraguay.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -477,7 +477,7 @@
     "predicted_winner": "United States",
     "confidence": 0.7,
     "reasoning_short": "USA's home advantage prevails",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -492,7 +492,7 @@
     "predicted_winner": "United States",
     "confidence": 0.61,
     "reasoning_short": "USA edge.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -507,7 +507,7 @@
     "predicted_winner": "United States",
     "confidence": 0.7,
     "reasoning_short": "USA hosts with better recent form.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -522,7 +522,7 @@
     "predicted_winner": "United States",
     "confidence": 0.62,
     "reasoning_short": "United States is favored by venue context and overall squad quality; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -537,7 +537,7 @@
     "predicted_winner": "United States",
     "confidence": 0.62,
     "reasoning_short": "The United States are favored by depth, athleticism, and venue comfort, though Paraguay can remain dangerous in transition.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -552,7 +552,7 @@
     "predicted_winner": "United States",
     "confidence": 0.57,
     "reasoning_short": "The United States should control this match with crowd support and stronger squad balance.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -567,7 +567,7 @@
     "predicted_winner": "United States",
     "confidence": 0.65,
     "reasoning_short": "USA hosting at SoFi, strong squad with MLS and European talent. Paraguay competitive but USA's home advantage and quality prove decisive.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -582,7 +582,7 @@
     "predicted_winner": "United States",
     "confidence": 0.8,
     "reasoning_short": "USA's athleticism and home support too much for Paraguay.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -597,7 +597,7 @@
     "predicted_winner": "United States",
     "confidence": 0.8,
     "reasoning_short": "USA dominates possession and exploits Paraguay's defensive vulnerabilities.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
