@@ -1,7 +1,9 @@
-# AI World Cup
 <p align="center">
   <img src="AI_World_Cup_2026.png" alt="AI World Cup 2026" width="100%">
 </p>
+
+# AI World Cup
+
 
 **A public, reproducible benchmark for comparing LLMs on FIFA World Cup 2026 predictions.**
 
