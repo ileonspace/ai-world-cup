@@ -612,7 +612,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.7,
     "reasoning_short": "Scotland handles physicality well and outclasses Haiti with superior structure.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -627,7 +627,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.8,
     "reasoning_short": "Scotland's experience shines",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -642,7 +642,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.66,
     "reasoning_short": "Scotland stronger.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -657,7 +657,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.65,
     "reasoning_short": "Scotland superior quality over Haiti.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -672,7 +672,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.68,
     "reasoning_short": "Scotland is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -687,7 +687,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.69,
     "reasoning_short": "Scotland are the stronger side structurally and should control the match, especially without needing to chase a high tempo.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -702,7 +702,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.64,
     "reasoning_short": "Scotland are the stronger side on paper and should manage a solid away-style win.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -717,7 +717,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.68,
     "reasoning_short": "Scotland significantly stronger technically. Haiti's World Cup debut likely difficult against organized Scottish side. Clear quality gap expected.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -732,7 +732,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.7,
     "reasoning_short": "Scotland's physicality and set-piece prowess overcome Haiti.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -747,7 +747,7 @@
     "predicted_winner": "Scotland",
     "confidence": 0.7,
     "reasoning_short": "Scotland's physicality and set-piece threat secure a narrow victory.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Gemini",
@@ -762,7 +762,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.6,
     "reasoning_short": "Turkey edges dynamic midfield battle to win closely contested match.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -777,7 +777,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Tight contest ends in draw",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -792,7 +792,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Balanced teams.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -807,7 +807,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Balanced matchup with similar strengths.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -822,7 +822,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.58,
     "reasoning_short": "Turkey is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -837,7 +837,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.36,
     "reasoning_short": "This looks like a closely matched contest with similar physicality and competitive profiles, so a draw is the safest forecast.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -852,7 +852,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.3,
     "reasoning_short": "These teams are closely matched, so a draw is the safest group-stage call.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -867,7 +867,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.4,
     "reasoning_short": "Australia resilient after 2022 run; Turkey improving rapidly. Both sides capable of upset football. Neutral-ish BC Place suits even contest.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -882,7 +882,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Both sides physical and direct; likely a tight, competitive draw.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -897,7 +897,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.65,
     "reasoning_short": "Turkey's midfield control stifles Australia's attacking transitions.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
@@ -1362,7 +1362,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.95,
     "reasoning_short": "Germany cruises to dominant win over tournament underdogs.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -1377,7 +1377,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.9,
     "reasoning_short": "Germany dominates with efficiency",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -1392,7 +1392,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.84,
     "reasoning_short": "Major quality gap.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -1407,7 +1407,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.9,
     "reasoning_short": "Germany dominant against minnows.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -1422,7 +1422,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.75,
     "reasoning_short": "Germany is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -1437,7 +1437,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.92,
     "reasoning_short": "Germany should dominate possession, territory, and chance volume against a much weaker opponent.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -1452,7 +1452,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.9,
     "reasoning_short": "Germany are clear favorites and should win decisively against a lower-ranked opponent.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -1467,7 +1467,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.95,
     "reasoning_short": "Massive gulf in class. Germany among world elite; Cura\u00e7ao debutants at this level. Comfortable German victory expected.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -1482,7 +1482,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.95,
     "reasoning_short": "Massive talent gap; Germany will dominate possession and score freely.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -1497,7 +1497,7 @@
     "predicted_winner": "Germany",
     "confidence": 0.95,
     "reasoning_short": "Germany dominates completely against a significantly weaker opponent.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
@@ -1512,7 +1512,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.65,
     "reasoning_short": "Netherlands edges tactical, fast-paced encounter against highly disciplined Japanese side.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -1527,7 +1527,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.8,
     "reasoning_short": "Dutch control midfield battle",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -1542,7 +1542,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.61,
     "reasoning_short": "Dutch edge.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -1557,7 +1557,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.75,
     "reasoning_short": "Dutch quality edges Asian side.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -1572,7 +1572,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.58,
     "reasoning_short": "Netherlands is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -1587,7 +1587,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.61,
     "reasoning_short": "The Netherlands have the edge in physicality and set pieces, though Japan's structure and tempo should keep it competitive.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -1602,7 +1602,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.58,
     "reasoning_short": "The Netherlands have slightly more quality, though Japan should remain competitive.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -1617,7 +1617,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.58,
     "reasoning_short": "Netherlands strong European contender; Japan increasingly dangerous with Bundesliga-heavy squad. Netherlands' physical presence and experience edges it.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -1632,7 +1632,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.75,
     "reasoning_short": "Dutch creativity and physicality too much for disciplined Japan.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -1647,7 +1647,7 @@
     "predicted_winner": "Netherlands",
     "confidence": 0.7,
     "reasoning_short": "Netherlands' wing play creates enough chances to edge a competitive Japan side.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",

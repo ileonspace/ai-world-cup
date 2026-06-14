@@ -59,9 +59,9 @@
     "away_team": "Scotland",
     "kickoff_time": null,
     "venue": "Gillette Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -72,9 +72,9 @@
     "away_team": "Turkey",
     "kickoff_time": null,
     "venue": "BC Place",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 2,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -124,9 +124,9 @@
     "away_team": "Cura\u00e7ao",
     "kickoff_time": null,
     "venue": "NRG Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 7,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -137,9 +137,9 @@
     "away_team": "Japan",
     "kickoff_time": null,
     "venue": "AT&T Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 2,
+    "away_score": 2,
     "winner": null
   },
   {
