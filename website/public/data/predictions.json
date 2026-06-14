@@ -912,7 +912,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.7,
     "reasoning_short": "Brazil unlocks Morocco's elite defensive block with world class individual quality.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -927,7 +927,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.85,
     "reasoning_short": "Brazil's firepower too much",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -942,7 +942,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.67,
     "reasoning_short": "Brazil slight edge.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -957,7 +957,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.85,
     "reasoning_short": "Brazil favorites with superior talent.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -972,7 +972,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.58,
     "reasoning_short": "Brazil is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -987,7 +987,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.74,
     "reasoning_short": "Brazil have the higher attacking ceiling, but Morocco's organization and counterattacking threat make this a tighter scoreline than usual.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -1002,7 +1002,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.81,
     "reasoning_short": "Brazil are among the strongest teams in the field and should open with a win.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -1017,7 +1017,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.6,
     "reasoning_short": "Brazil perennial contender with attacking depth. Morocco proven giant-killers but Brazil's individual quality and tournament experience edges it.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -1032,7 +1032,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.8,
     "reasoning_short": "Brazil's individual quality overcomes Morocco's defensive discipline.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -1047,7 +1047,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.75,
     "reasoning_short": "Brazil's individual brilliance overwhelms Morocco's organized defense.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
