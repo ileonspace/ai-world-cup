@@ -338,30 +338,30 @@
               "rank": 1
             },
             {
-              "team": "Ecuador",
-              "fifa_code": "ECU",
-              "country": "Ecuador",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
-              "rank": 2
-            },
-            {
               "team": "Ivory Coast",
               "fifa_code": "CIV",
               "country": "Ivory Coast",
-              "matches_played": 0,
-              "wins": 0,
+              "matches_played": 1,
+              "wins": 1,
               "draws": 0,
               "losses": 0,
-              "goals_for": 0,
+              "goals_for": 1,
               "goals_against": 0,
-              "goal_difference": 0,
+              "goal_difference": 1,
+              "points": 3,
+              "rank": 2
+            },
+            {
+              "team": "Ecuador",
+              "fifa_code": "ECU",
+              "country": "Ecuador",
+              "matches_played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "goals_for": 0,
+              "goals_against": 1,
+              "goal_difference": -1,
               "points": 0,
               "rank": 3
             },
@@ -385,6 +385,20 @@
           "group": "F",
           "rows": [
             {
+              "team": "Sweden",
+              "fifa_code": "SWE",
+              "country": "Sweden",
+              "matches_played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "goals_for": 5,
+              "goals_against": 1,
+              "goal_difference": 4,
+              "points": 3,
+              "rank": 1
+            },
+            {
               "team": "Japan",
               "fifa_code": "JPN",
               "country": "Japan",
@@ -396,7 +410,7 @@
               "goals_against": 2,
               "goal_difference": 0,
               "points": 1,
-              "rank": 1
+              "rank": 2
             },
             {
               "team": "Netherlands",
@@ -410,33 +424,19 @@
               "goals_against": 2,
               "goal_difference": 0,
               "points": 1,
-              "rank": 2
-            },
-            {
-              "team": "Sweden",
-              "fifa_code": "SWE",
-              "country": "Sweden",
-              "matches_played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
-              "points": 0,
               "rank": 3
             },
             {
               "team": "Tunisia",
               "fifa_code": "TUN",
               "country": "Tunisia",
-              "matches_played": 0,
+              "matches_played": 1,
               "wins": 0,
               "draws": 0,
-              "losses": 0,
-              "goals_for": 0,
-              "goals_against": 0,
-              "goal_difference": 0,
+              "losses": 1,
+              "goals_for": 1,
+              "goals_against": 5,
+              "goal_difference": -4,
               "points": 0,
               "rank": 4
             }

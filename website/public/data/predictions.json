@@ -1212,7 +1212,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.55,
     "reasoning_short": "Athletic match-up finishes level as both teams counter each other well.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -1227,7 +1227,7 @@
     "predicted_winner": "Ivory Coast",
     "confidence": 0.65,
     "reasoning_short": "Ivory Coast's pace decisive",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "GPT-5.5",
@@ -1242,7 +1242,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Close contest.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -1257,7 +1257,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Even contest between African and South American sides.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -1272,7 +1272,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Snapshot lacks player-form data; the matchup appears balanced, so a low-scoring draw is projected.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -1287,7 +1287,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.39,
     "reasoning_short": "Both teams combine physicality and pace, and neither has a clear structural edge, so shared points are plausible.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -1302,7 +1302,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.33,
     "reasoning_short": "This looks like a tight matchup between two athletic, organized teams.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -1317,7 +1317,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.38,
     "reasoning_short": "Both sides possess genuine talent. Ivory Coast's African flair vs Ecuador's South American grit. Closely matched on paper; draw reasonable.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -1332,7 +1332,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.65,
     "reasoning_short": "Physical battle; both have pace on counter, likely stalemate.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -1347,7 +1347,7 @@
     "predicted_winner": "Ecuador",
     "confidence": 0.6,
     "reasoning_short": "Ecuador's high press disrupts Ivory Coast's build-up play.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
@@ -1662,7 +1662,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.7,
     "reasoning_short": "Sweden maximizes physical advantage and set-pieces to overcome Tunisia.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -1677,7 +1677,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.7,
     "reasoning_short": "Sweden's height prevails",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -1692,7 +1692,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.56,
     "reasoning_short": "Slight advantage.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -1707,7 +1707,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.65,
     "reasoning_short": "Sweden slight edge in European experience.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -1722,7 +1722,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Snapshot lacks player-form data; the matchup appears balanced, so a low-scoring draw is projected.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -1737,7 +1737,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.54,
     "reasoning_short": "Sweden are slightly more likely to convert one decisive chance and protect the lead in a low-scoring game.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -1752,7 +1752,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.56,
     "reasoning_short": "Sweden's structure and physical edge should be enough for a narrow win.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -1767,7 +1767,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.65,
     "reasoning_short": "Sweden physically strong with solid European base. Tunisia defensively organized but lacking attacking punch. Sweden should control this comfortably.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -1782,7 +1782,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.65,
     "reasoning_short": "Sweden's set-piece threat and aerial advantage decide a close game.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -1797,7 +1797,7 @@
     "predicted_winner": "Sweden",
     "confidence": 0.65,
     "reasoning_short": "Sweden's aerial dominance and defensive solidity secure a narrow win.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
