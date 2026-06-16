@@ -7,8 +7,8 @@
     "group_stage_points": 40,
     "group_standing_points": 0,
     "knockout_points": 0,
-    "exact_score_accuracy": 0.16666666666666666,
-    "outcome_accuracy": 0.5,
+    "exact_score_accuracy": 0.125,
+    "outcome_accuracy": 0.375,
     "average_confidence": 0.686057692307692,
     "champion_prediction": "France"
   },
@@ -20,8 +20,8 @@
     "group_stage_points": 37,
     "group_standing_points": 0,
     "knockout_points": 0,
-    "exact_score_accuracy": 0.08333333333333333,
-    "outcome_accuracy": 0.5,
+    "exact_score_accuracy": 0.0625,
+    "outcome_accuracy": 0.375,
     "average_confidence": 0.7326923076923078,
     "champion_prediction": "France"
   },
@@ -33,8 +33,8 @@
     "group_stage_points": 35,
     "group_standing_points": 0,
     "knockout_points": 0,
-    "exact_score_accuracy": 0.16666666666666666,
-    "outcome_accuracy": 0.4166666666666667,
+    "exact_score_accuracy": 0.125,
+    "outcome_accuracy": 0.3125,
     "average_confidence": 0.6068269230769233,
     "champion_prediction": "Spain"
   },
@@ -46,8 +46,8 @@
     "group_stage_points": 31,
     "group_standing_points": 0,
     "knockout_points": 0,
-    "exact_score_accuracy": 0.08333333333333333,
-    "outcome_accuracy": 0.4166666666666667,
+    "exact_score_accuracy": 0.0625,
+    "outcome_accuracy": 0.3125,
     "average_confidence": 0.6522115384615383,
     "champion_prediction": "Argentina"
   },
@@ -59,8 +59,8 @@
     "group_stage_points": 31,
     "group_standing_points": 0,
     "knockout_points": 0,
-    "exact_score_accuracy": 0.08333333333333333,
-    "outcome_accuracy": 0.4166666666666667,
+    "exact_score_accuracy": 0.0625,
+    "outcome_accuracy": 0.3125,
     "average_confidence": 0.7144230769230769,
     "champion_prediction": "Brazil"
   },
@@ -72,8 +72,8 @@
     "group_stage_points": 31,
     "group_standing_points": 0,
     "knockout_points": 0,
-    "exact_score_accuracy": 0.08333333333333333,
-    "outcome_accuracy": 0.4166666666666667,
+    "exact_score_accuracy": 0.0625,
+    "outcome_accuracy": 0.3125,
     "average_confidence": 0.6269230769230767,
     "champion_prediction": "Brazil"
   },
@@ -85,8 +85,8 @@
     "group_stage_points": 31,
     "group_standing_points": 0,
     "knockout_points": 0,
-    "exact_score_accuracy": 0.08333333333333333,
-    "outcome_accuracy": 0.4166666666666667,
+    "exact_score_accuracy": 0.0625,
+    "outcome_accuracy": 0.3125,
     "average_confidence": 0.6173076923076922,
     "champion_prediction": "Brazil"
   },
@@ -98,8 +98,8 @@
     "group_stage_points": 31,
     "group_standing_points": 0,
     "knockout_points": 0,
-    "exact_score_accuracy": 0.08333333333333333,
-    "outcome_accuracy": 0.4166666666666667,
+    "exact_score_accuracy": 0.0625,
+    "outcome_accuracy": 0.3125,
     "average_confidence": 0.7221153846153853,
     "champion_prediction": "Argentina"
   },
@@ -112,7 +112,7 @@
     "group_standing_points": 0,
     "knockout_points": 0,
     "exact_score_accuracy": 0.0,
-    "outcome_accuracy": 0.4166666666666667,
+    "outcome_accuracy": 0.3125,
     "average_confidence": 0.7024038461538459,
     "champion_prediction": "France"
   },
@@ -125,7 +125,7 @@
     "group_standing_points": 0,
     "knockout_points": 0,
     "exact_score_accuracy": 0.0,
-    "outcome_accuracy": 0.4166666666666667,
+    "outcome_accuracy": 0.3125,
     "average_confidence": 0.6064423076923078,
     "champion_prediction": "Brazil"
   }
