@@ -1,5 +1,26 @@
 [
   {
+    "data_snapshot_id": 25,
+    "source_name": "worldcup26",
+    "created_at": "2026-06-17T10:37:49.491242",
+    "raw_file_path": "data/snapshots/worldcup26_8619fccf0d66.json",
+    "prompt_version": "v1"
+  },
+  {
+    "data_snapshot_id": 24,
+    "source_name": "openfootball",
+    "created_at": "2026-06-17T10:36:53.466265",
+    "raw_file_path": "data/snapshots/openfootball_be0e370e0e75.json",
+    "prompt_version": "v1"
+  },
+  {
+    "data_snapshot_id": 23,
+    "source_name": "worldcup26",
+    "created_at": "2026-06-17T10:36:18.942670",
+    "raw_file_path": "data/snapshots/worldcup26_2415cc00bd6d.json",
+    "prompt_version": "v1"
+  },
+  {
     "data_snapshot_id": 22,
     "source_name": "worldcup26",
     "created_at": "2026-06-16T12:10:06.420426",

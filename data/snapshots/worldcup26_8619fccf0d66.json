@@ -1,0 +1,706 @@
+{
+  "errors": {
+    "games": "worldcup26 request failed for https://worldcup26.ir/get/games: [Errno -2] Name or service not known",
+    "groups": "worldcup26 request failed for https://worldcup26.ir/get/groups: [Errno -2] Name or service not known"
+  },
+  "payload": {
+    "games": [],
+    "groups": [],
+    "stadiums": {
+      "stadiums": [
+        {
+          "_id": "679c9c8a5749c4077500f001",
+          "capacity": 83000,
+          "city_en": "Mexico City",
+          "city_fa": "\u0645\u06a9\u0632\u06cc\u06a9\u0648\u0633\u06cc\u062a\u06cc",
+          "country_en": "Mexico",
+          "country_fa": "\u0645\u06a9\u0632\u06cc\u06a9",
+          "fifa_name": "Mexico City Stadium",
+          "id": "1",
+          "name_en": "Estadio Azteca",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0622\u0632\u062a\u06a9\u0627",
+          "region": "Central"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f002",
+          "capacity": 48000,
+          "city_en": "Guadalajara (Zapopan)",
+          "city_fa": "\u06af\u0648\u0627\u062f\u0627\u0644\u0627\u062e\u0627\u0631\u0627",
+          "country_en": "Mexico",
+          "country_fa": "\u0645\u06a9\u0632\u06cc\u06a9",
+          "fifa_name": "Estadio Guadalajara",
+          "id": "2",
+          "name_en": "Estadio Akron",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0622\u06a9\u0631\u0648\u0646",
+          "region": "Central"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f003",
+          "capacity": 53500,
+          "city_en": "Monterrey (Guadalupe)",
+          "city_fa": "\u0645\u0648\u0646\u062a\u0631\u06cc",
+          "country_en": "Mexico",
+          "country_fa": "\u0645\u06a9\u0632\u06cc\u06a9",
+          "fifa_name": "Estadio Monterrey",
+          "id": "3",
+          "name_en": "Estadio BBVA",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0628\u06cc\u200c\u0628\u06cc\u200c\u0648\u06cc\u200c\u0627\u06cc",
+          "region": "Central"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f004",
+          "capacity": 94000,
+          "city_en": "Dallas (Arlington, Texas)",
+          "city_fa": "\u062f\u0627\u0644\u0627\u0633",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Dallas Stadium",
+          "id": "4",
+          "name_en": "AT&T Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0627\u06cc\u200c\u062a\u06cc\u200c\u0627\u0646\u062f\u200c\u062a\u06cc",
+          "region": "Central"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f005",
+          "capacity": 72000,
+          "city_en": "Houston",
+          "city_fa": "\u0647\u06cc\u0648\u0633\u062a\u0648\u0646",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Houston Stadium",
+          "id": "5",
+          "name_en": "NRG Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0627\u0646\u200c\u0622\u0631\u200c\u062c\u06cc",
+          "region": "Central"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f006",
+          "capacity": 73000,
+          "city_en": "Kansas City",
+          "city_fa": "\u06a9\u0627\u0646\u0632\u0627\u0633 \u0633\u06cc\u062a\u06cc",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Kansas City Stadium",
+          "id": "6",
+          "name_en": "GEHA Field at Arrowhead Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0627\u0631\u0648\u0647\u062f",
+          "region": "Central"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f007",
+          "capacity": 75000,
+          "city_en": "Atlanta",
+          "city_fa": "\u0622\u062a\u0644\u0627\u0646\u062a\u0627",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Atlanta Stadium",
+          "id": "7",
+          "name_en": "Mercedes-Benz Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0645\u0631\u0633\u062f\u0633 \u0628\u0646\u0632",
+          "region": "Eastern"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f008",
+          "capacity": 65000,
+          "city_en": "Miami (Miami Gardens)",
+          "city_fa": "\u0645\u06cc\u0627\u0645\u06cc",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Miami Stadium",
+          "id": "8",
+          "name_en": "Hard Rock Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0647\u0627\u0631\u062f \u0631\u0627\u06a9",
+          "region": "Eastern"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f009",
+          "capacity": 65000,
+          "city_en": "Boston (Foxborough)",
+          "city_fa": "\u0628\u0648\u0633\u062a\u0648\u0646",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Boston Stadium",
+          "id": "9",
+          "name_en": "Gillette Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0698\u06cc\u0644\u062a",
+          "region": "Eastern"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f010",
+          "capacity": 69000,
+          "city_en": "Philadelphia",
+          "city_fa": "\u0641\u06cc\u0644\u0627\u062f\u0644\u0641\u06cc\u0627",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Philadelphia Stadium",
+          "id": "10",
+          "name_en": "Lincoln Financial Field",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0644\u06cc\u0646\u06a9\u0644\u0646 \u0641\u0627\u06cc\u0646\u0646\u0634\u0627\u0644",
+          "region": "Eastern"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f011",
+          "capacity": 82500,
+          "city_en": "New York/New Jersey (East Rutherford)",
+          "city_fa": "\u0646\u06cc\u0648\u06cc\u0648\u0631\u06a9/\u0646\u06cc\u0648\u062c\u0631\u0633\u06cc",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "New York/New Jersey Stadium",
+          "id": "11",
+          "name_en": "MetLife Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0645\u062a\u0644\u0627\u06cc\u0641",
+          "region": "Eastern"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f012",
+          "capacity": 45000,
+          "city_en": "Toronto",
+          "city_fa": "\u062a\u0648\u0631\u0646\u062a\u0648",
+          "country_en": "Canada",
+          "country_fa": "\u06a9\u0627\u0646\u0627\u062f\u0627",
+          "fifa_name": "Toronto Stadium",
+          "id": "12",
+          "name_en": "BMO Field",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0628\u06cc\u200c\u0627\u0645\u200c\u0627\u0648",
+          "region": "Eastern"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f013",
+          "capacity": 54000,
+          "city_en": "Vancouver",
+          "city_fa": "\u0648\u0646\u06a9\u0648\u0648\u0631",
+          "country_en": "Canada",
+          "country_fa": "\u06a9\u0627\u0646\u0627\u062f\u0627",
+          "fifa_name": "BC Place Vancouver",
+          "id": "13",
+          "name_en": "BC Place",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0628\u06cc\u200c\u0633\u06cc \u067e\u0644\u06cc\u0633",
+          "region": "Western"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f014",
+          "capacity": 69000,
+          "city_en": "Seattle",
+          "city_fa": "\u0633\u06cc\u0627\u062a\u0644",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Seattle Stadium",
+          "id": "14",
+          "name_en": "Lumen Field",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0644\u0648\u0645\u0646 \u0641\u06cc\u0644\u062f",
+          "region": "Western"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f015",
+          "capacity": 71000,
+          "city_en": "San Francisco Bay Area (Santa Clara)",
+          "city_fa": "\u0633\u0646\u200c\u0641\u0631\u0627\u0646\u0633\u06cc\u0633\u06a9\u0648",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "San Francisco Bay Area Stadium",
+          "id": "15",
+          "name_en": "Levi's Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0644\u06cc\u0648\u0627\u06cc\u0632",
+          "region": "Western"
+        },
+        {
+          "_id": "679c9c8a5749c4077500f016",
+          "capacity": 70000,
+          "city_en": "Los Angeles (Inglewood)",
+          "city_fa": "\u0644\u0633\u200c\u0622\u0646\u062c\u0644\u0633",
+          "country_en": "United States",
+          "country_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627",
+          "fifa_name": "Los Angeles Stadium",
+          "id": "16",
+          "name_en": "SoFi Stadium",
+          "name_fa": "\u0627\u0633\u062a\u0627\u062f\u06cc\u0648\u0645 \u0633\u0648\u0641\u0627\u06cc",
+          "region": "Western"
+        }
+      ]
+    },
+    "teams": {
+      "teams": [
+        {
+          "_id": "679c9c6b5749c4077500ea01",
+          "fifa_code": "MEX",
+          "flag": "https://flagcdn.com/w80/mx.png",
+          "groups": "A",
+          "id": "1",
+          "iso2": "MX",
+          "name_en": "Mexico",
+          "name_fa": "\u0645\u06a9\u0632\u06cc\u06a9"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea02",
+          "fifa_code": "RSA",
+          "flag": "https://flagcdn.com/w80/za.png",
+          "groups": "A",
+          "id": "2",
+          "iso2": "ZA",
+          "name_en": "South Africa",
+          "name_fa": "\u0622\u0641\u0631\u06cc\u0642\u0627\u06cc \u062c\u0646\u0648\u0628\u06cc"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea03",
+          "fifa_code": "KOR",
+          "flag": "https://flagcdn.com/w80/kr.png",
+          "groups": "A",
+          "id": "3",
+          "iso2": "KR",
+          "name_en": "South Korea",
+          "name_fa": "\u06a9\u0631\u0647 \u062c\u0646\u0648\u0628\u06cc"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea04",
+          "fifa_code": "CZE",
+          "flag": "https://flagcdn.com/w80/cz.png",
+          "groups": "A",
+          "id": "4",
+          "iso2": "CZ",
+          "name_en": "Czech Republic",
+          "name_fa": "\u062c\u0645\u0647\u0648\u0631\u06cc \u0686\u06a9"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea05",
+          "fifa_code": "CAN",
+          "flag": "https://flagcdn.com/w80/ca.png",
+          "groups": "B",
+          "id": "5",
+          "iso2": "CA",
+          "name_en": "Canada",
+          "name_fa": "\u06a9\u0627\u0646\u0627\u062f\u0627"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea06",
+          "fifa_code": "BIH",
+          "flag": "https://flagcdn.com/w80/ba.png",
+          "groups": "B",
+          "id": "6",
+          "iso2": "BA",
+          "name_en": "Bosnia and Herzegovina",
+          "name_fa": "\u0628\u0648\u0633\u0646\u06cc \u0648 \u0647\u0631\u0632\u06af\u0648\u06cc\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea07",
+          "fifa_code": "QAT",
+          "flag": "https://flagcdn.com/w80/qa.png",
+          "groups": "B",
+          "id": "7",
+          "iso2": "QA",
+          "name_en": "Qatar",
+          "name_fa": "\u0642\u0637\u0631"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea08",
+          "fifa_code": "SUI",
+          "flag": "https://flagcdn.com/w80/ch.png",
+          "groups": "B",
+          "id": "8",
+          "iso2": "CH",
+          "name_en": "Switzerland",
+          "name_fa": "\u0633\u0648\u0626\u06cc\u0633"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea09",
+          "fifa_code": "BRA",
+          "flag": "https://flagcdn.com/w80/br.png",
+          "groups": "C",
+          "id": "9",
+          "iso2": "BR",
+          "name_en": "Brazil",
+          "name_fa": "\u0628\u0631\u0632\u06cc\u0644"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea10",
+          "fifa_code": "MAR",
+          "flag": "https://flagcdn.com/w80/ma.png",
+          "groups": "C",
+          "id": "10",
+          "iso2": "MA",
+          "name_en": "Morocco",
+          "name_fa": "\u0645\u0631\u0627\u06a9\u0634"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea11",
+          "fifa_code": "HAI",
+          "flag": "https://flagcdn.com/w80/ht.png",
+          "groups": "C",
+          "id": "11",
+          "iso2": "HT",
+          "name_en": "Haiti",
+          "name_fa": "\u0647\u0627\u0626\u06cc\u062a\u06cc"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea12",
+          "fifa_code": "SCO",
+          "flag": "https://flagcdn.com/w80/gb-sct.png",
+          "groups": "C",
+          "id": "12",
+          "iso2": "SCO",
+          "name_en": "Scotland",
+          "name_fa": "\u0627\u0633\u06a9\u0627\u062a\u0644\u0646\u062f"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea13",
+          "fifa_code": "USA",
+          "flag": "https://flagcdn.com/w80/us.png",
+          "groups": "D",
+          "id": "13",
+          "iso2": "US",
+          "name_en": "United States",
+          "name_fa": "\u0622\u0645\u0631\u06cc\u06a9\u0627"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea14",
+          "fifa_code": "PAR",
+          "flag": "https://flagcdn.com/w80/py.png",
+          "groups": "D",
+          "id": "14",
+          "iso2": "PY",
+          "name_en": "Paraguay",
+          "name_fa": "\u067e\u0627\u0631\u0627\u06af\u0648\u0626\u0647"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea15",
+          "fifa_code": "AUS",
+          "flag": "https://flagcdn.com/w80/au.png",
+          "groups": "D",
+          "id": "15",
+          "iso2": "AU",
+          "name_en": "Australia",
+          "name_fa": "\u0627\u0633\u062a\u0631\u0627\u0644\u06cc\u0627"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea16",
+          "fifa_code": "TUR",
+          "flag": "https://flagcdn.com/w80/tr.png",
+          "groups": "D",
+          "id": "16",
+          "iso2": "TR",
+          "name_en": "Turkey",
+          "name_fa": "\u062a\u0631\u06a9\u06cc\u0647"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea17",
+          "fifa_code": "GER",
+          "flag": "https://flagcdn.com/w80/de.png",
+          "groups": "E",
+          "id": "17",
+          "iso2": "DE",
+          "name_en": "Germany",
+          "name_fa": "\u0622\u0644\u0645\u0627\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea18",
+          "fifa_code": "CUW",
+          "flag": "https://flagcdn.com/w80/cw.png",
+          "groups": "E",
+          "id": "18",
+          "iso2": "CW",
+          "name_en": "Cura\u00e7ao",
+          "name_fa": "\u06a9\u0648\u0631\u0627\u0633\u0627\u0626\u0648"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea19",
+          "fifa_code": "CIV",
+          "flag": "https://flagcdn.com/w80/ci.png",
+          "groups": "E",
+          "id": "19",
+          "iso2": "CI",
+          "name_en": "Ivory Coast",
+          "name_fa": "\u0633\u0627\u062d\u0644 \u0639\u0627\u062c"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea20",
+          "fifa_code": "ECU",
+          "flag": "https://flagcdn.com/w80/ec.png",
+          "groups": "E",
+          "id": "20",
+          "iso2": "EC",
+          "name_en": "Ecuador",
+          "name_fa": "\u0627\u06a9\u0648\u0627\u062f\u0648\u0631"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea21",
+          "fifa_code": "NED",
+          "flag": "https://flagcdn.com/w80/nl.png",
+          "groups": "F",
+          "id": "21",
+          "iso2": "NL",
+          "name_en": "Netherlands",
+          "name_fa": "\u0647\u0644\u0646\u062f"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea22",
+          "fifa_code": "JPN",
+          "flag": "https://flagcdn.com/w80/jp.png",
+          "groups": "F",
+          "id": "22",
+          "iso2": "JP",
+          "name_en": "Japan",
+          "name_fa": "\u0698\u0627\u067e\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea23",
+          "fifa_code": "SWE",
+          "flag": "https://flagcdn.com/w80/se.png",
+          "groups": "F",
+          "id": "23",
+          "iso2": "SE",
+          "name_en": "Sweden",
+          "name_fa": "\u0633\u0648\u0626\u062f"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea24",
+          "fifa_code": "TUN",
+          "flag": "https://flagcdn.com/w80/tn.png",
+          "groups": "F",
+          "id": "24",
+          "iso2": "TN",
+          "name_en": "Tunisia",
+          "name_fa": "\u062a\u0648\u0646\u0633"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea25",
+          "fifa_code": "BEL",
+          "flag": "https://flagcdn.com/w80/be.png",
+          "groups": "G",
+          "id": "25",
+          "iso2": "BE",
+          "name_en": "Belgium",
+          "name_fa": "\u0628\u0644\u0698\u06cc\u06a9"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea26",
+          "fifa_code": "EGY",
+          "flag": "https://flagcdn.com/w80/eg.png",
+          "groups": "G",
+          "id": "26",
+          "iso2": "EG",
+          "name_en": "Egypt",
+          "name_fa": "\u0645\u0635\u0631"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea27",
+          "fifa_code": "IRN",
+          "flag": "https://flagcdn.com/w80/ir.png",
+          "groups": "G",
+          "id": "27",
+          "iso2": "IR",
+          "name_en": "Iran",
+          "name_fa": "\u0627\u06cc\u0631\u0627\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea28",
+          "fifa_code": "NZL",
+          "flag": "https://flagcdn.com/w80/nz.png",
+          "groups": "G",
+          "id": "28",
+          "iso2": "NZ",
+          "name_en": "New Zealand",
+          "name_fa": "\u0646\u06cc\u0648\u0632\u06cc\u0644\u0646\u062f"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea29",
+          "fifa_code": "ESP",
+          "flag": "https://flagcdn.com/w80/es.png",
+          "groups": "H",
+          "id": "29",
+          "iso2": "ES",
+          "name_en": "Spain",
+          "name_fa": "\u0627\u0633\u067e\u0627\u0646\u06cc\u0627"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea30",
+          "fifa_code": "CPV",
+          "flag": "https://flagcdn.com/w80/cv.png",
+          "groups": "H",
+          "id": "30",
+          "iso2": "CV",
+          "name_en": "Cape Verde",
+          "name_fa": "\u06a9\u06cc\u067e \u0648\u0631\u062f"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea31",
+          "fifa_code": "KSA",
+          "flag": "https://flagcdn.com/w80/sa.png",
+          "groups": "H",
+          "id": "31",
+          "iso2": "SA",
+          "name_en": "Saudi Arabia",
+          "name_fa": "\u0639\u0631\u0628\u0633\u062a\u0627\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea32",
+          "fifa_code": "URU",
+          "flag": "https://flagcdn.com/w80/uy.png",
+          "groups": "H",
+          "id": "32",
+          "iso2": "UY",
+          "name_en": "Uruguay",
+          "name_fa": "\u0627\u0631\u0648\u06af\u0648\u0626\u0647"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea33",
+          "fifa_code": "FRA",
+          "flag": "https://flagcdn.com/w80/fr.png",
+          "groups": "I",
+          "id": "33",
+          "iso2": "FR",
+          "name_en": "France",
+          "name_fa": "\u0641\u0631\u0627\u0646\u0633\u0647"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea34",
+          "fifa_code": "SEN",
+          "flag": "https://flagcdn.com/w80/sn.png",
+          "groups": "I",
+          "id": "34",
+          "iso2": "SN",
+          "name_en": "Senegal",
+          "name_fa": "\u0633\u0646\u06af\u0627\u0644"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea35",
+          "fifa_code": "IRQ",
+          "flag": "https://flagcdn.com/w80/iq.png",
+          "groups": "I",
+          "id": "35",
+          "iso2": "IQ",
+          "name_en": "Iraq",
+          "name_fa": "\u0639\u0631\u0627\u0642"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea36",
+          "fifa_code": "NOR",
+          "flag": "https://flagcdn.com/w80/no.png",
+          "groups": "I",
+          "id": "36",
+          "iso2": "NO",
+          "name_en": "Norway",
+          "name_fa": "\u0646\u0631\u0648\u0698"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea37",
+          "fifa_code": "ARG",
+          "flag": "https://flagcdn.com/w80/ar.png",
+          "groups": "J",
+          "id": "37",
+          "iso2": "AR",
+          "name_en": "Argentina",
+          "name_fa": "\u0622\u0631\u0698\u0627\u0646\u062a\u06cc\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea38",
+          "fifa_code": "ALG",
+          "flag": "https://flagcdn.com/w80/dz.png",
+          "groups": "J",
+          "id": "38",
+          "iso2": "DZ",
+          "name_en": "Algeria",
+          "name_fa": "\u0627\u0644\u062c\u0632\u0627\u06cc\u0631"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea39",
+          "fifa_code": "AUT",
+          "flag": "https://flagcdn.com/w80/at.png",
+          "groups": "J",
+          "id": "39",
+          "iso2": "AT",
+          "name_en": "Austria",
+          "name_fa": "\u0627\u062a\u0631\u06cc\u0634"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea40",
+          "fifa_code": "JOR",
+          "flag": "https://flagcdn.com/w80/jo.png",
+          "groups": "J",
+          "id": "40",
+          "iso2": "JO",
+          "name_en": "Jordan",
+          "name_fa": "\u0627\u0631\u062f\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea41",
+          "fifa_code": "POR",
+          "flag": "https://flagcdn.com/w80/pt.png",
+          "groups": "K",
+          "id": "41",
+          "iso2": "PT",
+          "name_en": "Portugal",
+          "name_fa": "\u067e\u0631\u062a\u063a\u0627\u0644"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea42",
+          "fifa_code": "COD",
+          "flag": "https://flagcdn.com/w80/cd.png",
+          "groups": "K",
+          "id": "42",
+          "iso2": "CD",
+          "name_en": "Democratic Republic of the Congo",
+          "name_fa": "\u062c\u0645\u0647\u0648\u0631\u06cc \u062f\u0645\u0648\u06a9\u0631\u0627\u062a\u06cc\u06a9 \u06a9\u0646\u06af\u0648"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea43",
+          "fifa_code": "UZB",
+          "flag": "https://flagcdn.com/w80/uz.png",
+          "groups": "K",
+          "id": "43",
+          "iso2": "UZ",
+          "name_en": "Uzbekistan",
+          "name_fa": "\u0627\u0632\u0628\u06a9\u0633\u062a\u0627\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea44",
+          "fifa_code": "COL",
+          "flag": "https://flagcdn.com/w80/co.png",
+          "groups": "K",
+          "id": "44",
+          "iso2": "CO",
+          "name_en": "Colombia",
+          "name_fa": "\u06a9\u0644\u0645\u0628\u06cc\u0627"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea45",
+          "fifa_code": "ENG",
+          "flag": "https://flagcdn.com/w80/gb-eng.png",
+          "groups": "L",
+          "id": "45",
+          "iso2": "ENG",
+          "name_en": "England",
+          "name_fa": "\u0627\u0646\u06af\u0644\u0633\u062a\u0627\u0646"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea46",
+          "fifa_code": "CRO",
+          "flag": "https://flagcdn.com/w80/hr.png",
+          "groups": "L",
+          "id": "46",
+          "iso2": "HR",
+          "name_en": "Croatia",
+          "name_fa": "\u06a9\u0631\u0648\u0627\u0633\u06cc"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea47",
+          "fifa_code": "GHA",
+          "flag": "https://flagcdn.com/w80/gh.png",
+          "groups": "L",
+          "id": "47",
+          "iso2": "GH",
+          "name_en": "Ghana",
+          "name_fa": "\u063a\u0646\u0627"
+        },
+        {
+          "_id": "679c9c6b5749c4077500ea48",
+          "fifa_code": "PAN",
+          "flag": "https://flagcdn.com/w80/pa.png",
+          "groups": "L",
+          "id": "48",
+          "iso2": "PA",
+          "name_en": "Panama",
+          "name_fa": "\u067e\u0627\u0646\u0627\u0645\u0627"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "errors": {
+    "games": "worldcup26 request failed for https://worldcup26.ir/get/games: [Errno -2] Name or service not known",
+    "groups": "worldcup26 request failed for https://worldcup26.ir/get/groups: [Errno -2] Name or service not known",
+    "stadiums": "worldcup26 request failed for https://worldcup26.ir/get/stadiums: [Errno -2] Name or service not known",
+    "teams": "worldcup26 request failed for https://worldcup26.ir/get/teams: [Errno -2] Name or service not known"
+  },
+  "payload": {
+    "games": [],
+    "groups": [],
+    "stadiums": [],
+    "teams": []
+  }
+}
