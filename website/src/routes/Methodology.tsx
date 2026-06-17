@@ -1,4 +1,50 @@
+import { useEffect, useState } from 'react';
+import { ModelCard } from '../components/ModelCard';
+import { api } from '../lib/api';
+import type { ModelInfo } from '../lib/types';
+
+const scoringSections = [
+  {
+    title: 'Match prediction scoring',
+    rows: [
+      ['Exact score', '5'],
+      ['Correct outcome', '3'],
+      ['Correct winner', '2'],
+      ['Correct goal difference', '1']
+    ],
+    note: 'For draws, winner points are not awarded separately because the draw is already represented by the correct outcome.'
+  },
+  {
+    title: 'Group standing scoring',
+    rows: [
+      ['Correct group winner', '5'],
+      ['Correct top two teams', '5'],
+      ['Correct qualified team from group', '3 per team'],
+      ['Exact team rank', '2 per team']
+    ]
+  },
+  {
+    title: 'Knockout and tournament scoring',
+    rows: [
+      ['Correct team reaches Round of 32', '2'],
+      ['Correct team reaches Round of 16', '4'],
+      ['Correct team reaches quarter-final', '6'],
+      ['Correct team reaches semi-final', '8'],
+      ['Correct finalist', '12'],
+      ['Correct champion', '20'],
+      ['Correct runner-up', '10'],
+      ['Correct third place', '8'],
+      ['Correct fourth place', '5']
+    ],
+    note: 'Total tournament points are the sum of all applicable scoring components.'
+  }
+];
+
 export function Methodology() {
+  const [models, setModels] = useState<ModelInfo[]>([]);
+
+  useEffect(() => { void api.models().then(setModels); }, []);
+
   return (
     <div className="space-y-8">
       <section>
@@ -23,6 +69,20 @@ export function Methodology() {
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{text}</p>
           </article>
         ))}
+      </section>
+
+      <section className="space-y-4">
+        <div>
+          <h2 className="text-2xl font-semibold">Models compared</h2>
+          <p className="mt-2 max-w-3xl text-slate-600 dark:text-slate-300">
+            These are the submitted model runs included in the current exported benchmark data.
+            Search-enabled models should be interpreted separately unless every model has the same
+            retrieval access.
+          </p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-3">
+          {models.map((model) => <ModelCard key={model.id} model={model} />)}
+        </div>
       </section>
 
       <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950">
@@ -54,6 +114,44 @@ export function Methodology() {
             final ranking predictions.
           </p>
         </article>
+      </section>
+
+      <section className="space-y-4">
+        <div>
+          <h2 className="text-2xl font-semibold">How points are calculated</h2>
+          <p className="mt-2 max-w-3xl text-slate-600 dark:text-slate-300">
+            Scores update as real results become available. Each model's leaderboard total is the
+            sum of match-level, group-standing, knockout, and final-ranking points.
+          </p>
+        </div>
+        <div className="grid gap-4 lg:grid-cols-3">
+          {scoringSections.map((section) => (
+            <article key={section.title} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-950">
+              <h3 className="text-lg font-semibold">{section.title}</h3>
+              <div className="table-scroll mt-4">
+                <table className="min-w-full text-left text-sm">
+                  <thead className="text-slate-500 dark:text-slate-400">
+                    <tr>
+                      <th className="pb-2 font-semibold">Prediction type</th>
+                      <th className="pb-2 text-right font-semibold">Points</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {section.rows.map(([label, points]) => (
+                      <tr key={label} className="border-t border-slate-100 dark:border-slate-800">
+                        <td className="py-2 pr-3">{label}</td>
+                        <td className="py-2 text-right font-semibold">{points}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {section.note ? (
+                <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">{section.note}</p>
+              ) : null}
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="rounded-lg border border-amber-200 bg-amber-50 p-5 text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-100">

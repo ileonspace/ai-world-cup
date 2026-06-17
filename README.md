@@ -56,7 +56,7 @@ AI World Cup solves this by fixing the benchmark conditions:
 4. Raw responses are saved exactly as returned.
 5. Predictions are validated before scoring.
 6. The leaderboard is updated using transparent scoring rules.
-7. The public website displays predictions, charts, tables, fixtures, and results.
+7. The public website displays the leaderboard, tournament explorer, predictions, methodology, data snapshots, and results.
 
 ---
 
@@ -133,15 +133,14 @@ The website includes:
 - outcome accuracy
 - exact score accuracy
 - average confidence
-- fixtures and results
-- all imported predictions
-- match-by-match model comparison
-- group predictions
-- knockout predictions
+- match-by-match predictions with real results
+- group-stage and knockout filtering inside predictions
+- team, model, group, and round filters
 - champion predictions
-- prompt protocol
+- model details
+- prompt protocol and submission methodology
+- scoring rules
 - data snapshot information
-- methodology and scoring explanation
 
 Website data is exported from the Python pipeline into:
 
@@ -271,6 +270,8 @@ Recommended separation:
 
 - **Main leaderboard:** models using only the provided prompt data.
 - **Search-augmented leaderboard:** tools that use live web search or external retrieval.
+
+The current website shows submitted model details on the Methodology page, alongside the prompt protocol and scoring rules.
 
 ---
 
@@ -522,6 +523,8 @@ git add README.md website/public/data
 git commit -m "Update AI World Cup website data and README leaderboard"
 git push
 ```
+
+For website UI changes, also stage the relevant `website/src` files before committing.
 
 ---
 

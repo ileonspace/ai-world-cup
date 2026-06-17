@@ -5,11 +5,7 @@ const links = [
   ['/', 'Home'],
   ['/leaderboard', 'Leaderboard'],
   ['/tournament', 'Tournament'],
-  ['/models', 'Models'],
-  ['/fixtures', 'Fixtures'],
   ['/predictions', 'Predictions'],
-  ['/groups', 'Groups'],
-  ['/knockout', 'Knockout'],
   ['/methodology', 'Methodology'],
   ['/data-snapshot', 'Data'],
   ['/about', 'About']

@@ -1,6 +1,5 @@
 import type {
   Fixture,
-  GroupsPayload,
   KnockoutPayload,
   LeaderboardRow,
   ModelInfo,
@@ -38,12 +37,6 @@ export const api = {
   models: () => loadJson<ModelInfo[]>('models.json', []),
   fixtures: () => loadJson<Fixture[]>('fixtures.json', []),
   predictions: () => loadJson<Prediction[]>('predictions.json', []),
-  groups: () =>
-    loadJson<GroupsPayload>('groups.json', {
-      official_groups: [],
-      predicted_group_standings: [],
-      actual_standings: []
-    }),
   knockout: () =>
     loadJson<KnockoutPayload>('knockout.json', {
       predicted_knockout_brackets: [],

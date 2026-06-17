@@ -63,22 +63,6 @@ export type Prediction = {
   points: number | null;
 };
 
-export type GroupsPayload = {
-  official_groups: { group: string; teams: string[] }[];
-  predicted_group_standings: {
-    model_name: string;
-    provider: string;
-    group: string;
-    rank: number;
-    team: string;
-    points: number;
-    goals_for: number;
-    goals_against: number;
-    goal_difference: number;
-  }[];
-  actual_standings: unknown[];
-};
-
 export type KnockoutPayload = {
   predicted_knockout_brackets: {
     model_name: string;

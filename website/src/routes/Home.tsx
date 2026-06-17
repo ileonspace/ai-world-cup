@@ -29,7 +29,7 @@ export function Home() {
         <div className="mt-6 flex flex-wrap gap-3">
           <Link className="rounded-md bg-white px-4 py-2 font-semibold text-pitch" to="/leaderboard">Leaderboard</Link>
           <Link className="rounded-md border border-white/70 px-4 py-2 font-semibold text-white" to="/tournament">Tournament Explorer</Link>
-          <Link className="rounded-md border border-white/70 px-4 py-2 font-semibold text-white" to="/fixtures">Fixtures</Link>
+          <Link className="rounded-md border border-white/70 px-4 py-2 font-semibold text-white" to="/predictions">Predictions</Link>
           <Link className="rounded-md border border-white/70 px-4 py-2 font-semibold text-white" to="/methodology">Methodology</Link>
         </div>
       </section>
