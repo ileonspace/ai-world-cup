@@ -267,9 +267,9 @@
     "away_team": "Democratic Republic of the Congo",
     "kickoff_time": null,
     "venue": "NRG Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -280,9 +280,9 @@
     "away_team": "Croatia",
     "kickoff_time": null,
     "venue": "AT&T Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 4,
+    "away_score": 2,
     "winner": null
   },
   {
@@ -293,9 +293,9 @@
     "away_team": "Colombia",
     "kickoff_time": null,
     "venue": "Estadio Azteca",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 3,
     "winner": null
   },
   {
@@ -306,9 +306,9 @@
     "away_team": "Panama",
     "kickoff_time": null,
     "venue": "BMO Field",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 0,
     "winner": null
   },
   {
