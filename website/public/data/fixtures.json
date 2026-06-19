@@ -319,9 +319,9 @@
     "away_team": "South Korea",
     "kickoff_time": null,
     "venue": "Estadio Akron",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -332,9 +332,9 @@
     "away_team": "Bosnia and Herzegovina",
     "kickoff_time": null,
     "venue": "SoFi Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 4,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -345,9 +345,9 @@
     "away_team": "Qatar",
     "kickoff_time": null,
     "venue": "BC Place",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 6,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -358,9 +358,9 @@
     "away_team": "South Africa",
     "kickoff_time": null,
     "venue": "Mercedes-Benz Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 1,
     "winner": null
   },
   {

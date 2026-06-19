@@ -3612,7 +3612,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.65,
     "reasoning_short": "Host support aids Mexico over high pressing South Korean challenge.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -3627,7 +3627,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Both teams cancel each other",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -3642,7 +3642,7 @@
     "predicted_winner": "Mexico",
     "confidence": 0.61,
     "reasoning_short": "Home support.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "Grok",
@@ -3657,7 +3657,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.55,
     "reasoning_short": "Tight match with home support for Mexico.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -3672,7 +3672,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Snapshot lacks player-form data; the matchup appears balanced, so a low-scoring draw is projected.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -3687,7 +3687,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.45,
     "reasoning_short": "South Korea's discipline and Mexico's home comfort balance out, pointing to a shared result.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -3702,7 +3702,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.34,
     "reasoning_short": "Mexico and South Korea are closely matched, so shared points look likely.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -3717,7 +3717,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.4,
     "reasoning_short": "Mexico and South Korea historically competitive matchup. Both need points; tactical battle expected. Draw plausible outcome.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -3732,7 +3732,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.65,
     "reasoning_short": "Both disciplined and fit; Mexico's edge at home balanced by Korea's resilience.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -3747,7 +3747,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Both teams share points in a fiercely contested midfield battle.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
@@ -3762,7 +3762,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.7,
     "reasoning_short": "Swiss technical structure breaks down tough Bosnian physical presence.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -3777,7 +3777,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.7,
     "reasoning_short": "Swiss efficiency secures win",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -3792,7 +3792,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.62,
     "reasoning_short": "Swiss edge.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -3807,7 +3807,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.7,
     "reasoning_short": "Swiss organization wins.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -3822,7 +3822,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.58,
     "reasoning_short": "Switzerland is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -3837,7 +3837,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.78,
     "reasoning_short": "Switzerland should be more stable defensively and more efficient in chance creation.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -3852,7 +3852,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.72,
     "reasoning_short": "Switzerland should be organized enough to control the match and finish chances.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -3867,7 +3867,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.62,
     "reasoning_short": "Switzerland consistent European performers. Bosnia lack consistent quality to trouble organized Swiss side.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -3882,7 +3882,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.65,
     "reasoning_short": "Switzerland's organization and midfield control decide a tight match.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -3897,7 +3897,7 @@
     "predicted_winner": "Switzerland",
     "confidence": 0.75,
     "reasoning_short": "Switzerland's tactical discipline secures a clean sheet and victory.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
@@ -3912,7 +3912,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.8,
     "reasoning_short": "Canada rides wave of home support to control Qatar match.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -3927,7 +3927,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.75,
     "reasoning_short": "Canada's home support lifts them",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -3942,7 +3942,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.65,
     "reasoning_short": "Canada stronger.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -3957,7 +3957,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.6,
     "reasoning_short": "Canada improving at home continent.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -3972,7 +3972,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.72,
     "reasoning_short": "Canada is favored by venue context and overall squad quality; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -3987,7 +3987,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.74,
     "reasoning_short": "Canada are more likely to win midfield battles and create the higher-quality chances.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -4002,7 +4002,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.64,
     "reasoning_short": "Canada are favored strongly enough to take three points.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -4017,7 +4017,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.8,
     "reasoning_short": "Canada should dominate Qatar without home advantage boost. Qatar's 2022 struggles indicate clear quality gap.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -4032,7 +4032,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.75,
     "reasoning_short": "Canada's home support and athleticism overwhelm Qatar.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -4047,7 +4047,7 @@
     "predicted_winner": "Canada",
     "confidence": 0.7,
     "reasoning_short": "Canada's attacking momentum proves too much for Qatar's defense.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
@@ -4062,7 +4062,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.65,
     "reasoning_short": "Czech Republic capitalizes on crucial set-piece opportunities to get points.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -4077,7 +4077,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.65,
     "reasoning_short": "Czech discipline secures win",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -4092,7 +4092,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.64,
     "reasoning_short": "Czech advantage.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -4107,7 +4107,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.65,
     "reasoning_short": "Czech technical edge.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -4122,7 +4122,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.58,
     "reasoning_short": "Czech Republic is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -4137,7 +4137,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.64,
     "reasoning_short": "Czech Republic are expected to be more composed and efficient in a match they should control.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -4152,7 +4152,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.6,
     "reasoning_short": "Czech Republic's tournament pedigree gives them the edge.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -4167,7 +4167,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.65,
     "reasoning_short": "Czech Republic technically superior European side. South Africa unlikely to compete at this level consistently.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -4182,7 +4182,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Both physical but lack cutting edge; likely a stalemate.",
-    "points": null
+    "points": 9
   },
   {
     "model_name": "Qwen 3 7",
@@ -4197,7 +4197,7 @@
     "predicted_winner": "Czech Republic",
     "confidence": 0.65,
     "reasoning_short": "Czech Republic's organized defense frustrates South Africa.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
