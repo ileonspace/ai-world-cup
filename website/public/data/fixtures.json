@@ -371,9 +371,9 @@
     "away_team": "Haiti",
     "kickoff_time": null,
     "venue": "Lincoln Financial Field",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 3,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -384,9 +384,9 @@
     "away_team": "Morocco",
     "kickoff_time": null,
     "venue": "Gillette Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -397,9 +397,9 @@
     "away_team": "Australia",
     "kickoff_time": null,
     "venue": "Lumen Field",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 2,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -410,9 +410,9 @@
     "away_team": "Paraguay",
     "kickoff_time": null,
     "venue": "Levi's Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 1,
     "winner": null
   },
   {

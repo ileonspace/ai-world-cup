@@ -4212,7 +4212,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.95,
     "reasoning_short": "Brazil dominates match thoroughly to confirm knockout round progression.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -4227,7 +4227,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.9,
     "reasoning_short": "Brazil's attack overwhelming",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -4242,7 +4242,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.9,
     "reasoning_short": "Large gap.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -4257,7 +4257,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.95,
     "reasoning_short": "Brazil rout minnows.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -4272,7 +4272,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.75,
     "reasoning_short": "Brazil is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -4287,7 +4287,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.97,
     "reasoning_short": "Brazil should create repeated scoring chances and likely win comfortably.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -4302,7 +4302,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.95,
     "reasoning_short": "Brazil should overwhelm Haiti with chance volume and quality.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -4317,7 +4317,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.95,
     "reasoning_short": "Brazil one of tournament favourites; Haiti debutants face overwhelming quality difference. Heavy Brazil win expected.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -4332,7 +4332,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.95,
     "reasoning_short": "Brazil's firepower and technical dominance crush Haiti.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -4347,7 +4347,7 @@
     "predicted_winner": "Brazil",
     "confidence": 0.95,
     "reasoning_short": "Brazil dominates possession and scores comfortably against Haiti.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Gemini",
@@ -4362,7 +4362,7 @@
     "predicted_winner": "Morocco",
     "confidence": 0.6,
     "reasoning_short": "Morocco shuts down Scotland attack and hits cleanly via counter.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -4377,7 +4377,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Both teams neutralize each other",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -4392,7 +4392,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.49,
     "reasoning_short": "Tight matchup.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -4407,7 +4407,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.55,
     "reasoning_short": "Evenly contested encounter.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -4422,7 +4422,7 @@
     "predicted_winner": "Morocco",
     "confidence": 0.58,
     "reasoning_short": "Morocco is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "Perplexity Pro",
@@ -4437,7 +4437,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.4,
     "reasoning_short": "Morocco's organization and Scotland's directness make this a balanced contest with few clear edges.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -4452,7 +4452,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.32,
     "reasoning_short": "Both teams can frustrate opponents, making a draw plausible.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -4467,7 +4467,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.4,
     "reasoning_short": "Scotland solid and disciplined; Morocco proven world-level side. Competitive match; draw a fair prediction.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -4482,7 +4482,7 @@
     "predicted_winner": "Morocco",
     "confidence": 0.7,
     "reasoning_short": "Morocco's technical quality and counter-attacking speed too much.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "Qwen 3 7",
@@ -4497,7 +4497,7 @@
     "predicted_winner": "Morocco",
     "confidence": 0.65,
     "reasoning_short": "Morocco's tactical flexibility allows them to snatch a late winner.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Gemini",
@@ -4512,7 +4512,7 @@
     "predicted_winner": "United States",
     "confidence": 0.7,
     "reasoning_short": "USA wins dynamic match, advancing out of Group D.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -4527,7 +4527,7 @@
     "predicted_winner": "United States",
     "confidence": 0.7,
     "reasoning_short": "USA's depth secures win",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -4542,7 +4542,7 @@
     "predicted_winner": "United States",
     "confidence": 0.57,
     "reasoning_short": "USA narrow edge.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -4557,7 +4557,7 @@
     "predicted_winner": "United States",
     "confidence": 0.7,
     "reasoning_short": "USA strong on home soil.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -4572,7 +4572,7 @@
     "predicted_winner": "United States",
     "confidence": 0.72,
     "reasoning_short": "United States is favored by venue context and overall squad quality; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Perplexity Pro",
@@ -4587,7 +4587,7 @@
     "predicted_winner": "United States",
     "confidence": 0.61,
     "reasoning_short": "The United States should edge a competitive match through depth and more attacking threat.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -4602,7 +4602,7 @@
     "predicted_winner": "United States",
     "confidence": 0.58,
     "reasoning_short": "The United States should edge Australia in a tight but winnable contest.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -4617,7 +4617,7 @@
     "predicted_winner": "United States",
     "confidence": 0.58,
     "reasoning_short": "USA hosting and improving rapidly. Australia resilient but USA's depth and home support edge this.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -4632,7 +4632,7 @@
     "predicted_winner": "United States",
     "confidence": 0.75,
     "reasoning_short": "USA's pressing and home crowd overrun Australia.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Qwen 3 7",
@@ -4647,7 +4647,7 @@
     "predicted_winner": "United States",
     "confidence": 0.7,
     "reasoning_short": "USA's high press forces Australian errors, leading to a home win.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
@@ -4662,7 +4662,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.65,
     "reasoning_short": "Turkey finds late winner to break organized South American defense.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -4677,7 +4677,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.75,
     "reasoning_short": "Turkey's organization prevails",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -4692,7 +4692,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.49,
     "reasoning_short": "Even game.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -4707,7 +4707,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.6,
     "reasoning_short": "Turkey attacking flair.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -4722,7 +4722,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Snapshot lacks player-form data; the matchup appears balanced, so a low-scoring draw is projected.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -4737,7 +4737,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.38,
     "reasoning_short": "Both sides are capable of disrupting each other, and neither has a clear enough advantage for a strong win pick.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -4752,7 +4752,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.52,
     "reasoning_short": "Turkey's higher attacking ceiling gives them a slight advantage.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -4767,7 +4767,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.52,
     "reasoning_short": "Turkey improving with quality young players in Europe. Paraguay competitive South American side but Turkey's momentum favours them.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -4782,7 +4782,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.65,
     "reasoning_short": "Turkish passion and set-piece goals edge out Paraguay.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -4797,7 +4797,7 @@
     "predicted_winner": "Turkey",
     "confidence": 0.65,
     "reasoning_short": "Turkey's attacking flair breaks down Paraguay's rigid defense.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
