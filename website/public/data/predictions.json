@@ -6312,7 +6312,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.75,
     "reasoning_short": "Argentina limits counter-pressing threats to wrap up Group J.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -6327,7 +6327,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.75,
     "reasoning_short": "Argentina's stars shine again",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -6342,7 +6342,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.63,
     "reasoning_short": "Argentina edge.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -6357,7 +6357,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.75,
     "reasoning_short": "Messi-era Argentina edges it.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -6372,7 +6372,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.58,
     "reasoning_short": "Argentina is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -6387,7 +6387,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.84,
     "reasoning_short": "Argentina's overall quality and control in possession should be too much for Austria.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Perplexity",
@@ -6402,7 +6402,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.79,
     "reasoning_short": "Argentina are stronger in most phases and should win the match.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -6417,7 +6417,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.75,
     "reasoning_short": "Argentina champions with Messi and world-class attack. Austria solid but Argentina's individual brilliance proves decisive.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "DeepSeek",
@@ -6432,7 +6432,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.8,
     "reasoning_short": "Argentina's possession and Messi's genius control the midfield.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Qwen 3 7",
@@ -6447,7 +6447,7 @@
     "predicted_winner": "Argentina",
     "confidence": 0.75,
     "reasoning_short": "Argentina's midfield mastery controls the game's tempo.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Gemini",
