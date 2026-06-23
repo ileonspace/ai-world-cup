@@ -1,0 +1,58 @@
+name: Daily Results Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-results-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install package
+        run: python -m pip install -e .
+
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Sync latest match data
+        run: aiwc data sync --sources openfootball,worldcup26
+
+      - name: Recalculate scores
+        run: aiwc evaluate tournament --completed-only
+
+      - name: Export website JSON
+        run: aiwc site export
+
+      - name: Show tournament leaderboard
+        run: aiwc leaderboard tournament
+
+      - name: Commit and push updates
+        run: |
+          git add data/snapshots website/public/data
+          if git diff --cached --quiet; then
+            echo "No website/data changes to commit."
+            exit 0
+          fi
+          git commit -m "Update World Cup results and leaderboard"
+          git push

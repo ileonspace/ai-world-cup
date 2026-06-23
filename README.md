@@ -530,16 +530,31 @@ For website UI changes, also stage the relevant `website/src` files before commi
 
 ## Daily Automation
 
-The repository can be configured to run a daily GitHub Actions workflow.
+For local daily updates after games start, run:
 
-The daily workflow can:
+```bash
+./daily_update.sh
+```
+
+The script syncs match data, recalculates tournament scores, exports website JSON, prints the current tournament leaderboard, commits changed website/data files, and pushes to GitHub. If no exported data changed, it exits without creating a commit.
+
+You can override the default commit message:
+
+```bash
+COMMIT_MESSAGE="Update results" ./daily_update.sh
+```
+
+The repository also includes `.github/workflows/daily-update.yml`, which can run the same update automatically in GitHub Actions. It runs every day at 07:00 UTC and can also be started manually from the GitHub **Actions** tab.
+
+The daily GitHub workflow:
 
 1. sync the latest football data,
 2. update snapshots,
 3. evaluate predictions against completed matches,
 4. export website JSON,
 5. commit updated data,
-6. redeploy the GitHub Pages website.
+6. push to `main`,
+7. trigger the GitHub Pages deployment workflow.
 
 This keeps the public leaderboard and charts up to date during the tournament.
 
