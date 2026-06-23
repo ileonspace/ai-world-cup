@@ -6012,7 +6012,7 @@
     "predicted_winner": "France",
     "confidence": 0.9,
     "reasoning_short": "France overpowers Iraq defensive scheme easily to move onward.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -6027,7 +6027,7 @@
     "predicted_winner": "France",
     "confidence": 0.85,
     "reasoning_short": "France's depth overwhelming",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "GPT-5.5",
@@ -6042,7 +6042,7 @@
     "predicted_winner": "France",
     "confidence": 0.87,
     "reasoning_short": "France superior.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Grok",
@@ -6057,7 +6057,7 @@
     "predicted_winner": "France",
     "confidence": 0.9,
     "reasoning_short": "France overwhelming.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -6072,7 +6072,7 @@
     "predicted_winner": "France",
     "confidence": 0.75,
     "reasoning_short": "France is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Perplexity Pro",
@@ -6087,7 +6087,7 @@
     "predicted_winner": "France",
     "confidence": 0.95,
     "reasoning_short": "France are heavily favored and should win comfortably on quality alone.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Perplexity",
@@ -6102,7 +6102,7 @@
     "predicted_winner": "France",
     "confidence": 0.92,
     "reasoning_short": "France should dominate possession and create a one-sided result.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -6117,7 +6117,7 @@
     "predicted_winner": "France",
     "confidence": 0.95,
     "reasoning_short": "France world-class against overmatched Iraq. Mbappe and company should run riot comfortably.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -6132,7 +6132,7 @@
     "predicted_winner": "France",
     "confidence": 0.9,
     "reasoning_short": "France's depth and attacking talent overwhelm Iraq.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Qwen 3 7",
@@ -6147,7 +6147,7 @@
     "predicted_winner": "France",
     "confidence": 0.9,
     "reasoning_short": "France's superior squad depth leads to a dominant performance.",
-    "points": null
+    "points": 11
   },
   {
     "model_name": "Gemini",
@@ -6162,7 +6162,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Intense duel sees Senegal speed balanced by Norway direct attack.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -6177,7 +6177,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.6,
     "reasoning_short": "Evenly matched contest",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -6192,7 +6192,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.48,
     "reasoning_short": "Close game.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -6207,7 +6207,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.55,
     "reasoning_short": "Balanced attacking sides.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -6222,7 +6222,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.5,
     "reasoning_short": "Snapshot lacks player-form data; the matchup appears balanced, so a low-scoring draw is projected.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -6237,7 +6237,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.34,
     "reasoning_short": "This is one of the more balanced fixtures in the group, with neither side clearly superior.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -6252,7 +6252,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.33,
     "reasoning_short": "Senegal and Norway both have enough quality to cancel each other out.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -6267,7 +6267,7 @@
     "predicted_winner": "Norway",
     "confidence": 0.55,
     "reasoning_short": "Haaland-led Norway powerful but Senegal dangerous with African talent. Norway's clinical finishing edges tight contest.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "DeepSeek",
@@ -6282,7 +6282,7 @@
     "predicted_winner": "DRAW",
     "confidence": 0.65,
     "reasoning_short": "Physical battle; Haaland's threat vs Senegal's athletic defense.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -6297,7 +6297,7 @@
     "predicted_winner": "Senegal",
     "confidence": 0.65,
     "reasoning_short": "Senegal's counter-attacking speed catches Norway off guard.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",
@@ -6462,7 +6462,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.75,
     "reasoning_short": "Algeria offensive talent depth decides matchup against Jordan.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -6477,7 +6477,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.7,
     "reasoning_short": "Algeria's flair decides match",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -6492,7 +6492,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.67,
     "reasoning_short": "Algeria stronger.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -6507,7 +6507,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.6,
     "reasoning_short": "Algeria slight favorite.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -6522,7 +6522,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.68,
     "reasoning_short": "Algeria is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -6537,7 +6537,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.58,
     "reasoning_short": "Algeria are likely to have the stronger individual quality and more reliable chance creation.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "Perplexity",
@@ -6552,7 +6552,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.61,
     "reasoning_short": "Algeria's quality advantage should be decisive against Jordan.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -6567,7 +6567,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.65,
     "reasoning_short": "Algeria more experienced at this level. Jordan's historic qualifier but Algeria's African quality proves too strong.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -6582,7 +6582,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.75,
     "reasoning_short": "Algeria's pace and technical ability too much for Jordan.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -6597,7 +6597,7 @@
     "predicted_winner": "Algeria",
     "confidence": 0.7,
     "reasoning_short": "Algeria's tactical discipline secures a narrow away win.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "Gemini",

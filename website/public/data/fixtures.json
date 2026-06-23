@@ -527,9 +527,9 @@
     "away_team": "Iraq",
     "kickoff_time": null,
     "venue": "Lincoln Financial Field",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 3,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -540,9 +540,9 @@
     "away_team": "Senegal",
     "kickoff_time": null,
     "venue": "MetLife Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 3,
+    "away_score": 2,
     "winner": null
   },
   {
@@ -566,9 +566,9 @@
     "away_team": "Algeria",
     "kickoff_time": null,
     "venue": "Levi's Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 2,
     "winner": null
   },
   {
