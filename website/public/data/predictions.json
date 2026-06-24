@@ -6612,7 +6612,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.9,
     "reasoning_short": "Portugal clinical execution minimizes any potential group exit threat.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -6627,7 +6627,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.8,
     "reasoning_short": "Portugal's talent shines",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -6642,7 +6642,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.84,
     "reasoning_short": "Portugal superior.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -6657,7 +6657,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.85,
     "reasoning_short": "Portugal cruise through.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -6672,7 +6672,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.75,
     "reasoning_short": "Portugal is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -6687,7 +6687,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.91,
     "reasoning_short": "Portugal are clear favorites and should maintain pressure throughout the match.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -6702,7 +6702,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.89,
     "reasoning_short": "Portugal are clear favorites and should handle the match comfortably.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -6717,7 +6717,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.9,
     "reasoning_short": "Portugal European elite; Uzbekistan debutants. Class gap overwhelming. Portugal expected to dominate.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -6732,7 +6732,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.9,
     "reasoning_short": "Portugal's depth and individual quality crush Uzbekistan.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -6747,7 +6747,7 @@
     "predicted_winner": "Portugal",
     "confidence": 0.85,
     "reasoning_short": "Portugal's technical superiority is too much for Uzbekistan.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
@@ -6762,7 +6762,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.8,
     "reasoning_short": "Croatia midfield handles tempo and controls match flawlessly.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -6777,7 +6777,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.75,
     "reasoning_short": "Croatia's experience prevails",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -6792,7 +6792,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.69,
     "reasoning_short": "Croatia quality.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -6807,7 +6807,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.8,
     "reasoning_short": "Croatia technical superiority.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -6822,7 +6822,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.68,
     "reasoning_short": "Croatia is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity Pro",
@@ -6837,7 +6837,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.74,
     "reasoning_short": "Croatia's tournament experience and technical composure should separate them from Panama.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -6852,7 +6852,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.7,
     "reasoning_short": "Croatia should control midfield and convert enough chances to win.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -6867,7 +6867,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.72,
     "reasoning_short": "Croatia experienced finalists with world-class midfield. Panama tough but Croatia's technical quality decisive.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -6882,7 +6882,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.8,
     "reasoning_short": "Croatia's midfield experience and tournament know-how dominate.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -6897,7 +6897,7 @@
     "predicted_winner": "Croatia",
     "confidence": 0.8,
     "reasoning_short": "Croatia's experience and midfield control secure an easy win.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
@@ -6912,7 +6912,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.7,
     "reasoning_short": "Colombia depth wins despite strong resilience shown by African team.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -6927,7 +6927,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.7,
     "reasoning_short": "Colombia's attack too sharp",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "GPT-5.5",
@@ -6942,7 +6942,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.7,
     "reasoning_short": "Colombia favored.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Grok",
@@ -6957,7 +6957,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.75,
     "reasoning_short": "Colombia favored.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -6972,7 +6972,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.58,
     "reasoning_short": "Colombia is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 6
   },
   {
     "model_name": "Perplexity Pro",
@@ -6987,7 +6987,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.78,
     "reasoning_short": "Colombia should have more control and greater attacking consistency.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Perplexity",
@@ -7002,7 +7002,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.63,
     "reasoning_short": "Colombia are more complete and should earn a clean-sheet win.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -7017,7 +7017,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.7,
     "reasoning_short": "Colombia's South American quality and European-based players too much for DR Congo in debut tournament.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "DeepSeek",
@@ -7032,7 +7032,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.75,
     "reasoning_short": "Colombia's flair and organization too strong for DR Congo.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Qwen 3 7",
@@ -7047,7 +7047,7 @@
     "predicted_winner": "Colombia",
     "confidence": 0.75,
     "reasoning_short": "Colombia's attacking flair breaks down DR Congo's defense.",
-    "points": null
+    "points": 5
   },
   {
     "model_name": "Gemini",
@@ -7062,7 +7062,7 @@
     "predicted_winner": "England",
     "confidence": 0.8,
     "reasoning_short": "England structural discipline limits Ghana transition opportunism.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Mistral Medium 3.5",
@@ -7077,7 +7077,7 @@
     "predicted_winner": "England",
     "confidence": 0.75,
     "reasoning_short": "England's depth secures win",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5",
@@ -7092,7 +7092,7 @@
     "predicted_winner": "England",
     "confidence": 0.73,
     "reasoning_short": "England stronger.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Grok",
@@ -7107,7 +7107,7 @@
     "predicted_winner": "England",
     "confidence": 0.8,
     "reasoning_short": "England strong squad.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "GPT-5.5 Thinking",
@@ -7122,7 +7122,7 @@
     "predicted_winner": "England",
     "confidence": 0.68,
     "reasoning_short": "England is favored on overall squad quality and matchup profile; no current statistics are provided in the snapshot.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity Pro",
@@ -7137,7 +7137,7 @@
     "predicted_winner": "England",
     "confidence": 0.8,
     "reasoning_short": "England are the stronger side and should create enough chances to win by multiple goals.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Perplexity",
@@ -7152,7 +7152,7 @@
     "predicted_winner": "England",
     "confidence": 0.76,
     "reasoning_short": "England's overall squad strength should secure a fairly routine victory.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Claude Sonnet 4.6",
@@ -7167,7 +7167,7 @@
     "predicted_winner": "England",
     "confidence": 0.68,
     "reasoning_short": "England's Premier League talent rich and motivated. Ghana improving but England's depth and quality decisive.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "DeepSeek",
@@ -7182,7 +7182,7 @@
     "predicted_winner": "England",
     "confidence": 0.8,
     "reasoning_short": "England's structured attack and physicality control Ghana.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Qwen 3 7",
@@ -7197,7 +7197,7 @@
     "predicted_winner": "England",
     "confidence": 0.75,
     "reasoning_short": "England's pace on the wings proves decisive against Ghana.",
-    "points": null
+    "points": 0
   },
   {
     "model_name": "Gemini",

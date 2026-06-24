@@ -579,9 +579,9 @@
     "away_team": "Uzbekistan",
     "kickoff_time": null,
     "venue": "NRG Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 5,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -592,9 +592,9 @@
     "away_team": "Croatia",
     "kickoff_time": null,
     "venue": "BMO Field",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -605,9 +605,9 @@
     "away_team": "Democratic Republic of the Congo",
     "kickoff_time": null,
     "venue": "Estadio Akron",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -618,9 +618,9 @@
     "away_team": "Ghana",
     "kickoff_time": null,
     "venue": "Gillette Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 0,
     "winner": null
   },
   {
