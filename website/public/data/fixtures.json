@@ -631,9 +631,9 @@
     "away_team": "Brazil",
     "kickoff_time": null,
     "venue": "Hard Rock Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 3,
     "winner": null
   },
   {
@@ -644,9 +644,9 @@
     "away_team": "Haiti",
     "kickoff_time": null,
     "venue": "Mercedes-Benz Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 4,
+    "away_score": 2,
     "winner": null
   },
   {
@@ -657,9 +657,9 @@
     "away_team": "South Korea",
     "kickoff_time": null,
     "venue": "Estadio BBVA",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -670,9 +670,9 @@
     "away_team": "Mexico",
     "kickoff_time": null,
     "venue": "Estadio Azteca",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 3,
     "winner": null
   },
   {
@@ -683,9 +683,9 @@
     "away_team": "Qatar",
     "kickoff_time": null,
     "venue": "Lumen Field",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 3,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -696,9 +696,9 @@
     "away_team": "Canada",
     "kickoff_time": null,
     "venue": "BC Place",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 2,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -937,12 +937,12 @@
   },
   {
     "match_number": 73,
-    "stage": "Group Stage",
-    "group": null,
-    "home_team": "2A",
-    "away_team": "2B",
-    "kickoff_time": "2026-06-28T00:00:00",
-    "venue": "Los Angeles (Inglewood)",
+    "stage": "r32",
+    "group": "R32",
+    "home_team": "South Africa",
+    "away_team": "Canada",
+    "kickoff_time": null,
+    "venue": "SoFi Stadium",
     "status": "SCHEDULED",
     "home_score": null,
     "away_score": null,
