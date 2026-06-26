@@ -823,24 +823,6 @@
               "winner": null
             },
             {
-              "match_number": 75,
-              "stage": "Round of 32",
-              "home_team": "1F",
-              "away_team": "Morocco",
-              "home_score": null,
-              "away_score": null,
-              "winner": null
-            },
-            {
-              "match_number": 76,
-              "stage": "Round of 32",
-              "home_team": "Brazil",
-              "away_team": "2F",
-              "home_score": null,
-              "away_score": null,
-              "winner": null
-            },
-            {
               "match_number": 77,
               "stage": "Round of 32",
               "home_team": "1I",
@@ -852,7 +834,7 @@
             {
               "match_number": 78,
               "stage": "Round of 32",
-              "home_team": "2E",
+              "home_team": "Ivory Coast",
               "away_team": "2I",
               "home_score": null,
               "away_score": null,
@@ -872,15 +854,6 @@
               "stage": "Round of 32",
               "home_team": "1L",
               "away_team": "3E/H/I/J/K",
-              "home_score": null,
-              "away_score": null,
-              "winner": null
-            },
-            {
-              "match_number": 81,
-              "stage": "Round of 32",
-              "home_team": "United States",
-              "away_team": "3B/E/F/I/J",
               "home_score": null,
               "away_score": null,
               "winner": null
@@ -942,7 +915,7 @@
             {
               "match_number": 88,
               "stage": "Round of 32",
-              "home_team": "2D",
+              "home_team": "Australia",
               "away_team": "2G",
               "home_score": null,
               "away_score": null,
