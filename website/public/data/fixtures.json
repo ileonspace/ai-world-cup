@@ -709,9 +709,9 @@
     "away_team": "Ivory Coast",
     "kickoff_time": null,
     "venue": "Lincoln Financial Field",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 2,
     "winner": null
   },
   {
@@ -722,9 +722,9 @@
     "away_team": "Germany",
     "kickoff_time": null,
     "venue": "MetLife Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 2,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -735,9 +735,9 @@
     "away_team": "Australia",
     "kickoff_time": null,
     "venue": "Levi's Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 0,
     "winner": null
   },
   {
@@ -748,9 +748,9 @@
     "away_team": "United States",
     "kickoff_time": null,
     "venue": "SoFi Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 3,
+    "away_score": 2,
     "winner": null
   },
   {
@@ -761,9 +761,9 @@
     "away_team": "Sweden",
     "kickoff_time": null,
     "venue": "AT&T Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -774,9 +774,9 @@
     "away_team": "Netherlands",
     "kickoff_time": null,
     "venue": "GEHA Field at Arrowhead Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 3,
     "winner": null
   },
   {
@@ -966,7 +966,7 @@
     "stage": "Group Stage",
     "group": null,
     "home_team": "1F",
-    "away_team": "2C",
+    "away_team": "Morocco",
     "kickoff_time": "2026-06-29T00:00:00",
     "venue": "Monterrey (Guadalupe)",
     "status": "SCHEDULED",
@@ -978,7 +978,7 @@
     "match_number": 76,
     "stage": "Group Stage",
     "group": null,
-    "home_team": "1C",
+    "home_team": "Brazil",
     "away_team": "2F",
     "kickoff_time": "2026-06-29T00:00:00",
     "venue": "Houston",
@@ -1095,7 +1095,7 @@
     "match_number": 85,
     "stage": "Group Stage",
     "group": null,
-    "home_team": "1B",
+    "home_team": "Switzerland",
     "away_team": "3E/F/G/I/J",
     "kickoff_time": "2026-07-02T00:00:00",
     "venue": "Vancouver",
