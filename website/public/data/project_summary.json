@@ -1,10 +1,10 @@
 {
   "project_name": "AI World Cup",
   "description": "A reproducible benchmark for comparing LLM predictions on FIFA World Cup 2026.",
-  "latest_data_snapshot_id": 51,
+  "latest_data_snapshot_id": 53,
   "prompt_version": "v1",
   "number_of_models": 10,
   "number_of_predictions": 1040,
   "number_of_fixtures": 104,
-  "last_updated": "2026-06-26T18:27:30.450135+00:00"
+  "last_updated": "2026-06-28T02:55:35.107057+00:00"
 }
