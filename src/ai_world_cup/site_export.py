@@ -40,6 +40,8 @@ TEAM_ALIASES = {
     "Curacao": "Curaçao",
 }
 
+GROUP_STAGE_GROUPS = set("ABCDEFGHIJKL")
+
 
 def _canonical_team_name(name: str | None) -> str:
     if not name:
@@ -52,6 +54,11 @@ def _canonical_group_name(group_name: str | None) -> str | None:
     if not group_name:
         return None
     return group_name.replace("Group ", "")
+
+
+def _is_group_stage_group(group_name: str | None) -> bool:
+    canonical = _canonical_group_name(group_name)
+    return canonical in GROUP_STAGE_GROUPS
 
 
 def _dump(path: Path, payload: Any) -> None:
@@ -473,7 +480,11 @@ def _actual_tournament_view(
     knockout_matches = []
     for match in session.exec(select(Match).order_by(Match.match_number, Match.id)):
         group = _canonical_group_name(match.group_name)
-        if group and match.home_score is not None and match.away_score is not None:
+        if (
+            _is_group_stage_group(group)
+            and match.home_score is not None
+            and match.away_score is not None
+        ):
             groups.setdefault(group, {})
             _apply_group_result(
                 groups[group],
@@ -483,7 +494,7 @@ def _actual_tournament_view(
                 match.home_score,
                 match.away_score,
             )
-        elif not group:
+        elif not _is_group_stage_group(group):
             knockout_matches.append(
                 {
                     "match_number": match.match_number,
@@ -655,7 +666,7 @@ def _model_tournament_view(
     knockout_matches = []
     for prediction in predictions:
         group = _canonical_group_name(prediction.group_name)
-        if prediction.is_official_fixture and group:
+        if prediction.is_official_fixture and _is_group_stage_group(group):
             groups.setdefault(group, {})
             _apply_group_result(
                 groups[group],
