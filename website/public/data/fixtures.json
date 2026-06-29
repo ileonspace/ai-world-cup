@@ -943,9 +943,9 @@
     "away_team": "Canada",
     "kickoff_time": null,
     "venue": "SoFi Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 0,
+    "away_score": 1,
     "winner": null
   },
   {
