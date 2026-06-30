@@ -767,8 +767,8 @@
               "stage": "Round of 32",
               "home_team": "Germany",
               "away_team": "Paraguay",
-              "home_score": null,
-              "away_score": null,
+              "home_score": 1,
+              "away_score": 1,
               "winner": null
             },
             {
@@ -776,8 +776,8 @@
               "stage": "Round of 32",
               "home_team": "Netherlands",
               "away_team": "Morocco",
-              "home_score": null,
-              "away_score": null,
+              "home_score": 1,
+              "away_score": 1,
               "winner": null
             },
             {
@@ -785,8 +785,8 @@
               "stage": "Round of 32",
               "home_team": "Brazil",
               "away_team": "Japan",
-              "home_score": null,
-              "away_score": null,
+              "home_score": 2,
+              "away_score": 1,
               "winner": null
             },
             {
@@ -914,8 +914,8 @@
             {
               "match_number": 90,
               "stage": "Round of 16",
-              "home_team": "W73",
-              "away_team": "W75",
+              "home_team": "Canada",
+              "away_team": "Morocco",
               "home_score": null,
               "away_score": null,
               "winner": null

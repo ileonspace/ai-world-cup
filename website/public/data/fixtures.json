@@ -956,9 +956,9 @@
     "away_team": "Paraguay",
     "kickoff_time": null,
     "venue": "Gillette Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -969,9 +969,9 @@
     "away_team": "Morocco",
     "kickoff_time": null,
     "venue": "Estadio BBVA",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 1,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -982,9 +982,9 @@
     "away_team": "Japan",
     "kickoff_time": null,
     "venue": "NRG Stadium",
-    "status": "SCHEDULED",
-    "home_score": null,
-    "away_score": null,
+    "status": "FINISHED",
+    "home_score": 2,
+    "away_score": 1,
     "winner": null
   },
   {
@@ -1158,12 +1158,12 @@
   },
   {
     "match_number": 90,
-    "stage": "Group Stage",
-    "group": null,
-    "home_team": "W73",
-    "away_team": "W75",
-    "kickoff_time": "2026-07-04T00:00:00",
-    "venue": "Houston",
+    "stage": "r16",
+    "group": "R16",
+    "home_team": "Canada",
+    "away_team": "Morocco",
+    "kickoff_time": null,
+    "venue": "NRG Stadium",
     "status": "SCHEDULED",
     "home_score": null,
     "away_score": null,
