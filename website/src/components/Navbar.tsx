@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 const links = [
   ['/', 'Home'],
@@ -13,6 +13,14 @@ const links = [
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const [lang, setLang] = useState<'en' | 'zh'>('en');
+
+  const toggleLang = useCallback(() => {
+    const next = lang === 'en' ? 'zh' : 'en';
+    setLang(next);
+    const t = (window as any).translate;
+    if (t) t.changeLanguage(next === 'zh' ? 'chinese_simplified' : 'english');
+  }, [lang]);
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
     `rounded-md px-3 py-2 ${
       isActive
@@ -27,6 +35,16 @@ export function Navbar() {
           <NavLink to="/" className="text-xl font-bold tracking-tight text-pitch dark:text-emerald-300">
             AI World Cup
           </NavLink>
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={toggleLang}
+              className="ignore inline-flex items-center rounded-full bg-slate-100 p-0.5 text-xs font-medium dark:bg-slate-800"
+            >
+              <span className={`rounded-full px-2.5 py-1 transition ${lang === 'en' ? 'bg-pitch text-white dark:bg-emerald-500 dark:text-slate-950' : 'text-slate-500 dark:text-slate-400'}`}>EN</span>
+              <span className={`rounded-full px-2.5 py-1 transition ${lang === 'zh' ? 'bg-pitch text-white dark:bg-emerald-500 dark:text-slate-950' : 'text-slate-500 dark:text-slate-400'}`}>中文</span>
+            </button>
+          </div>
           <button
             type="button"
             aria-expanded={open}
