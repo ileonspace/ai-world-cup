@@ -1,0 +1,58 @@
+name: 自动同步上游
+
+on:
+  schedule:
+    - cron: '37 */6 * * *'     # 每6小时自动运行
+  workflow_dispatch:             # 也支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 配置 Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: 添加上游
+        run: |
+          git remote add upstream https://github.com/jonaidshianifar/ai-world-cup.git
+          git fetch upstream main
+
+      - name: 检查更新
+        id: check
+        run: |
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "✅ 已是最新"
+            echo "sync=no" >> $GITHUB_OUTPUT
+          else
+            echo "🔔 检测到上游更新"
+            echo "sync=yes" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 合并上游
+        if: steps.check.outputs.sync == 'yes'
+        run: |
+          git merge upstream/main --no-edit --no-ff || true
+          # 如有冲突：index.html/Navbar.tsx 保留我们的，其余用上游
+          for f in $(git diff --name-only --diff-filter=U 2>/dev/null); do
+            if echo "$f" | grep -qE 'index\.html|Navbar\.tsx'; then
+              git checkout --ours "$f" && git add "$f"
+            else
+              git checkout --theirs "$f" && git add "$f"
+            fi
+          done
+          git commit -m "🔄 自动同步上游 [skip ci]" || echo "无需额外提交"
+
+      - name: 推送
+        if: steps.check.outputs.sync == 'yes'
+        run: git push origin main
