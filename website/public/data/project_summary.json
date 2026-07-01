@@ -3,8 +3,8 @@
   "description": "A reproducible benchmark for comparing LLM predictions on FIFA World Cup 2026.",
   "latest_data_snapshot_id": 2,
   "prompt_version": "v1",
-  "number_of_models": 0,
-  "number_of_predictions": 0,
+  "number_of_models": 10,
+  "number_of_predictions": 1040,
   "number_of_fixtures": 104,
   "last_updated": "2026-07-01T10:39:48.627020+00:00"
 }
