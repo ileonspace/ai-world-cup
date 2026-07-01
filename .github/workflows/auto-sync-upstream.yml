@@ -2,7 +2,7 @@ name: 自动同步上游
 
 on:
   schedule:
-    - cron: '37 */6 * * *'     # 每6小时自动运行
+    - cron: '0 8 * * *'         # 每天 UTC 8:00，比上游(7:00)晚1小时
   workflow_dispatch:             # 也支持手动触发
 
 permissions:
