@@ -794,8 +794,8 @@
               "stage": "Round of 32",
               "home_team": "France",
               "away_team": "Sweden",
-              "home_score": 3,
-              "away_score": 0,
+              "home_score": null,
+              "away_score": null,
               "winner": null
             },
             {
@@ -803,8 +803,8 @@
               "stage": "Round of 32",
               "home_team": "Ivory Coast",
               "away_team": "Norway",
-              "home_score": 1,
-              "away_score": 2,
+              "home_score": null,
+              "away_score": null,
               "winner": null
             },
             {
@@ -812,8 +812,8 @@
               "stage": "Round of 32",
               "home_team": "Mexico",
               "away_team": "Ecuador",
-              "home_score": 2,
-              "away_score": 0,
+              "home_score": null,
+              "away_score": null,
               "winner": null
             },
             {
@@ -905,8 +905,8 @@
             {
               "match_number": 89,
               "stage": "Round of 16",
-              "home_team": "Paraguay",
-              "away_team": "France",
+              "home_team": "W74",
+              "away_team": "W77",
               "home_score": null,
               "away_score": null,
               "winner": null
@@ -923,8 +923,8 @@
             {
               "match_number": 91,
               "stage": "Round of 16",
-              "home_team": "Brazil",
-              "away_team": "Norway",
+              "home_team": "W76",
+              "away_team": "W78",
               "home_score": null,
               "away_score": null,
               "winner": null
