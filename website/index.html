@@ -33,7 +33,15 @@
       translate.selectLanguageTag.show = false;
       translate.service.use('client.edge');
       translate.listener.start();
-      translate.execute();
+      // 延迟翻译，让页面先渲染，避免大表格卡顿
+      var tid = requestIdleCallback ? requestIdleCallback(function() { translate.execute(); }) : setTimeout(function() { translate.execute(); }, 100);
     </script>
+    <style>
+      /* 大表格逐行渲染，避免 translate.js 一次处理全部行卡死 */
+      article .table-scroll tr {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 48px;
+      }
+    </style>
   </body>
 </html>
